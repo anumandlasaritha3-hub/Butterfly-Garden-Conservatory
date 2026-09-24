@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wing & Bloom Conservatory</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+ <!-- Google Fonts -->
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./experience-details.css">
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="footer.css">
+
+</head>
+
+<body>
+    <header class="site-header" id="siteHeader">
+    <div class="header-container">
+
+        <!-- BRAND -->
+        <a href="index.html" class="brand" aria-label="Wing and Bloom Conservatory Home">
+            <img decoding="async" src="./images/logo.webp"
+                 alt="Wing & Bloom Conservatory"
+                 class="brand-logo">
+
+            <div class="brand-content">
+                <span class="brand-name">
+                    Wing <span>&</span> Bloom
+                </span>
+            
+                <span class="brand-tagline"><b>Where Nature Takes Flight</b></span>
+            </div>
+        </a>
+
+        <!-- DESKTOP NAV -->
+        <nav class="main-nav" id="mainNav">
+
+            <div class="nav-item has-dropdown">
+                <a href="index.html" class="nav-link dropdown-link">
+                    Home
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="index.html" class="dropdown-item">
+                        <span class="dropdown-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </span>
+                        <span>
+                            <strong>Garden Experience</strong>
+                            <small>Classic nature-inspired home</small>
+                        </span>
+                    </a>
+
+                    <a href="home.html#home2" class="dropdown-item">
+                        <span class="dropdown-icon">
+                            <i class="fa-solid fa-seedling"></i>
+                        </span>
+                        <span>
+                            <strong>Conservatory Escape</strong>
+                            <small>Immersive tropical experience</small>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="butterflies.html" class="nav-link">Butterflies</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="experiences.html" class="nav-link active">Experiences</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="gallery.html" class="nav-link">Gallery</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="blog.html" class="nav-link">Blog</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <!-- MOBILE CTA -->
+            <a href="book-a-visit.html" class="mobile-cta">
+                <i class="fa-regular fa-calendar-check"></i>
+                Plan Your Visit
+            </a>
+        </nav>
+
+        <!-- HEADER ACTIONS -->
+        <div class="header-actions">
+
+            <!-- RTL / LTR -->
+            <button class="header-tool rtl-btn"
+                    id="rtlToggle"
+                    type="button"
+                    aria-label="Switch text direction">
+                <span id="directionText">RTL</span>
+            </button>
+
+            <!-- DARK / LIGHT -->
+            <button class="header-tool theme-btn"
+                    id="themeToggle"
+                    type="button"
+                    aria-label="Switch theme">
+                <i class="fa-regular fa-moon" id="themeIcon"></i>
+            </button>
+
+            <!-- PRIMARY CTA -->
+            <a href="book-a-visit.html" class="header-cta">
+                <i class="fa-regular fa-calendar-check"></i>
+                <span>Plan Your Visit</span>
+                <i class="fa-solid fa-arrow-right cta-arrow"></i>
+            </a>
+
+            <!-- HAMBURGER -->
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Open navigation"
+                    aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </div>
+</header>
+
+
+<main class="detail-page">
+
+    <!-- =====================================================
+         01. HERO
+    ====================================================== -->
+    <section class="detail-hero">
+
+        <div class="detail-hero-image">
+            <img fetchpriority="high" decoding="async" id="detailHeroImage"
+                 src="./images/butterfly-encounter.webp"
+                 alt="Butterfly Encounter">
+        </div>
+
+        <div class="detail-hero-overlay"></div>
+
+        <div class="container detail-hero-container">
+
+            <div class="detail-hero-content">
+
+                <a href="experiences.html" class="detail-back">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back To Experiences
+                </a>
+
+                <div class="detail-tag">
+                    <span></span>
+                    <p id="detailCategory">SIGNATURE EXPERIENCE</p>
+                </div>
+
+                <span class="detail-number" id="detailNumber">01</span>
+
+                <h1>
+                    <span id="detailTitle">Butterfly</span>
+                    <em id="detailAccent">Encounter</em>
+                </h1>
+
+                <p id="detailHeroDescription">
+                    Wander among free-flying butterflies and experience the
+                    conservatory at its most magical.
+                </p>
+
+            </div>
+
+            <div class="detail-hero-meta">
+
+                <div>
+                    <i class="fa-regular fa-hourglass-half"></i>
+                    <span>
+                        <small>DURATION</small>
+                        <strong id="detailDuration">Self-Paced</strong>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-users"></i>
+                    <span>
+                        <small>BEST FOR</small>
+                        <strong id="detailAudience">All Visitors</strong>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>
+                        <small>LOCATION</small>
+                        <strong id="detailLocation">Main Conservatory</strong>
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         02. OVERVIEW
+    ====================================================== -->
+    <section class="detail-intro detail-space">
+
+        <div class="container detail-intro-grid">
+
+            <div class="detail-intro-title">
+
+                <div class="detail-tag">
+                    <span></span>
+                    <p>OVERVIEW</p>
+                </div>
+
+                <h2 id="overviewTitle">
+                    Step Into A World <em>Alive With Wings</em>
+                </h2>
+
+            </div>
+
+            <div class="detail-intro-copy">
+
+                <p class="detail-lead" id="overviewLead">
+                    Butterfly Encounter is the signature Wing &amp; Bloom
+                    experience — an immersive journey through a tropical
+                    environment alive with free-flying butterflies,
+                    colourful flowers and lush foliage.
+                </p>
+
+                <p id="overviewTextOne">
+                    Instead of observing butterflies from behind glass, you
+                    enter their living environment. Walk along peaceful
+                    pathways while butterflies feed from flowers, glide
+                    above the garden and rest naturally among tropical
+                    leaves.
+                </p>
+
+                <p id="overviewTextTwo">
+                    No two visits feel exactly the same. Butterfly activity
+                    changes throughout the day, creating quiet moments of
+                    discovery whenever you slow down and look carefully.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         03. LARGE IMAGE
+    ====================================================== -->
+    <section class="detail-visual">
+
+        <div class="container">
+
+            <div class="detail-main-image">
+
+                <img loading="lazy" decoding="async" id="detailMainImage"
+                     src="./images/butterfly-encounter.webp"
+                     alt="Butterfly Encounter">
+
+                <span class="detail-image-number" id="detailImageNumber">01</span>
+
+                <div class="detail-image-caption">
+
+                    <i class="fa-solid fa-leaf"></i>
+
+                    <div>
+                        <small>FEATURED VIEW</small>
+                        <strong id="detailImageCaption">A Living World Around You</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         04. HIGHLIGHTS
+    ====================================================== -->
+    <section class="detail-highlights detail-space">
+
+        <div class="container">
+
+            <div class="detail-section-head">
+
+                <h2>Experience <em>Highlights</em></h2>
+
+                <p>
+                    Discover what makes this experience special, from the
+                    first step inside to the quiet moments you'll remember
+                    long after you leave.
+                </p>
+
+            </div>
+
+            <div class="detail-highlight-grid" id="highlightGrid"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         05. YOUR JOURNEY
+    ====================================================== -->
+    <section class="detail-journey">
+
+        <div class="container detail-space">
+
+            <div class="detail-journey-heading">
+
+                <div class="detail-tag">
+                    <span></span>
+                    <p>HOW IT WORKS</p>
+                </div>
+
+                <h2>Your Journey <em>Through The Garden</em></h2>
+
+                <p>
+                    A simple, relaxed flow that guides you from arrival to
+                    discovery, at your own comfortable pace.
+                </p>
+
+            </div>
+
+            <div class="detail-journey-list" id="journeyList"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         06. GOOD TO KNOW
+    ====================================================== -->
+    <section class="detail-know detail-space">
+
+        <div class="container detail-know-layout">
+
+            <div class="detail-know-heading">
+
+                <div class="detail-tag">
+                    <span></span>
+                    <p>GOOD TO KNOW</p>
+                </div>
+
+                <h2>Helpful Tips <em>Before You Arrive</em></h2>
+
+                <p>
+                    A few simple details to help you prepare and make the
+                    most of your visit.
+                </p>
+
+            </div>
+
+            <div class="detail-know-list" id="knowList"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         07. WHAT'S INCLUDED
+    ====================================================== -->
+    <section class="detail-included detail-space">
+
+        <div class="container">
+
+            <div class="detail-section-heading">
+
+                <div class="detail-tag detail-center-tag">
+                    <span></span>
+                    <p>WHAT'S INCLUDED</p>
+                </div>
+
+                <h2>Everything <em>You'll Experience</em></h2>
+
+                <p>
+                    A closer look at what's part of this experience, from
+                    the moment you arrive to the moment you leave.
+                </p>
+
+            </div>
+
+            <div class="detail-included-grid" id="includedGrid"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         08. VISITOR GUIDELINES
+    ====================================================== -->
+    <section class="detail-guidelines detail-space">
+
+        <div class="container detail-guidelines-layout">
+
+            <div>
+
+                <span class="detail-big-number">04</span>
+
+                <div class="detail-guideline-intro">
+
+                    <div class="detail-tag">
+                        <span></span>
+                        <p>PLEASE NOTE</p>
+                    </div>
+
+                    <h2>Visitor <em>Guidelines</em></h2>
+
+                    <p>
+                        A few simple guidelines help keep both our
+                        butterflies and our visitors safe, calm and
+                        comfortable throughout the conservatory.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="detail-guideline-list">
+
+                <article class="detail-guideline">
+                    <span>01</span>
+                    <i class="fa-solid fa-shirt"></i>
+                    <div>
+                        <h3>Dress Comfortably</h3>
+                        <p>
+                            The conservatory stays warm and humid year
+                            round, so light clothing and comfortable
+                            walking shoes are recommended.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="detail-guideline">
+                    <span>02</span>
+                    <i class="fa-solid fa-hand"></i>
+                    <div>
+                        <h3>Look, Don't Touch</h3>
+                        <p>
+                            Butterfly wings are extremely delicate. Please
+                            avoid touching or handling them and let them
+                            move freely on their own.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="detail-guideline">
+                    <span>03</span>
+                    <i class="fa-solid fa-camera"></i>
+                    <div>
+                        <h3>Photograph Gently</h3>
+                        <p>
+                            Personal photography is always welcome. Please
+                            avoid flash photography and give butterflies
+                            plenty of space.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="detail-guideline">
+                    <span>04</span>
+                    <i class="fa-solid fa-volume-low"></i>
+                    <div>
+                        <h3>Keep It Calm</h3>
+                        <p>
+                            Move slowly and keep your voice low so
+                            butterflies remain calm and undisturbed
+                            throughout your visit.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         09. FAQ
+    ====================================================== -->
+    <section class="detail-faq detail-space">
+
+        <div class="container detail-faq-layout">
+
+            <div class="detail-faq-heading">
+
+                <div class="detail-tag">
+                    <span></span>
+                    <p>FAQ</p>
+                </div>
+
+                <h2>Common <em>Questions</em></h2>
+
+                <p>
+                    Answers to a few things visitors often ask before
+                    joining this experience.
+                </p>
+
+                <a href="contact.html" class="detail-text-link">
+                    Still Have Questions?
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <div class="detail-faq-list" id="faqList"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         10. OTHER EXPERIENCES
+    ====================================================== -->
+    <section class="detail-other detail-space">
+
+        <div class="container">
+
+            <div class="detail-section-head">
+
+                <h2>Explore Other <em>Experiences</em></h2>
+
+                <p>
+                    Continue discovering more ways to enjoy Wing &amp;
+                    Bloom Conservatory.
+                </p>
+
+            </div>
+
+            <div class="detail-other-grid" id="otherExperiences"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         11. CTA
+    ====================================================== -->
+    <section class="detail-cta">
+
+        <div class="container">
+
+            <div class="detail-cta-inner">
+
+                <div class="detail-cta-number">
+                    Book<br>Now
+                </div>
+
+                <div class="detail-cta-content">
+
+                    <div class="detail-tag">
+                        <span></span>
+                        <p>PLAN YOUR VISIT</p>
+                    </div>
+
+                    <h2>Ready To Step <em>Into The Garden?</em></h2>
+
+                    <p>
+                        Book your visit today and experience Wing &amp;
+                        Bloom Conservatory for yourself.
+                    </p>
+
+                </div>
+
+                <div class="detail-cta-actions">
+
+                    <a href="book-a-visit.html" class="detail-primary-btn">
+                        <i class="fa-regular fa-calendar-check"></i>
+                        Plan Your Visit
+                    </a>
+
+                    <a href="contact.html" class="detail-secondary-btn">
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- =========================
+     FOOTER START
+========================= -->
+
+<footer class="site-footer">
+
+    <!-- Top Accent Line -->
+    <div class="footer-top-line"></div>
+
+    <div class="footer-container">
+
+        <div class="footer-main">
+
+            <!-- ================= BRAND ================= -->
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="footer-logo-wrap">
+
+                    <img decoding="async" src="./images/logo.webp"
+                         alt="Wing & Bloom Conservatory"
+                         class="footer-logo">
+
+                    <div class="footer-brand-content">
+
+                        <span class="footer-brand-name">
+                            Wing <span>&</span> Bloom
+                        </span>
+
+                        <span class="footer-tagline">
+                            Where Nature Takes Flight
+                        </span>
+
+                    </div>
+
+                </a>
+
+                <p class="footer-description">
+                    Step into a living world of butterflies, tropical blooms
+                    and peaceful garden experiences designed to bring you
+                    closer to nature.
+                </p>
+
+                <div class="footer-socials">
+
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="social-link" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="#" class="social-link" aria-label="Pinterest">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= EXPLORE ================= -->
+
+            <div class="footer-column">
+
+                <h3 class="footer-title">Explore</h3>
+
+                <ul class="footer-links">
+
+                    <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i>About Us</a></li>
+
+                    <li><a href="butterflies.html"><i class="fa-solid fa-chevron-right"></i>Our Butterflies</a></li>
+
+                    <li><a href="experiences.html"><i class="fa-solid fa-chevron-right"></i>Experiences</a></li>
+
+                    <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i>Gallery</a></li>
+
+                    <li><a href="blog.html"><i class="fa-solid fa-chevron-right"></i>Garden Journal</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- ================= PLAN VISIT ================= -->
+
+            <div class="footer-column">
+
+                <h3 class="footer-title">Plan Your Visit</h3>
+
+                <ul class="footer-links">
+
+                    <li><a href="book-a-visit.html"><i class="fa-solid fa-chevron-right"></i>Visitor Information</a></li>
+
+                    <li><a href="book-a-visit.html#tickets"><i class="fa-solid fa-chevron-right"></i>Opening Hours</a></li>
+
+                    <li><a href="book-a-visit.html#tickets"><i class="fa-solid fa-chevron-right"></i>Tickets</a></li>
+
+                    <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i>Contact Us</a></li>
+
+                    <li><a href="book-a-visit.html#visit-faq"><i class="fa-solid fa-chevron-right"></i>FAQs</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- ================= QUICK LINKS ================= -->
+
+            <div class="footer-quick-area">
+
+
+                <!-- DISCOVER -->
+
+                <div class="footer-quick-column">
+
+                    <h3 class="footer-title">Discover</h3>
+
+                    <ul class="footer-links">
+
+                        <li><a href="home.html#garden"><i class="fa-solid fa-chevron-right"></i>Our Gardens</a></li>
+
+                        <li><a href="butterflies.html#species"><i class="fa-solid fa-chevron-right"></i>Butterfly Species</a></li>
+
+                        <li><a href="experiences.html#our-experiences"><i class="fa-solid fa-chevron-right"></i>Events</a></li>
+
+                        <li><a href="experiences.html#group-experiences"><i class="fa-solid fa-chevron-right"></i>Education</a></li>
+
+                        <li><a href="about.html#our-story"><i class="fa-solid fa-chevron-right"></i>Conservation</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- VISITOR HELP -->
+
+              <!-- VISITOR HELP -->
+<div class="footer-quick-column">
+
+    <h3 class="footer-title">Visitor Help</h3>
+
+    <ul class="footer-links">
+
+        <li>
+            <a href="book-a-visit.html#getting-here">
+                <i class="fa-solid fa-chevron-right"></i>
+                Directions
+            </a>
+        </li>
+
+        <li>
+            <a href="book-a-visit.html#quick-facts">
+                <i class="fa-solid fa-chevron-right"></i>
+                Accessibility
+            </a>
+        </li>
+
+        <li>
+            <a href="book-a-visit.html#visit-faq">
+                <i class="fa-solid fa-chevron-right"></i>
+                FAQs
+            </a>
+        </li>
+
+        <li>
+            <a href="coming-soon.html">
+                <i class="fa-solid fa-chevron-right"></i>
+                Coming Soon
+            </a>
+        </li>
+
+        <li>
+            <a href="404.html">
+                <i class="fa-solid fa-chevron-right"></i>
+                404 Page
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= BOTTOM ================= -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="currentYear"></span>
+                <strong>Wing & Bloom Conservatory.</strong>
+                All Rights Reserved.
+            </p>
+
+            <div class="footer-bottom-links">
+
+                <a href="privacy-policy.html">Privacy Policy</a>
+
+                <span></span>
+
+                <a href="terms-conditions.html">Terms & Conditions</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="./nav.js"></script>
+<script src="./experience-details.js"></script>
+</body>
+
+</html>

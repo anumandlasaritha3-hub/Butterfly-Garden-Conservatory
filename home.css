@@ -1,0 +1,4265 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
+
+/* =========================================================
+   HOME 2 - VARIABLES
+========================================================= */
+
+:root {
+    --primary: #1B4D2A;
+    --secondary: #F49CAB;
+
+    --bg: #ffffff;
+    --surface: #ffffff;
+
+    --text: #171717;
+    --muted-text: #5f665f;
+
+    --soft-green: #f3f6eb;
+    --soft-cream: #fffdf8;
+
+    --border: rgba(27, 77, 42, 0.14);
+
+    --heading-font: "Playfair Display", serif;
+    --body-font: "DM Sans", sans-serif;
+
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    --container-width: 1320px;
+
+    --transition: 0.3s ease;
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+.home2 {
+    width: 100%;
+    overflow: hidden;
+
+    color: var(--text);
+    background: var(--bg);
+
+    font-family: var(--body-font);
+}
+
+
+.home2 *,
+.home2 *::before,
+.home2 *::after {
+    box-sizing: border-box;
+}
+
+
+.home2 img {
+    max-width: 100%;
+    display: block;
+}
+
+
+.container {
+    width: min(90%, var(--container-width));
+    margin: 0 auto;
+}
+
+
+.section-space {
+    padding: 90px 0;
+}
+
+
+/* =========================================================
+   COMMON HEADING
+========================================================= */
+
+.section-heading {
+    width: min(100%, 760px);
+
+    margin: 0 auto 50px;
+
+    text-align: center;
+}
+
+
+.section-tag {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 14px;
+
+    color: var(--primary);
+
+    font-size: 0.72rem;
+    font-weight: var(--fw-bold);
+
+    letter-spacing: 0.24em;
+    line-height: 1;
+
+    text-transform: uppercase;
+}
+
+
+.section-tag p {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 0;
+}
+
+
+.section-tag i {
+    font-size: 0.62rem;
+}
+
+
+.center-tag {
+    justify-content: center;
+}
+
+
+.tag-line {
+    width: 38px;
+    height: 1.5px;
+
+    display: block;
+
+    background: var(--secondary);
+}
+
+
+.section-title {
+    margin: 0;
+
+    color: var(--primary);
+
+    font-family: var(--heading-font);
+
+    font-size: clamp(1.9rem, 3vw, 2.8rem);
+
+    font-weight: var(--fw-bold);
+
+    line-height: 1.08;
+}
+
+
+.section-title span {
+    color: var(--secondary);
+
+    font-style: italic;
+}
+
+
+.section-text {
+    max-width: 720px;
+
+    margin: 17px auto 0;
+
+    color: var(--muted-text);
+
+    font-size: 0.98rem;
+
+    line-height: 1.75;
+}
+
+
+.left-text {
+    margin-left: 0;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.primary-btn,
+.secondary-btn {
+    min-height: 50px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+
+    padding: 0 28px;
+
+    border-radius: 50px;
+
+    font-family: var(--body-font);
+
+    font-size: 0.86rem;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* PRIMARY */
+
+.primary-btn {
+    border: 2px solid var(--primary);
+
+    color: #ffffff;
+
+    background: var(--primary);
+}
+
+
+.primary-btn:hover {
+    border-color: var(--secondary);
+
+    color: var(--primary);
+
+    background: var(--secondary);
+
+    transform: translateY(-3px);
+}
+
+
+/* SECONDARY - YOUR 3RD IMAGE STYLE */
+
+.secondary-btn {
+    border: 1.5px solid var(--primary);
+
+    color: var(--primary);
+
+    background: transparent;
+}
+
+
+.secondary-btn i {
+    font-size: 0.82rem;
+}
+
+
+.secondary-btn:hover {
+    color: var(--primary);
+
+    border-color: var(--secondary);
+
+    background: var(--secondary);
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   01 - HERO
+========================================================= */
+/* =========================================================
+   HOME 2 - HERO SECTION
+   WING & BLOOM CONSERVATORY
+   COMPLETE CLEAN CSS
+========================================================= */
+
+
+/* =========================================================
+   01. HERO WRAPPER
+========================================================= */
+
+.h2hero {
+    position: relative;
+    width: 100%;
+
+    height: calc(100svh - var(--header-height));
+    min-height: 620px;
+    max-height: calc(100svh - var(--header-height));
+
+    overflow: hidden;
+    isolation: isolate;
+
+    background: #edf0dc;
+}
+
+
+/* =========================================================
+   02. HERO BACKGROUND IMAGE
+========================================================= */
+
+.h2hero-bg {
+    position: absolute;
+    inset: 0;
+
+    z-index: -3;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url('./images/home2-banner.webp');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    transform: scale(1.02);
+
+    transition: transform 7s ease;
+}
+
+
+.h2hero.loaded .h2hero-bg {
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   03. LEFT SOFT IMAGE BLEND
+========================================================= */
+
+.h2hero-wash {
+    position: absolute;
+    inset: 0;
+
+    z-index: -2;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(249, 247, 235, 0.99) 0%,
+            rgba(249, 247, 235, 0.97) 20%,
+            rgba(244, 244, 224, 0.93) 32%,
+            rgba(232, 238, 211, 0.78) 42%,
+            rgba(224, 235, 201, 0.48) 51%,
+            rgba(224, 235, 201, 0.17) 61%,
+            transparent 72%
+        );
+}
+
+
+/* =========================================================
+   04. HERO CONTENT
+========================================================= */
+
+.h2hero-copy {
+    position: absolute;
+
+    z-index: 3;
+
+    top: 50%;
+    left: 5.8%;
+
+    width: min(600px, 43vw);
+
+    transform: translateY(-50%);
+}
+
+
+/* =========================================================
+   05. HERO TAGLINE
+   LEAF + TEXT + LINE
+========================================================= */
+
+/* =========================================================
+   HERO TAGLINE
+   LIGHT MODE = GREEN
+   DARK MODE  = PINK
+========================================================= */
+
+.h2hero .h2-kicker {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 16px;
+
+    margin: 0 0 22px;
+    padding: 0;
+}
+
+
+/* Remove left line */
+.h2hero .h2-kicker > span:first-child {
+    display: none;
+}
+
+
+/* =========================================================
+   LIGHT MODE - GREEN
+========================================================= */
+
+.h2hero .h2-kicker p {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 14px;
+
+    margin: 0;
+    padding: 0;
+
+    color: var(--primary);
+
+    font-family: var(--body-font);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: 0.24em;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+}
+
+
+/* Green leaf */
+.h2hero .h2-kicker p i {
+    color: var(--primary);
+
+    font-size: 1.1rem;
+
+    line-height: 1;
+
+    transform: rotate(-14deg);
+}
+
+
+/* Green line */
+.h2hero .h2-kicker > span:last-child {
+    display: block;
+
+    width: 94px;
+    height: 1px;
+
+    flex: 0 0 94px;
+
+    background: var(--primary);
+    opacity: 0.65;
+}
+
+
+/* =========================================================
+   DARK MODE - PINK
+========================================================= */
+
+body.dark-theme .h2hero .h2-kicker p {
+    color: var(--secondary);
+}
+
+
+body.dark-theme .h2hero .h2-kicker p i {
+    color: var(--secondary);
+}
+
+
+body.dark-theme .h2hero .h2-kicker > span:last-child {
+    background: var(--secondary);
+    opacity: 1;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .h2hero .h2-kicker {
+        gap: 12px;
+    }
+
+    .h2hero .h2-kicker p {
+        gap: 10px;
+
+        font-size: 0.64rem;
+
+        letter-spacing: 0.18em;
+    }
+
+    .h2hero .h2-kicker p i {
+        font-size: 1rem;
+    }
+
+    .h2hero .h2-kicker > span:last-child {
+        width: 65px;
+        flex-basis: 65px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .h2hero .h2-kicker {
+        justify-content: center;
+
+        gap: 10px;
+
+        margin-bottom: 17px;
+    }
+
+    .h2hero .h2-kicker p {
+        gap: 9px;
+
+        font-size: 0.58rem;
+
+        letter-spacing: 0.14em;
+    }
+
+    .h2hero .h2-kicker p i {
+        font-size: 0.9rem;
+    }
+
+    .h2hero .h2-kicker > span:last-child {
+        width: 42px;
+        flex-basis: 42px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+
+    .h2hero .h2-kicker {
+        gap: 7px;
+    }
+
+    .h2hero .h2-kicker p {
+        gap: 7px;
+
+        font-size: 0.52rem;
+
+        letter-spacing: 0.11em;
+    }
+
+    .h2hero .h2-kicker > span:last-child {
+        width: 28px;
+        flex-basis: 28px;
+    }
+}
+
+
+/* =========================================================
+   06. MAIN HEADING
+========================================================= */
+
+.h2hero h1 {
+    margin: 0;
+
+    color: var(--primary);
+
+    font-family: var(--heading-font);
+
+    font-size: clamp(3.3rem, 5vw, 5.6rem);
+
+    font-weight: var(--fw-bold);
+
+    line-height: 0.91;
+
+    letter-spacing: -0.045em;
+}
+
+
+/* Pink italic line */
+
+.h2hero h1 em {
+    display: block;
+
+    margin-top: 9px;
+
+    color: var(--secondary);
+
+    font-family: var(--heading-font);
+
+    font-weight: 600;
+
+    font-style: italic;
+
+    line-height: 0.94;
+}
+
+
+/* =========================================================
+   07. HERO DESCRIPTION
+========================================================= */
+
+.h2hero .h2-lead {
+    max-width: 570px;
+
+    margin: 25px 0 0;
+
+    color: var(--text);
+
+    font-family: var(--body-font);
+
+    font-size: 0.98rem;
+    font-weight: var(--fw-regular);
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   08. BUTTON WRAPPER
+========================================================= */
+
+.h2hero-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 16px;
+
+    margin-top: 28px;
+}
+
+
+/* =========================================================
+   09. PRIMARY BUTTON
+   PLAN YOUR VISIT
+========================================================= */
+
+.h2hero .h2-btn {
+    min-width: 220px;
+    min-height: 56px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 22px;
+
+    padding: 0 30px;
+
+    border: 2px solid var(--primary);
+    border-radius: 50px;
+
+    background: var(--primary);
+
+    color: #ffffff;
+
+    font-family: var(--body-font);
+
+    font-size: 0.9rem;
+    font-weight: var(--fw-bold);
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 8px 22px
+        rgba(27, 77, 42, 0.12);
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.h2hero .h2-btn i {
+    color: #ffffff;
+
+    font-size: 0.82rem;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* Primary hover */
+
+.h2hero .h2-btn:hover {
+    color: var(--primary);
+
+    background: var(--secondary);
+
+    border-color: var(--secondary);
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 28px
+        rgba(244, 156, 171, 0.25);
+}
+
+
+.h2hero .h2-btn:hover i {
+    color: var(--primary);
+
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   10. SECONDARY BUTTON
+   EXPLORE BUTTERFLIES
+========================================================= */
+
+.h2hero .h2hero-secondary {
+    min-width: 245px;
+    min-height: 56px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    padding: 0 30px;
+
+    border: 1.5px solid var(--secondary);
+    border-radius: 50px;
+
+    background: transparent;
+
+    color: var(--primary);
+
+    font-family: var(--body-font);
+
+    font-size: 0.9rem;
+    font-weight: var(--fw-bold);
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.h2hero .h2hero-secondary i {
+    color: var(--primary);
+
+    font-size: 0.9rem;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* Secondary hover */
+
+.h2hero .h2hero-secondary:hover {
+    color: var(--primary);
+
+    background: var(--secondary);
+
+    border-color: var(--secondary);
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(244, 156, 171, 0.22);
+}
+
+
+.h2hero .h2hero-secondary:hover i {
+    color: var(--primary);
+
+    transform: rotate(-12deg);
+}
+
+
+/* =========================================================
+   11. BOTTOM META
+   LIVE BUTTERFLIES • TROPICAL BLOOMS • QUIET DISCOVERY
+========================================================= */
+
+.h2hero-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 13px;
+
+    margin-top: 36px;
+
+    color: var(--primary);
+
+    font-family: var(--body-font);
+
+    font-size: 0.72rem;
+    font-weight: var(--fw-bold);
+
+    line-height: 1.2;
+
+    letter-spacing: 0.13em;
+
+    text-transform: uppercase;
+}
+
+
+.h2hero-meta span {
+    display: inline-block;
+
+    color: inherit;
+
+    font: inherit;
+
+    letter-spacing: inherit;
+
+    white-space: nowrap;
+}
+
+
+/* Pink separator dots */
+
+.h2hero-meta i {
+    width: 5px;
+    height: 5px;
+
+    display: block;
+    flex: 0 0 5px;
+
+    border-radius: 50%;
+
+    background: var(--secondary);
+}
+
+
+/* =========================================================
+   12. PINK FLOATING BADGE
+========================================================= */
+
+.h2hero-stamp {
+    position: absolute;
+
+    z-index: 4;
+
+    top: 11%;
+    right: 7%;
+
+    width: 138px;
+    height: 138px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px;
+
+    border-radius:
+        50% 44% 52% 48% /
+        48% 53% 47% 52%;
+
+    color: var(--primary);
+
+    background:
+        rgba(255, 216, 225, 0.92);
+
+    text-align: center;
+
+    box-shadow:
+        0 18px 45px
+        rgba(27, 77, 42, 0.12);
+
+    animation:
+        h2StampFloat
+        4s ease-in-out infinite;
+}
+
+
+.h2hero-stamp i {
+    margin-bottom: 8px;
+
+    color: var(--primary);
+
+    font-size: 0.9rem;
+}
+
+
+.h2hero-stamp span {
+    color: var(--primary);
+
+    font-family: var(--body-font);
+
+    font-size: 0.53rem;
+    font-weight: var(--fw-semibold);
+
+    letter-spacing: 0.15em;
+
+    text-transform: uppercase;
+}
+
+
+.h2hero-stamp strong {
+    margin-top: 5px;
+
+    color: var(--primary);
+
+    font-family: var(--heading-font);
+
+    font-size: 0.92rem;
+    font-weight: var(--fw-bold);
+
+    font-style: italic;
+
+    text-transform: uppercase;
+}
+
+
+@keyframes h2StampFloat {
+
+    0%,
+    100% {
+        transform:
+            rotate(7deg)
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            rotate(7deg)
+            translateY(-8px);
+    }
+
+}
+
+
+/* =========================================================
+   13. SMALL BUTTERFLY CARD
+========================================================= */
+
+.h2hero-mini {
+    position: absolute;
+
+    z-index: 4;
+
+    right: 5%;
+    bottom: 4%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding:
+        8px 18px 8px 8px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.65);
+
+    border-radius: 70px;
+
+    color: var(--primary);
+
+    background:
+        rgba(255, 255, 255, 0.9);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 12px 35px
+        rgba(0, 0, 0, 0.10);
+
+    font-family: var(--body-font);
+
+    font-size: 0.67rem;
+
+    line-height: 1.45;
+}
+
+
+.h2hero-mini img {
+    width: 62px;
+    height: 62px;
+
+    flex-shrink: 0;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+.h2hero-mini span {
+    color: var(--primary);
+}
+
+
+.h2hero-mini strong {
+    color: var(--primary);
+
+    font-family: var(--heading-font);
+
+    font-size: 0.84rem;
+    font-weight: var(--fw-bold);
+}
+
+
+/* =========================================================
+   14. DARK MODE
+========================================================= */
+
+body.dark-theme .h2hero {
+    background: #000000;
+}
+
+
+/* Dark background blend */
+
+body.dark-theme .h2hero-wash {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.99) 0%,
+            rgba(0, 0, 0, 0.96) 23%,
+            rgba(0, 0, 0, 0.88) 35%,
+            rgba(0, 0, 0, 0.67) 46%,
+            rgba(0, 0, 0, 0.31) 58%,
+            transparent 72%
+        );
+}
+
+
+/* Main heading GREEN -> WHITE */
+
+body.dark-theme .h2hero h1 {
+    color: #ffffff;
+}
+
+
+/* Italic heading stays pink */
+
+body.dark-theme .h2hero h1 em {
+    color: var(--secondary);
+}
+
+
+/* Tagline pink */
+
+body.dark-theme .h2hero .h2-kicker p,
+body.dark-theme .h2hero .h2-kicker p i {
+    color: var(--secondary);
+}
+
+
+body.dark-theme
+.h2hero .h2-kicker > span:last-child {
+    background: var(--secondary);
+}
+
+
+/* Description */
+
+body.dark-theme .h2hero .h2-lead {
+    color: #d7d7d7;
+}
+
+
+/* Bottom meta white */
+
+body.dark-theme .h2hero-meta,
+body.dark-theme .h2hero-meta span {
+    color: #ffffff;
+}
+
+
+/* Primary remains green */
+
+body.dark-theme .h2hero .h2-btn {
+    color: #ffffff;
+
+    background: var(--primary);
+
+    border-color: var(--primary);
+}
+
+
+body.dark-theme .h2hero .h2-btn i {
+    color: #ffffff;
+}
+
+
+body.dark-theme .h2hero .h2-btn:hover {
+    color: #000000;
+
+    background: var(--secondary);
+
+    border-color: var(--secondary);
+}
+
+
+body.dark-theme .h2hero .h2-btn:hover i {
+    color: #000000;
+}
+
+
+/* Secondary - PINK border */
+
+body.dark-theme
+.h2hero .h2hero-secondary {
+    color: #ffffff;
+
+    background: transparent;
+
+    border-color: var(--secondary);
+}
+
+
+body.dark-theme
+.h2hero .h2hero-secondary i {
+    color: #ffffff;
+}
+
+
+/* Secondary dark hover */
+
+body.dark-theme
+.h2hero .h2hero-secondary:hover {
+    color: #000000;
+
+    background: var(--secondary);
+
+    border-color: var(--secondary);
+}
+
+
+body.dark-theme
+.h2hero .h2hero-secondary:hover i {
+    color: #000000;
+}
+
+
+/* Mini card */
+
+body.dark-theme .h2hero-mini {
+    color: #ffffff;
+
+    background:
+        rgba(0, 0, 0, 0.82);
+
+    border-color:
+        rgba(244, 156, 171, 0.30);
+}
+
+
+body.dark-theme .h2hero-mini span,
+body.dark-theme .h2hero-mini strong {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   15. RTL
+========================================================= */
+
+html[dir="rtl"] .h2hero-wash {
+    transform: scaleX(-1);
+}
+
+
+html[dir="rtl"] .h2hero-copy {
+    right: 5.8%;
+    left: auto;
+
+    text-align: right;
+}
+
+
+html[dir="rtl"] .h2hero .h2-kicker {
+    justify-content: flex-start;
+}
+
+
+html[dir="rtl"] .h2hero-stamp {
+    right: auto;
+    left: 7%;
+}
+
+
+html[dir="rtl"] .h2hero-mini {
+    right: auto;
+    left: 5%;
+}
+
+
+html[dir="rtl"] .h2hero .h2-btn:hover i {
+    transform: translateX(-5px);
+}
+
+
+/* =========================================================
+   16. LARGE TABLET / SMALL LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .h2hero-copy {
+        left: 5%;
+
+        width: min(550px, 47vw);
+    }
+
+
+    html[dir="rtl"] .h2hero-copy {
+        right: 5%;
+        left: auto;
+    }
+
+
+    .h2hero h1 {
+        font-size:
+            clamp(3rem, 5.4vw, 4.8rem);
+    }
+
+
+    .h2hero-stamp {
+        right: 5%;
+
+        width: 115px;
+        height: 115px;
+    }
+
+
+    html[dir="rtl"] .h2hero-stamp {
+        right: auto;
+        left: 5%;
+    }
+
+
+    .h2hero-mini {
+        right: 3%;
+    }
+
+
+    html[dir="rtl"] .h2hero-mini {
+        right: auto;
+        left: 3%;
+    }
+
+}
+
+
+/* =========================================================
+   17. TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .h2hero {
+        min-height: 650px;
+    }
+
+
+    .h2hero-copy {
+        left: 4.5%;
+
+        width: 53vw;
+    }
+
+
+    html[dir="rtl"] .h2hero-copy {
+        right: 4.5%;
+        left: auto;
+    }
+
+
+    .h2hero h1 {
+        font-size:
+            clamp(2.7rem, 6.4vw, 4.2rem);
+    }
+
+
+    .h2hero .h2-kicker {
+        gap: 12px;
+    }
+
+
+    .h2hero .h2-kicker p {
+        gap: 10px;
+
+        font-size: 0.64rem;
+
+        letter-spacing: 0.17em;
+    }
+
+
+    .h2hero .h2-kicker p i {
+        font-size: 0.95rem;
+    }
+
+
+    .h2hero
+    .h2-kicker > span:last-child {
+        width: 60px;
+
+        flex-basis: 60px;
+    }
+
+
+    .h2hero .h2-lead {
+        font-size: 0.9rem;
+    }
+
+
+    .h2hero-meta {
+        font-size: 0.62rem;
+
+        gap: 10px;
+    }
+
+
+    .h2hero-stamp {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .h2hero-mini {
+        display: none;
+    }
+
+}
+
+
+/* =========================================================
+   18. MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .h2hero {
+        height: auto;
+
+        min-height: 720px;
+        max-height: none;
+    }
+
+
+    .h2hero-bg {
+        background-position: 64% center;
+    }
+
+
+    /* Mobile bottom blend */
+
+    .h2hero-wash {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.01) 0%,
+                rgba(0, 0, 0, 0.02) 25%,
+                rgba(249, 247, 235, 0.42) 39%,
+                rgba(249, 247, 235, 0.86) 52%,
+                rgba(249, 247, 235, 0.97) 66%,
+                rgba(249, 247, 235, 1) 100%
+            );
+    }
+
+
+    body.dark-theme .h2hero-wash {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.05) 0%,
+                rgba(0, 0, 0, 0.18) 28%,
+                rgba(0, 0, 0, 0.64) 48%,
+                rgba(0, 0, 0, 0.91) 65%,
+                #000000 100%
+            );
+    }
+
+
+    html[dir="rtl"] .h2hero-wash {
+        transform: none;
+    }
+
+
+    .h2hero-copy,
+    html[dir="rtl"] .h2hero-copy {
+        top: auto;
+
+        right: 5%;
+        bottom: 40px;
+        left: 5%;
+
+        width: auto;
+
+        text-align: center;
+
+        transform: none;
+    }
+
+
+    /* Tagline */
+
+    .h2hero .h2-kicker,
+    html[dir="rtl"] .h2hero .h2-kicker {
+        justify-content: center;
+
+        gap: 10px;
+
+        margin-bottom: 16px;
+    }
+
+
+    .h2hero .h2-kicker p {
+        gap: 9px;
+
+        font-size: 0.57rem;
+
+        letter-spacing: 0.14em;
+    }
+
+
+    .h2hero .h2-kicker p i {
+        font-size: 0.9rem;
+    }
+
+
+    .h2hero
+    .h2-kicker > span:last-child {
+        width: 40px;
+
+        flex-basis: 40px;
+    }
+
+
+    /* Heading */
+
+    .h2hero h1 {
+        font-size:
+            clamp(2.5rem, 11vw, 3.5rem);
+
+        line-height: 0.94;
+    }
+
+
+    .h2hero h1 em {
+        margin-top: 6px;
+    }
+
+
+    /* Description */
+
+    .h2hero .h2-lead {
+        max-width: 500px;
+
+        margin: 17px auto 0;
+
+        font-size: 0.84rem;
+
+        line-height: 1.55;
+    }
+
+
+    /* Buttons */
+
+    .h2hero-actions {
+        justify-content: center;
+
+        gap: 11px;
+
+        margin-top: 21px;
+    }
+
+
+    .h2hero .h2-btn,
+    .h2hero .h2hero-secondary {
+        min-width: auto;
+        min-height: 48px;
+
+        padding: 0 22px;
+
+        font-size: 0.78rem;
+    }
+
+
+    /* Meta */
+
+    .h2hero-meta {
+        justify-content: center;
+
+        gap: 8px;
+
+        margin-top: 24px;
+
+        font-size: 0.58rem;
+
+        letter-spacing: 0.09em;
+    }
+
+
+    .h2hero-meta i {
+        width: 4px;
+        height: 4px;
+
+        flex-basis: 4px;
+    }
+
+
+    /* Badge */
+
+    .h2hero-stamp {
+        top: 6%;
+        right: 5%;
+
+        width: 90px;
+        height: 90px;
+    }
+
+
+    html[dir="rtl"] .h2hero-stamp {
+        right: auto;
+        left: 5%;
+    }
+
+
+    .h2hero-stamp span {
+        font-size: 0.42rem;
+    }
+
+
+    .h2hero-stamp strong {
+        font-size: 0.7rem;
+    }
+
+
+    .h2hero-mini {
+        display: none;
+    }
+
+}
+
+
+/* =========================================================
+   19. SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .h2hero {
+        min-height: 700px;
+    }
+
+
+    .h2hero-copy,
+    html[dir="rtl"] .h2hero-copy {
+        right: 4%;
+        bottom: 30px;
+        left: 4%;
+    }
+
+
+    .h2hero .h2-kicker {
+        gap: 7px;
+    }
+
+
+    .h2hero .h2-kicker p {
+        gap: 7px;
+
+        font-size: 0.52rem;
+
+        letter-spacing: 0.1em;
+    }
+
+
+    .h2hero
+    .h2-kicker > span:last-child {
+        width: 28px;
+
+        flex-basis: 28px;
+    }
+
+
+    .h2hero h1 {
+        font-size:
+            clamp(2.35rem, 12vw, 3.1rem);
+    }
+
+
+    .h2hero .h2-lead {
+        font-size: 0.78rem;
+    }
+
+
+    .h2hero-actions {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+    .h2hero .h2-btn,
+    .h2hero .h2hero-secondary {
+        width: 220px;
+        min-width: 220px;
+
+        min-height: 47px;
+    }
+
+
+    .h2hero-meta {
+        max-width: 330px;
+
+        margin-right: auto;
+        margin-left: auto;
+
+        font-size: 0.53rem;
+
+        gap: 6px;
+
+        letter-spacing: 0.07em;
+    }
+
+
+    .h2hero-stamp {
+        width: 82px;
+        height: 82px;
+    }
+
+}
+
+
+/* =========================================================
+   20. EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .h2hero {
+        min-height: 680px;
+    }
+
+
+    .h2hero h1 {
+        font-size: 2.2rem;
+    }
+
+
+    .h2hero .h2-kicker p {
+        font-size: 0.47rem;
+    }
+
+
+    .h2hero
+    .h2-kicker > span:last-child {
+        width: 20px;
+
+        flex-basis: 20px;
+    }
+
+
+    .h2hero-meta {
+        font-size: 0.49rem;
+    }
+
+}
+
+
+/* =========================================================
+   21. SHORT LAPTOP SCREENS
+========================================================= */
+
+@media (min-width: 768px) and (max-height: 760px) {
+
+    .h2hero {
+        min-height: 570px;
+    }
+
+
+    .h2hero-copy {
+        transform:
+            translateY(-48%);
+    }
+
+
+    .h2hero .h2-kicker {
+        margin-bottom: 15px;
+    }
+
+
+    .h2hero h1 {
+        font-size:
+            clamp(2.8rem, 4.4vw, 4.5rem);
+    }
+
+
+    .h2hero .h2-lead {
+        margin-top: 17px;
+
+        font-size: 0.86rem;
+    }
+
+
+    .h2hero-actions {
+        margin-top: 19px;
+    }
+
+
+    .h2hero .h2-btn,
+    .h2hero .h2hero-secondary {
+        min-height: 49px;
+    }
+
+
+    .h2hero-meta {
+        margin-top: 22px;
+
+        font-size: 0.62rem;
+    }
+
+
+    .h2hero-stamp {
+        width: 105px;
+        height: 105px;
+    }
+
+}
+
+
+/* =========================================================
+   22. REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .h2hero-bg,
+    .h2hero-stamp,
+    .h2hero .h2-btn,
+    .h2hero .h2hero-secondary {
+        animation: none;
+        transition: none;
+    }
+
+}
+
+
+/* =========================================================
+   02 - GARDEN
+========================================================= */
+
+.garden-section {
+    position: relative;
+
+    overflow: hidden;
+
+    background: var(--soft-cream);
+}
+
+
+/* =========================================================
+   GARDEN VISUAL
+========================================================= */
+
+.garden-visual {
+    position: relative;
+
+    width: 100%;
+
+    margin-top: 52px;
+
+    overflow: hidden;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 20px 55px
+        rgba(27, 77, 42, 0.10);
+}
+
+
+/* =========================================================
+   FOUR IMAGE LAYOUT
+========================================================= */
+
+.garden-spots {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    width: 100%;
+    min-height: 530px;
+}
+
+
+/* =========================================================
+   INDIVIDUAL GARDEN ITEM
+========================================================= */
+
+.garden-spot {
+    position: relative;
+
+    min-width: 0;
+    min-height: 530px;
+
+    overflow: hidden;
+
+    isolation: isolate;
+
+    cursor: pointer;
+}
+
+
+/* Divider between images */
+
+.garden-spot:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+
+    z-index: 5;
+
+    top: 7%;
+    right: 0;
+    bottom: 7%;
+
+    width: 1px;
+
+    background:
+        rgba(255, 255, 255, 0.30);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.garden-spot > img {
+    position: absolute;
+
+    z-index: -3;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.7s ease,
+        filter 0.5s ease;
+}
+
+
+/* Give each image a useful focal point */
+
+.garden-spot:nth-child(1) > img {
+    object-position: center;
+}
+
+
+.garden-spot:nth-child(2) > img {
+    object-position: center;
+}
+
+
+.garden-spot:nth-child(3) > img {
+    object-position: center;
+}
+
+
+.garden-spot:nth-child(4) > img {
+    object-position: center;
+}
+
+
+/* =========================================================
+   IMAGE SHADE
+========================================================= */
+
+.garden-shade {
+    position: absolute;
+
+    z-index: -2;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(5, 26, 12, 0.02) 0%,
+            rgba(5, 26, 12, 0.02) 35%,
+            rgba(5, 26, 12, 0.20) 55%,
+            rgba(5, 26, 12, 0.72) 78%,
+            rgba(5, 26, 12, 0.95) 100%
+        );
+
+    transition:
+        background 0.4s ease;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.garden-content {
+    position: absolute;
+
+    z-index: 3;
+
+    right: 24px;
+    bottom: 30px;
+    left: 24px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 14px;
+
+    padding-top: 18px;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.24);
+
+    transform: translateY(0);
+
+    transition:
+        transform 0.4s ease;
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.garden-number {
+    flex: 0 0 auto;
+
+    margin-top: 2px;
+
+    color: var(--secondary);
+
+    font-family: var(--heading-font);
+
+    font-size: 1.05rem;
+
+    font-weight: var(--fw-bold);
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.garden-content h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: var(--heading-font);
+
+    font-size: 1.12rem;
+
+    font-weight: var(--fw-bold);
+
+    line-height: 1.25;
+}
+
+
+/* =========================================================
+   PARAGRAPH
+========================================================= */
+
+.garden-content p {
+    margin: 6px 0 0;
+
+    color:
+        rgba(255, 255, 255, 0.82);
+
+    font-family: var(--body-font);
+
+    font-size: 0.74rem;
+
+    font-weight: var(--fw-regular);
+
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   HOVER EFFECT
+========================================================= */
+
+.garden-spot:hover > img {
+    transform: scale(1.08);
+}
+
+
+.garden-spot:hover .garden-content {
+    transform: translateY(-6px);
+}
+
+
+.garden-spot:hover .garden-shade {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(5, 26, 12, 0.02) 0%,
+            rgba(5, 26, 12, 0.06) 30%,
+            rgba(5, 26, 12, 0.24) 50%,
+            rgba(5, 26, 12, 0.78) 75%,
+            rgba(5, 26, 12, 0.98) 100%
+        );
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-theme .garden-section {
+    background: #000000;
+}
+
+
+body.dark-theme .garden-visual {
+    border:
+        1px solid
+        rgba(244, 156, 171, 0.18);
+
+    box-shadow:
+        0 22px 60px
+        rgba(0, 0, 0, 0.55);
+}
+
+
+body.dark-theme .garden-shade {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.03) 0%,
+            rgba(0, 0, 0, 0.08) 35%,
+            rgba(0, 0, 0, 0.30) 55%,
+            rgba(0, 0, 0, 0.78) 78%,
+            rgba(0, 0, 0, 0.98) 100%
+        );
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .garden-content {
+    flex-direction: row-reverse;
+
+    text-align: right;
+}
+
+
+html[dir="rtl"]
+.garden-spot:not(:last-child)::after {
+    right: auto;
+    left: 0;
+}
+
+
+/* =========================================================
+   TABLET - 2 X 2
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .garden-visual {
+        margin-top: 42px;
+
+        border-radius: 25px;
+    }
+
+
+    .garden-spots {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        min-height: auto;
+    }
+
+
+    .garden-spot {
+        min-height: 390px;
+    }
+
+
+    /* Remove desktop dividers */
+
+    .garden-spot:not(:last-child)::after {
+        display: none;
+    }
+
+
+    /* New subtle 2x2 spacing */
+
+    .garden-spot:nth-child(1),
+    .garden-spot:nth-child(2) {
+        border-bottom:
+            1px solid
+            rgba(255, 255, 255, 0.25);
+    }
+
+
+    .garden-spot:nth-child(1),
+    .garden-spot:nth-child(3) {
+        border-right:
+            1px solid
+            rgba(255, 255, 255, 0.25);
+    }
+
+
+    .garden-content {
+        right: 22px;
+        bottom: 25px;
+        left: 22px;
+    }
+
+
+    .garden-content h3 {
+        font-size: 1.1rem;
+    }
+
+
+    .garden-content p {
+        font-size: 0.73rem;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE - VERTICAL
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .garden-visual {
+        margin-top: 32px;
+
+        overflow: visible;
+
+        border-radius: 0;
+
+        box-shadow: none;
+    }
+
+
+    .garden-spots {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+    }
+
+
+    .garden-spot {
+        min-height: 340px;
+
+        border:
+            0 !important;
+
+        border-radius: 22px;
+    }
+
+
+    .garden-content {
+        right: 20px;
+        bottom: 22px;
+        left: 20px;
+
+        gap: 12px;
+
+        padding-top: 15px;
+    }
+
+
+    .garden-number {
+        font-size: 1rem;
+    }
+
+
+    .garden-content h3 {
+        font-size: 1.15rem;
+    }
+
+
+    .garden-content p {
+        font-size: 0.75rem;
+
+        line-height: 1.5;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .garden-spot {
+        min-height: 300px;
+
+        border-radius: 18px;
+    }
+
+
+    .garden-content {
+        right: 16px;
+        bottom: 18px;
+        left: 16px;
+    }
+
+
+    .garden-content h3 {
+        font-size: 1.05rem;
+    }
+
+
+    .garden-content p {
+        font-size: 0.7rem;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .garden-spot > img,
+    .garden-content,
+    .garden-shade {
+        transition: none;
+    }
+
+}
+
+
+/* =========================================================
+   03 - ENCOUNTERS
+========================================================= */
+
+.encounter-section {
+    background: var(--bg);
+}
+
+
+.encounter-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.05fr)
+        minmax(0, 0.95fr);
+
+    align-items: center;
+
+    gap: clamp(50px, 7vw, 100px);
+}
+
+
+.encounter-image {
+    position: relative;
+
+    height: 580px;
+
+    overflow: hidden;
+
+    border-radius:
+        38% 62% 42% 58% /
+        32% 42% 58% 68%;
+}
+
+
+.encounter-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.image-label {
+    position: absolute;
+
+    left: 28px;
+    bottom: 28px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 11px 17px;
+
+    border-radius: 40px;
+
+    color: var(--primary);
+
+    background:
+        rgba(255,255,255,.92);
+
+    font-size: 0.62rem;
+
+    font-weight: 700;
+
+    letter-spacing: .14em;
+}
+
+
+.encounter-number {
+    position: absolute;
+
+    top: 30px;
+    right: 30px;
+
+    color: rgba(255,255,255,.9);
+
+    font-family: var(--heading-font);
+
+    font-size: 3rem;
+}
+
+
+.fact-list {
+    margin: 27px 0;
+}
+
+
+.fact {
+    display: grid;
+
+    grid-template-columns: 38px 1fr;
+
+    gap: 15px;
+
+    padding: 16px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+
+.fact > span {
+    color: var(--secondary);
+
+    font-family: var(--heading-font);
+}
+
+
+.fact h3 {
+    margin: 0;
+
+    color: var(--primary);
+
+    font-family: var(--heading-font);
+
+    font-size: 1rem;
+}
+
+
+.fact p {
+    margin: 5px 0 0;
+
+    color: var(--muted-text);
+
+    font-size: .78rem;
+
+    line-height: 1.55;
+}
+.encounter-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    padding: 16px 28px;
+
+    background: var(--primary);
+    color: #ffffff;
+
+    border: 1px solid var(--primary);
+    border-radius: 50px;
+
+    font-family: var(--body-font);
+    font-size: 0.9rem;
+    font-weight: var(--fw-bold);
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.encounter-btn i {
+    color: #ffffff;
+}
+
+.encounter-btn:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+
+    color: var(--primary);
+
+    transform: translateY(-2px);
+}
+
+.encounter-btn:hover i {
+    color: var(--primary);
+}
+
+/* =========================================================
+   04 - BLOOM CALENDAR
+========================================================= */
+
+.bloom-section {
+    background: var(--soft-green);
+}
+
+
+.bloom-showcase {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.15fr)
+        minmax(0, .85fr);
+
+    min-height: 500px;
+
+    overflow: hidden;
+
+    border-radius: 30px;
+
+    background: var(--surface);
+
+    box-shadow:
+        0 20px 60px
+        rgba(27,77,42,.07);
+}
+
+
+/* BLOOM IMAGE */
+
+.bloom-image {
+    position: relative;
+
+    min-height: 500px;
+
+    overflow: hidden;
+}
+
+
+.bloom-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent 45%,
+            rgba(5,30,13,.55)
+        );
+}
+
+
+.bloom-image img {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    inset: 0;
+
+    object-fit: cover;
+
+    transition:
+        opacity .35s ease,
+        transform .6s ease;
+}
+
+
+.bloom-showcase:hover
+.bloom-image img {
+    transform: scale(1.025);
+}
+
+
+.bloom-image-number {
+    position: absolute;
+
+    z-index: 2;
+
+    top: 30px;
+    left: 30px;
+
+    width: 68px;
+    height: 68px;
+
+    display: flex;
+
+    align-items: baseline;
+    justify-content: center;
+
+    padding-top: 21px;
+
+    border-radius: 50%;
+
+    color: var(--primary);
+
+    background: rgba(255,255,255,.94);
+}
+
+
+.bloom-image-number span {
+    font-family: var(--heading-font);
+
+    font-size: 1rem;
+
+    font-weight: 700;
+}
+
+
+.bloom-image-number small {
+    margin-left: 2px;
+
+    font-size: .52rem;
+}
+
+
+.bloom-image-word {
+    position: absolute;
+
+    z-index: 2;
+
+    left: 35px;
+    bottom: 25px;
+
+    color: #ffffff;
+
+    font-family: var(--heading-font);
+
+    font-size: clamp(2.5rem,5vw,5rem);
+
+    font-weight: 700;
+
+    letter-spacing: .04em;
+
+    opacity: .85;
+}
+
+
+/* BLOOM CONTENT */
+
+.bloom-content {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding:
+        clamp(35px,5vw,65px);
+}
+
+
+.bloom-small {
+    color: var(--secondary);
+
+    font-size: .67rem;
+
+    font-weight: 700;
+
+    letter-spacing: .22em;
+}
+
+
+.bloom-content > h3 {
+    margin: 11px 0 0;
+
+    color: var(--primary);
+
+    font-family: var(--heading-font);
+
+    font-size: clamp(1.8rem,3vw,2.8rem);
+
+    line-height: 1.1;
+}
+
+
+.bloom-content > p {
+    margin: 16px 0 0;
+
+    color: var(--muted-text);
+
+    font-size: .9rem;
+
+    line-height: 1.7;
+}
+
+
+/* BLOOM TABS */
+
+.bloom-tabs {
+    margin-top: 30px;
+
+    border-top: 1px solid var(--border);
+}
+
+
+.bloom-tab {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 15px 4px;
+
+    border: 0;
+
+    border-bottom: 1px solid var(--border);
+
+    color: var(--muted-text);
+
+    background: transparent;
+
+    font-family: var(--body-font);
+
+    font-size: .8rem;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+
+.bloom-tab span {
+    color: var(--secondary);
+
+    font-family: var(--heading-font);
+}
+
+
+.bloom-tab:hover,
+.bloom-tab.active {
+    padding-left: 12px;
+
+    color: var(--primary);
+}
+
+
+.bloom-tab.active {
+    font-weight: 700;
+}
+
+
+.bloom-note {
+    display: flex;
+
+    gap: 13px;
+
+    margin-top: 24px;
+}
+
+
+.bloom-note > i {
+    margin-top: 3px;
+
+    color: var(--secondary);
+}
+
+
+.bloom-note strong,
+.bloom-note span {
+    display: block;
+}
+
+
+.bloom-note strong {
+    color: var(--primary);
+
+    font-family: var(--heading-font);
+
+    font-size: .9rem;
+}
+
+
+.bloom-note span {
+    margin-top: 3px;
+
+    color: var(--muted-text);
+
+    font-size: .7rem;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   05 - DAY EXPERIENCE
+========================================================= */
+
+.day-section {
+    background: var(--soft-cream);
+}
+
+
+.day-heading {
+    display: grid;
+
+    grid-template-columns: 1fr .7fr;
+
+    align-items: end;
+
+    gap: 60px;
+
+    margin-bottom: 45px;
+}
+
+
+.day-intro {
+    max-width: 480px;
+
+    margin: 0 0 3px auto;
+
+    color: var(--muted-text);
+
+    font-size: .9rem;
+
+    line-height: 1.7;
+}
+
+
+.day-experience {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1.1fr)
+        minmax(360px,.9fr);
+
+    min-height: 620px;
+
+    overflow: hidden;
+
+    border-radius: 30px;
+
+    background: var(--surface);
+
+    box-shadow:
+        0 20px 60px
+        rgba(27,77,42,.06);
+}
+
+
+/* LEFT IMAGE */
+
+.day-photo {
+    position: relative;
+
+    min-height: 620px;
+
+    overflow: hidden;
+}
+
+
+.day-photo::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent 35%,
+            rgba(5,30,13,.65)
+        );
+}
+
+
+.day-photo img {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    inset: 0;
+
+    object-fit: cover;
+}
+
+
+.day-photo-text {
+    position: absolute;
+
+    z-index: 2;
+
+    right: 35px;
+    bottom: 35px;
+    left: 35px;
+
+    color: #ffffff;
+}
+
+
+.day-photo-text span {
+    font-size: .62rem;
+
+    font-weight: 700;
+
+    letter-spacing: .22em;
+}
+
+
+.day-photo-text h3 {
+    margin: 10px 0 0;
+
+    font-family: var(--heading-font);
+
+    font-size: clamp(1.8rem,3vw,3rem);
+
+    line-height: 1.05;
+}
+
+
+/* JOURNEY */
+
+.day-journey {
+    position: relative;
+
+    padding: 42px 45px;
+}
+
+
+.day-journey::before {
+    content: "";
+
+    position: absolute;
+
+    top: 68px;
+    bottom: 115px;
+    left: 91px;
+
+    width: 1px;
+
+    background:
+        rgba(27,77,42,.2);
+}
+
+
+.journey-item {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 48px 18px 1fr;
+
+    gap: 13px;
+
+    min-height: 92px;
+}
+
+
+.journey-time {
+    padding-top: 2px;
+
+    color: var(--secondary);
+
+    font-size: .68rem;
+
+    font-weight: 700;
+}
+
+
+.journey-dot {
+    position: relative;
+
+    z-index: 2;
+
+    width: 12px;
+    height: 12px;
+
+    margin-top: 3px;
+
+    border: 3px solid var(--surface);
+
+    border-radius: 50%;
+
+    background: var(--primary);
+
+    box-shadow:
+        0 0 0 1px var(--primary);
+}
+
+
+.journey-item.active
+.journey-dot {
+    background: var(--secondary);
+
+    box-shadow:
+        0 0 0 1px var(--secondary);
+}
+
+
+.journey-copy {
+    display: grid;
+
+    grid-template-columns: 25px 1fr;
+
+    gap: 10px;
+}
+
+
+.journey-copy > span {
+    color: var(--secondary);
+
+    font-family: var(--heading-font);
+
+    font-size: .72rem;
+}
+
+
+.journey-copy h3 {
+    margin: 0;
+
+    color: var(--primary);
+
+    font-family: var(--heading-font);
+
+    font-size: .98rem;
+}
+
+
+.journey-copy p {
+    margin: 5px 0 0;
+
+    color: var(--muted-text);
+
+    font-size: .72rem;
+
+    line-height: 1.5;
+}
+
+
+.day-btn {
+    margin-top: 5px;
+}
+
+
+/* =========================================================
+   06 - CARE
+========================================================= */
+
+.care-section {
+    background: var(--soft-green);
+}
+
+
+.care-layout {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1.25fr 1fr;
+
+    grid-template-areas:
+        "one image three"
+        "two image four";
+
+    align-items: center;
+
+    gap: 25px 50px;
+}
+
+
+.care-image {
+    position: relative;
+
+    grid-area: image;
+
+    height: 520px;
+
+    overflow: hidden;
+
+    border-radius:
+        50% 50% 43% 57% /
+        38% 42% 58% 62%;
+}
+
+
+.care-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.care-badge {
+    position: absolute;
+
+    right: 25px;
+    bottom: 30px;
+
+    width: 110px;
+    height: 110px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: var(--primary);
+
+    background: var(--secondary);
+
+    text-align: center;
+}
+
+
+.care-badge i {
+    margin-bottom: 5px;
+}
+
+
+.care-badge span {
+    font-size: .5rem;
+
+    font-weight: 700;
+
+    letter-spacing: .15em;
+}
+
+
+.care-badge strong {
+    margin-top: 3px;
+
+    font-family: var(--heading-font);
+
+    font-size: .82rem;
+}
+
+
+.care-one {
+    grid-area: one;
+}
+
+
+.care-two {
+    grid-area: two;
+}
+
+
+.care-three {
+    grid-area: three;
+}
+
+
+.care-four {
+    grid-area: four;
+}
+
+
+.care-info {
+    padding: 22px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+
+.care-info > span {
+    color: var(--secondary);
+
+    font-family: var(--heading-font);
+}
+
+
+.care-info h3 {
+    margin: 7px 0 0;
+
+    color: var(--primary);
+
+    font-family: var(--heading-font);
+
+    font-size: 1.08rem;
+}
+
+
+.care-info p {
+    margin: 7px 0 0;
+
+    color: var(--muted-text);
+
+    font-size: .77rem;
+
+    line-height: 1.6;
+}
+
+/* Care Section - Number, Heading & Paragraph */
+
+.care-info > span {
+    font-size: 1.15rem;
+    font-weight: var(--fw-bold);
+    line-height: 1;
+}
+
+.care-info h3 {
+    font-size: 1.35rem;
+    line-height: 1.3;
+    font-weight: var(--fw-bold);
+}
+
+.care-info p {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    margin-top: 10px;
+}
+
+
+/* Tablet */
+@media (max-width: 992px) {
+    .care-info > span {
+        font-size: 1.05rem;
+    }
+
+    .care-info h3 {
+        font-size: 1.25rem;
+    }
+
+    .care-info p {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+    .care-info > span {
+        font-size: 1rem;
+    }
+
+    .care-info h3 {
+        font-size: 1.15rem;
+    }
+
+    .care-info p {
+        font-size: 0.88rem;
+        line-height: 1.65;
+    }
+}
+/* =========================================================
+   07 - CLOSING
+========================================================= */
+
+/* =========================================
+   CLOSING CTA SECTION
+========================================= */
+
+.closing-section {
+    position: relative;
+    height: 440px;
+    min-height: 440px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+/* BACKGROUND IMAGE */
+
+.closing-image {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* SOFT OVERLAY */
+
+.closing-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    background: linear-gradient(
+        90deg,
+        rgba(8, 25, 13, 0.15) 0%,
+        rgba(8, 25, 13, 0.05) 45%,
+        transparent 75%
+    );
+}
+
+
+/* CONTAINER */
+
+.closing-container {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+
+    /* Moves card little right */
+    padding-left: clamp(45px, 7vw, 135px);
+    padding-right: 40px;
+}
+
+
+/* CONTENT CARD */
+
+.closing-card {
+    width: min(540px, 100%);
+
+    padding: 38px 42px;
+
+    border-radius: 26px;
+
+    background: rgba(255, 253, 248, 0.94);
+
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+
+    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.16);
+}
+
+
+/* TAG */
+
+.closing-card .section-tag {
+    margin-bottom: 14px;
+}
+
+
+/* HEADING */
+
+.closing-card .section-title {
+    margin-bottom: 15px;
+}
+
+
+/* PARAGRAPH */
+
+.closing-card .section-text {
+    margin-top: 0;
+
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+
+/* BUTTON */
+
+.closing-btn {
+    margin-top: 20px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+    .closing-section {
+        height: 410px;
+        min-height: 410px;
+    }
+
+    .closing-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .closing-card {
+        width: min(500px, 100%);
+        padding: 34px 36px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .closing-section {
+        height: auto;
+        min-height: 370px;
+
+        padding: 28px 0;
+    }
+
+    .closing-image {
+        object-position: 65% center;
+    }
+
+    .closing-container {
+        width: 90%;
+
+        padding-left: 0;
+        padding-right: 0;
+
+        margin: 0 auto;
+    }
+
+    .closing-card {
+        width: 100%;
+
+        padding: 28px 24px;
+
+        border-radius: 22px;
+
+        text-align: center;
+    }
+
+    .closing-card .section-tag {
+        justify-content: center;
+    }
+
+    .closing-card .section-title {
+        font-size: clamp(1.7rem, 7vw, 2.1rem);
+    }
+
+    .closing-card .section-text {
+        max-width: 420px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 0.86rem;
+        line-height: 1.65;
+    }
+
+    .closing-btn {
+        margin-top: 18px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .closing-section {
+        min-height: 350px;
+    }
+
+    .closing-card {
+        padding: 25px 20px;
+    }
+}
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-theme {
+    --bg: #000000;
+    --surface: #080808;
+
+    --text: #ffffff;
+    --muted-text: #c5c5c5;
+
+    --soft-green: #070907;
+    --soft-cream: #000000;
+
+    --border:
+        rgba(244,156,171,.25);
+}
+
+
+body.dark-theme
+.section-title,
+
+body.dark-theme
+.bloom-content > h3,
+
+body.dark-theme
+.fact h3,
+
+body.dark-theme
+.journey-copy h3,
+
+body.dark-theme
+.care-info h3,
+
+body.dark-theme
+.bloom-note strong {
+    color: #ffffff;
+}
+
+
+body.dark-theme
+.section-tag {
+    color: var(--secondary);
+}
+
+
+body.dark-theme
+.bloom-showcase,
+
+body.dark-theme
+.day-experience {
+    background: #080808;
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+}
+
+
+body.dark-theme
+.journey-dot {
+    border-color: #080808;
+}
+
+
+body.dark-theme
+.closing-card {
+    background:
+        rgba(0,0,0,.84);
+}
+
+
+body.dark-theme
+.closing-card .section-title {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .home2 {
+    direction: rtl;
+}
+
+
+html[dir="rtl"]
+.left-text {
+    margin-right: 0;
+}
+
+
+html[dir="rtl"]
+.hero-image {
+    inset: 0 42% 0 0;
+}
+
+
+html[dir="rtl"]
+.hero-overlay {
+    transform: scaleX(-1);
+}
+
+
+html[dir="rtl"]
+.bloom-tab {
+    text-align: right;
+}
+
+
+html[dir="rtl"]
+.bloom-tab:hover,
+html[dir="rtl"]
+.bloom-tab.active {
+    padding-left: 4px;
+    padding-right: 12px;
+}
+
+
+html[dir="rtl"]
+.bloom-image-number {
+    left: auto;
+    right: 30px;
+}
+
+
+html[dir="rtl"]
+.bloom-image-word {
+    right: 35px;
+    left: auto;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .section-space {
+        padding: 75px 0;
+    }
+
+
+    /* HERO */
+
+    .hero-section {
+        height: 720px;
+        min-height: 0;
+    }
+
+
+    .hero-image {
+        inset: 0;
+    }
+
+
+    .hero-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(238,242,229,.98) 0%,
+                rgba(238,242,229,.91) 48%,
+                rgba(238,242,229,.3) 100%
+            );
+    }
+
+
+    .hero-content {
+        width: 62%;
+    }
+
+
+    /* GARDEN */
+
+    .garden-visual {
+        height: 580px;
+    }
+
+
+    .garden-spots {
+        grid-template-columns:
+            repeat(2,1fr);
+
+        gap: 5px;
+    }
+
+
+    /* ENCOUNTER */
+
+    .encounter-grid {
+        gap: 45px;
+    }
+
+
+    .encounter-image {
+        height: 500px;
+    }
+
+
+    /* BLOOM */
+
+    .bloom-showcase {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+
+    /* DAY */
+
+    .day-heading {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+
+    .day-intro {
+        margin-left: 0;
+    }
+
+
+    .day-experience {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+
+    .day-journey {
+        padding: 35px 28px;
+    }
+
+
+    .day-journey::before {
+        left: 74px;
+    }
+
+
+    /* CARE */
+
+    .care-layout {
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-areas:
+            "image image"
+            "one three"
+            "two four";
+    }
+
+
+    .care-image {
+        width: 65%;
+
+        margin: 0 auto 25px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .container {
+        width: 90%;
+    }
+
+
+    .section-space {
+        padding: 60px 0;
+    }
+
+
+    .section-heading {
+        margin-bottom: 36px;
+    }
+
+
+    .section-tag {
+        font-size: .61rem;
+
+        letter-spacing: .17em;
+    }
+
+
+    .tag-line {
+        width: 27px;
+    }
+
+
+    .section-title {
+        font-size:
+            clamp(1.8rem,7vw,2.35rem);
+    }
+
+
+    .section-text {
+        font-size: .86rem;
+    }
+
+
+    /* HERO */
+
+    .hero-section {
+        height:
+            calc(100svh - 72px);
+
+        min-height: 620px;
+    }
+
+
+    .hero-image {
+        inset: 0;
+    }
+
+
+    .hero-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(238,242,229,.3),
+                rgba(238,242,229,.7) 38%,
+                rgba(238,242,229,.98) 72%
+            );
+    }
+
+
+    .hero-container {
+        align-items: flex-end;
+
+        padding-bottom: 45px;
+    }
+
+
+    .hero-content {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .hero-tag {
+        justify-content: center;
+    }
+
+
+    .hero-title {
+        font-size:
+            clamp(2.5rem,11vw,3.5rem);
+    }
+
+
+    .hero-text {
+        margin:
+            17px auto 0;
+
+        font-size: .84rem;
+    }
+
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+
+    .hero-features {
+        margin:
+            28px auto 0;
+    }
+
+
+    .hero-note {
+        display: none;
+    }
+
+
+    /* GARDEN */
+
+    .garden-visual {
+        height: 600px;
+    }
+
+
+    .garden-spots {
+        right: 15px;
+        bottom: 15px;
+        left: 15px;
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .garden-spot {
+        padding: 11px 8px;
+    }
+
+
+    /* ENCOUNTER */
+
+    .encounter-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .encounter-image {
+        height: 450px;
+    }
+
+
+    .encounter-content {
+        text-align: center;
+    }
+
+
+    .encounter-content
+    .section-tag {
+        justify-content: center;
+    }
+
+
+    .encounter-content
+    .left-text {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    .fact {
+        text-align: left;
+    }
+
+
+    /* BLOOM */
+
+    .bloom-showcase {
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+
+        border-radius: 22px;
+    }
+
+
+    .bloom-image {
+        min-height: 390px;
+    }
+
+
+    .bloom-content {
+        padding: 32px 25px;
+    }
+
+
+    .bloom-image-word {
+        font-size: 3rem;
+    }
+
+
+    /* DAY */
+
+    .day-heading {
+        text-align: center;
+    }
+
+
+    .day-heading .section-tag {
+        justify-content: center;
+    }
+
+
+    .day-intro {
+        margin:
+            0 auto;
+
+        text-align: center;
+    }
+
+
+    .day-experience {
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+
+        border-radius: 22px;
+    }
+
+
+    .day-photo {
+        min-height: 420px;
+    }
+
+
+    .day-journey {
+        padding: 35px 25px;
+    }
+
+
+    .day-journey::before {
+        left: 71px;
+
+        bottom: 110px;
+    }
+
+
+    /* CARE */
+
+    .care-layout {
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "image"
+            "one"
+            "two"
+            "three"
+            "four";
+
+        gap: 0;
+    }
+
+
+    .care-image {
+        width: 100%;
+        height: 420px;
+
+        margin-bottom: 20px;
+    }
+
+
+    /* CLOSING */
+
+    .closing-section {
+        min-height: 620px;
+
+        align-items: flex-end;
+
+        padding-bottom: 30px;
+    }
+
+
+    .closing-card {
+        padding: 32px;
+
+        text-align: center;
+    }
+
+
+    .closing-card
+    .section-tag {
+        justify-content: center;
+    }
+
+
+    .closing-card
+    .left-text {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+
+    .section-space {
+        padding: 52px 0;
+    }
+
+
+    .section-tag {
+        font-size: .55rem;
+    }
+
+
+    .tag-line {
+        width: 20px;
+    }
+
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+
+    .primary-btn,
+    .secondary-btn {
+        min-height: 46px;
+
+        padding: 0 23px;
+
+        font-size: .76rem;
+    }
+
+
+    .hero-features {
+        gap: 6px;
+    }
+
+
+    .hero-features strong {
+        font-size: .8rem;
+    }
+
+
+    .hero-features span {
+        font-size: .6rem;
+    }
+
+
+    .garden-visual {
+        height: 560px;
+    }
+
+
+    .encounter-image {
+        height: 380px;
+    }
+
+
+    .bloom-image {
+        min-height: 320px;
+    }
+
+
+    .bloom-content {
+        padding: 28px 20px;
+    }
+
+
+    .day-photo {
+        min-height: 350px;
+    }
+
+
+    .day-photo-text {
+        right: 22px;
+        bottom: 22px;
+        left: 22px;
+    }
+
+
+    .journey-item {
+        grid-template-columns:
+            43px 16px 1fr;
+    }
+
+
+    .day-journey::before {
+        left: 65px;
+    }
+
+
+    .journey-copy {
+        grid-template-columns:
+            20px 1fr;
+    }
+
+
+    .care-image {
+        height: 350px;
+    }
+
+}
+
+
+/* =========================================================
+   REVEAL ANIMATION
+========================================================= */
+
+.reveal {
+    opacity: 0;
+
+    transform:
+        translateY(25px);
+
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
+}
+
+
+.reveal.show {
+    opacity: 1;
+
+    transform:
+        translateY(0);
+}
+
+
+@media
+(prefers-reduced-motion: reduce) {
+
+    .reveal {
+        opacity: 1;
+
+        transform: none;
+
+        transition: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   HOME 2 HERO - ENTRANCE ANIMATIONS
+========================================================= */
+
+/* Background - soft fade + zoom */
+.h2hero-bg {
+    animation: heroBgFade 1.4s ease-out both;
+}
+
+
+/* Main left content - fade from left */
+.h2hero-copy {
+    animation: heroFadeLeft 1s ease-out 0.15s both;
+}
+
+
+/* Pink floating badge - fade from right */
+.h2hero-stamp {
+    animation:
+        heroFadeRight 1s ease-out 0.55s both,
+        h2StampFloat 4s ease-in-out 1.55s infinite;
+}
+
+
+/* Bottom butterfly card - fade from right */
+.h2hero-mini {
+    animation: heroFadeRight 1s ease-out 0.75s both;
+}
+
+
+/* =========================================
+   KEYFRAMES
+========================================= */
+
+@keyframes heroBgFade {
+
+    from {
+        opacity: 0;
+        transform: scale(1.08);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1.02);
+    }
+}
+
+
+@keyframes heroFadeLeft {
+
+    from {
+        opacity: 0;
+        transform:
+            translate(-45px, -50%);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translate(0, -50%);
+    }
+}
+
+
+@keyframes heroFadeRight {
+
+    from {
+        opacity: 0;
+        transform: translateX(45px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* =========================================
+   RTL
+========================================= */
+
+html[dir="rtl"] .h2hero-copy {
+    animation-name: heroFadeRightCopy;
+}
+
+
+@keyframes heroFadeRightCopy {
+
+    from {
+        opacity: 0;
+        transform:
+            translate(45px, -50%);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translate(0, -50%);
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .h2hero-copy {
+        animation: heroMobileFadeUp 0.9s ease-out 0.15s both;
+    }
+
+    @keyframes heroMobileFadeUp {
+
+        from {
+            opacity: 0;
+            transform: translateY(35px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+    .h2hero-bg,
+    .h2hero-copy,
+    .h2hero-stamp,
+    .h2hero-mini {
+        animation: none !important;
+    }
+}

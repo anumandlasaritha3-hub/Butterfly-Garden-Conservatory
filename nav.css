@@ -1,0 +1,2421 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
+
+
+/* =========================================================
+   WING & BLOOM CONSERVATORY
+   COMPLETE HEADER CSS
+========================================================= */
+
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    /* BRAND */
+    --primary: #1B4D2A;
+    --secondary: #F49CAB;
+
+    /* LIGHT */
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --text: #171717;
+    --muted-text: #5f665f;
+
+    --border: rgba(27, 77, 42, 0.13);
+
+    /* FONTS */
+    --heading-font: "Playfair Display", serif;
+    --body-font: "DM Sans", sans-serif;
+
+    /* FONT WEIGHTS */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /* HEADER */
+    --header-height: 88px;
+    --container-width: 1440px;
+
+    /* TRANSITION */
+    --transition: 0.3s ease;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-theme {
+
+    --bg: #000000;
+    --surface: #080808;
+
+    --text: #ffffff;
+    --muted-text: #c7c7c7;
+
+    --border: rgba(244, 156, 171, 0.35);
+
+    background: #000000;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: var(--body-font);
+
+    background: var(--bg);
+    color: var(--text);
+
+    transition:
+        background var(--transition),
+        color var(--transition);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* =========================================================
+   HEADER
+   STICKY FROM START = NO JUMP
+========================================================= */
+
+.site-header {
+
+    position: sticky;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    min-height: var(--header-height);
+
+    z-index: 99999;
+
+    background: #ffffff;
+
+    border-bottom:
+        1px solid var(--border);
+
+    transform: none;
+
+    animation: none;
+
+    transition:
+        background var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+}
+
+
+/* JS CAN STILL ADD .sticky
+   BUT POSITION NEVER CHANGES */
+
+.site-header.sticky {
+
+    position: sticky;
+
+    top: 0;
+
+    transform: none;
+
+    animation: none;
+
+    box-shadow:
+        0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+
+/* DARK HEADER */
+
+body.dark-theme .site-header {
+
+    background: #000000;
+
+    border-bottom-color:
+        rgba(244, 156, 171, 0.22);
+}
+
+
+body.dark-theme .site-header.sticky {
+
+    background: #000000;
+
+    box-shadow:
+        0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+
+/* =========================================================
+   HEADER CONTAINER
+========================================================= */
+
+.header-container {
+
+    width: min(94%, var(--container-width));
+
+    min-height: var(--header-height);
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.brand {
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* LOGO */
+
+.brand-logo {
+
+    width: 72px;
+    height: 72px;
+
+    flex-shrink: 0;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* BRAND CONTENT */
+
+.brand-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    line-height: 1.1;
+}
+
+
+/* BRAND NAME */
+
+.brand-name {
+
+    color: var(--primary);
+
+    font-family: var(--heading-font);
+
+    font-size:
+        clamp(1.3rem, 1.5vw, 1.6rem);
+
+    font-weight: var(--fw-bold);
+
+    line-height: 1.1;
+
+    white-space: nowrap;
+}
+
+
+.brand-name span {
+
+    color: var(--secondary);
+
+    font-style: italic;
+}
+
+
+/* TAGLINE */
+
+.brand-tagline {
+
+    display: block;
+
+    margin-top: 6px;
+
+    color: var(--primary);
+
+    font-family: var(--heading-font);
+
+    font-size: 0.78rem;
+
+    font-weight: var(--fw-bold);
+
+    font-style: italic;
+
+    line-height: 1.2;
+
+    white-space: nowrap;
+}
+
+
+/* OPTIONAL OLD SUBTITLE */
+
+.brand-subtitle {
+    display: none;
+}
+
+
+/* DARK BRAND */
+
+body.dark-theme .brand-name {
+    color: #ffffff;
+}
+
+
+body.dark-theme .brand-name span {
+    color: var(--secondary);
+}
+
+
+body.dark-theme .brand-tagline {
+    color: var(--secondary);
+}
+
+
+/* =========================================================
+   MAIN NAVIGATION
+========================================================= */
+
+.main-nav {
+
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: clamp(17px, 1.7vw, 30px);
+}
+
+
+.nav-item {
+    position: relative;
+}
+
+
+/* =========================================================
+   NAV LINK
+========================================================= */
+
+.nav-link {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding:
+        33px 0 30px;
+
+    color: var(--text);
+
+    font-family: var(--body-font);
+
+    font-size: 0.96rem;
+
+    font-weight: var(--fw-semibold);
+
+    line-height: 1;
+
+    transition:
+        color var(--transition);
+}
+
+
+.nav-link i {
+
+    color: var(--primary);
+
+    font-size: 0.62rem;
+
+    transition:
+        color var(--transition),
+        transform var(--transition);
+}
+
+
+/* HOVER + ACTIVE */
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary);
+}
+
+
+/* ACTIVE LINE */
+
+.nav-link::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 22px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: var(--secondary);
+
+    border-radius: 20px;
+
+    transition:
+        width var(--transition);
+}
+
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+
+/* =========================================================
+   DARK NAVIGATION
+========================================================= */
+
+body.dark-theme .nav-link {
+    color: #ffffff;
+}
+
+
+body.dark-theme .nav-link:hover,
+body.dark-theme .nav-link.active {
+    color: var(--secondary);
+}
+
+
+body.dark-theme .nav-link::after {
+    background: var(--secondary);
+}
+
+
+body.dark-theme .nav-link i {
+    color: var(--secondary);
+}
+
+
+/* =========================================================
+   HOME DROPDOWN
+========================================================= */
+
+.dropdown-menu {
+
+    position: absolute;
+
+    top: calc(100% - 7px);
+
+    left: 50%;
+
+    width: 310px;
+
+    padding: 10px;
+
+    background: var(--surface);
+
+    border:
+        1px solid rgba(244, 156, 171, 0.25);
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 18px 45px rgba(27, 77, 42, 0.14);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transform:
+        translateX(-50%)
+        translateY(10px);
+
+    transition:
+        opacity var(--transition),
+        visibility var(--transition),
+        transform var(--transition);
+}
+
+
+/* DESKTOP HOVER */
+
+.has-dropdown:hover .dropdown-menu {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+    transform:
+        translateX(-50%)
+        translateY(0);
+}
+
+
+.has-dropdown:hover .dropdown-link i {
+    transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   DROPDOWN ITEM
+========================================================= */
+
+.dropdown-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 13px;
+
+    border-radius: 10px;
+
+    color: var(--text);
+
+    transition:
+        background var(--transition),
+        transform var(--transition);
+}
+
+
+.dropdown-item:hover {
+
+    background:
+        rgba(244, 156, 171, 0.13);
+
+    transform: translateX(3px);
+}
+
+
+/* DROPDOWN ICON */
+
+.dropdown-icon {
+
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    color: var(--primary);
+
+    background:
+        rgba(27, 77, 42, 0.09);
+
+    font-size: 0.95rem;
+}
+
+
+.dropdown-item strong {
+
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: var(--primary);
+
+    font-family: var(--heading-font);
+
+    font-size: 0.98rem;
+
+    font-weight: var(--fw-bold);
+}
+
+
+.dropdown-item small {
+
+    display: block;
+
+    color: var(--muted-text);
+
+    font-size: 0.72rem;
+}
+
+
+/* =========================================================
+   DARK DROPDOWN
+========================================================= */
+
+body.dark-theme .dropdown-menu {
+
+    background: #080808;
+
+    border-color:
+        rgba(244, 156, 171, 0.35);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.55);
+}
+
+
+body.dark-theme .dropdown-item {
+    color: #ffffff;
+}
+
+
+body.dark-theme .dropdown-item:hover {
+
+    background:
+        rgba(244, 156, 171, 0.12);
+}
+
+
+body.dark-theme .dropdown-icon {
+
+    color: var(--secondary);
+
+    background:
+        rgba(244, 156, 171, 0.12);
+}
+
+
+body.dark-theme .dropdown-item strong {
+    color: var(--secondary);
+}
+
+
+/* =========================================================
+   HEADER ACTIONS
+========================================================= */
+
+.header-actions {
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* =========================================================
+   RTL + THEME BUTTONS
+========================================================= */
+
+.header-tool {
+
+    width: 44px;
+    height: 44px;
+
+    flex-shrink: 0;
+
+    display: grid;
+
+    place-items: center;
+
+    padding: 0;
+
+    border:
+        1.5px solid var(--secondary);
+
+    border-radius: 50%;
+
+    color: var(--primary);
+
+    background: transparent;
+
+    font-family: var(--body-font);
+
+    font-size: 0.76rem;
+
+    font-weight: var(--fw-bold);
+
+    cursor: pointer;
+
+    transition:
+        color var(--transition),
+        background var(--transition),
+        border-color var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+
+.rtl-btn,
+.theme-btn {
+    border-color: var(--secondary);
+}
+
+
+.theme-btn {
+    font-size: 1rem;
+}
+
+
+/* TOOL HOVER */
+
+.header-tool:hover {
+
+    color: var(--primary);
+
+    background:
+        rgba(244, 156, 171, 0.18);
+
+    border-color: var(--secondary);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 15px
+        rgba(244, 156, 171, 0.18);
+}
+
+
+/* DARK TOOL */
+
+body.dark-theme .header-tool {
+
+    color: var(--secondary);
+
+    background: #000000;
+
+    border:
+        1.5px solid var(--secondary);
+}
+
+
+body.dark-theme .header-tool:hover {
+
+    color: #000000;
+
+    background: var(--secondary);
+
+    border-color: var(--secondary);
+}
+
+
+/* =========================================================
+   PRIMARY CTA
+========================================================= */
+
+.header-cta {
+
+    min-height: 48px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-left: 4px;
+
+    padding: 0 21px;
+
+    border:
+        2px solid transparent;
+
+    border-radius: 50px;
+
+    color: #ffffff;
+
+    background: var(--primary);
+
+    font-family: var(--body-font);
+
+    font-size: 0.98rem;
+
+    font-weight: var(--fw-bold);
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    box-shadow:
+        0 8px 22px
+        rgba(27, 77, 42, 0.18);
+
+    transition:
+        color var(--transition),
+        background var(--transition),
+        border-color var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+
+.header-cta i {
+    font-size: 0.95rem;
+}
+
+
+.header-cta .cta-arrow {
+
+    font-size: 0.75rem;
+
+    transition:
+        transform var(--transition);
+}
+
+
+/* CTA HOVER */
+
+.header-cta:hover {
+
+    color: var(--primary);
+
+    background: var(--secondary);
+
+    border-color: transparent;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(244, 156, 171, 0.28);
+}
+
+
+.header-cta:hover .cta-arrow {
+    transform: translateX(4px);
+}
+
+
+/* DARK CTA */
+
+body.dark-theme .header-cta {
+
+    color: #ffffff;
+
+    background: var(--primary);
+
+    border-color: transparent;
+}
+
+
+body.dark-theme .header-cta:hover {
+
+    color: #000000;
+
+    background: var(--secondary);
+
+    border-color: transparent;
+}
+
+
+/* =========================================================
+   MOBILE CTA
+========================================================= */
+
+.mobile-cta {
+    display: none;
+}
+
+
+/* =========================================================
+   HAMBURGER
+========================================================= */
+
+.menu-toggle {
+
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: none;
+
+    padding: 9px;
+
+    border:
+        1.5px solid var(--secondary);
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    cursor: pointer;
+}
+
+
+.menu-toggle span {
+
+    width: 100%;
+    height: 2px;
+
+    display: block;
+
+    margin: 4px 0;
+
+    border-radius: 20px;
+
+    background: var(--primary);
+
+    transition:
+        var(--transition);
+}
+
+
+/* DARK HAMBURGER */
+
+body.dark-theme .menu-toggle {
+    border-color: var(--secondary);
+}
+
+
+body.dark-theme .menu-toggle span {
+    background: var(--secondary);
+}
+
+
+/* HAMBURGER ACTIVE */
+
+.menu-toggle.active span:nth-child(1) {
+
+    transform:
+        translateY(6px)
+        rotate(45deg);
+}
+
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+
+.menu-toggle.active span:nth-child(3) {
+
+    transform:
+        translateY(-6px)
+        rotate(-45deg);
+}
+
+
+/* =========================================================
+   RTL DESKTOP
+========================================================= */
+
+html[dir="rtl"] .header-container {
+    direction: rtl;
+}
+
+
+html[dir="rtl"] .brand {
+    direction: rtl;
+}
+
+
+html[dir="rtl"] .brand-content {
+    align-items: flex-start;
+}
+
+
+html[dir="rtl"] .main-nav {
+    direction: rtl;
+}
+
+
+html[dir="rtl"] .header-actions {
+    direction: rtl;
+}
+
+
+html[dir="rtl"] .dropdown-item {
+
+    direction: rtl;
+
+    text-align: right;
+}
+
+
+html[dir="rtl"] .dropdown-item:hover {
+    transform: translateX(-3px);
+}
+
+
+html[dir="rtl"] .header-cta {
+
+    margin-left: 0;
+
+    margin-right: 4px;
+}
+
+
+html[dir="rtl"] .cta-arrow {
+    transform: rotate(180deg);
+}
+
+
+html[dir="rtl"] .header-cta:hover .cta-arrow {
+
+    transform:
+        rotate(180deg)
+        translateX(4px);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+
+/* =========================================================
+   LAPTOP
+   1101px - 1280px
+========================================================= */
+
+@media (min-width: 1101px) and (max-width: 1280px) {
+
+    :root {
+        --header-height: 82px;
+    }
+
+
+    .header-container {
+
+        width: 96%;
+
+        gap: 14px;
+    }
+
+
+    .brand {
+        gap: 8px;
+    }
+
+
+    .brand-logo {
+
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .brand-name {
+        font-size: 1.15rem;
+    }
+
+
+    .brand-tagline {
+
+        margin-top: 4px;
+
+        font-size: 0.63rem;
+    }
+
+
+    .main-nav {
+        gap: 14px;
+    }
+
+
+    .nav-link {
+
+        padding:
+            30px 0 28px;
+
+        font-size: 0.82rem;
+    }
+
+
+    .nav-link::after {
+        bottom: 20px;
+    }
+
+
+    .header-actions {
+        gap: 7px;
+    }
+
+
+    .header-tool {
+
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .header-cta {
+
+        min-height: 44px;
+
+        padding: 0 14px;
+
+        font-size: 0.82rem;
+    }
+}
+
+
+/* =========================================================
+   TABLET + MOBILE
+   <= 1100px
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    :root {
+        --header-height: 78px;
+    }
+
+
+    /* HEADER */
+
+    .site-header,
+    .site-header.sticky {
+
+        position: sticky;
+
+        top: 0;
+
+        min-height:
+            var(--header-height);
+
+        transform: none;
+
+        animation: none;
+    }
+
+
+    .header-container {
+
+        position: relative;
+
+        width: 94%;
+
+        min-height:
+            var(--header-height);
+
+        gap: 10px;
+    }
+
+
+    /* BRAND */
+
+    .brand {
+
+        gap: 8px;
+
+        margin-right: auto;
+    }
+
+
+    html[dir="rtl"] .brand {
+
+        margin-right: 0;
+
+        margin-left: auto;
+    }
+
+
+    .brand-logo {
+
+        width: 58px;
+        height: 58px;
+
+        min-width: 58px;
+    }
+
+
+    .brand-name {
+        font-size: 1.15rem;
+    }
+
+
+    .brand-tagline {
+
+        margin-top: 4px;
+
+        font-size: 0.62rem;
+    }
+
+
+    /* ACTIONS */
+
+    .header-actions {
+        gap: 7px;
+    }
+
+
+    .header-tool {
+
+        width: 40px;
+        height: 40px;
+
+        font-size: 0.68rem;
+    }
+
+
+    .theme-btn {
+        font-size: 0.9rem;
+    }
+
+
+    /* HAMBURGER */
+
+    .menu-toggle {
+
+        width: 40px;
+        height: 40px;
+
+        display: block;
+
+        padding: 8px;
+    }
+
+
+    /* HIDE DESKTOP CTA */
+
+    .header-cta {
+        display: none;
+    }
+
+
+    /* =====================================================
+       MOBILE NAV DRAWER
+    ===================================================== */
+
+    .main-nav {
+
+        position: absolute;
+
+        top: calc(100% + 1px);
+
+        left: 3%;
+
+        width: 94%;
+
+        max-height: 0;
+
+        display: block;
+
+        padding: 0 18px;
+
+        overflow: hidden;
+
+        background:
+            var(--surface);
+
+        border:
+            1px solid transparent;
+
+        border-radius:
+            0 0 18px 18px;
+
+        box-shadow:
+            0 18px 35px
+            rgba(0, 0, 0, 0.1);
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        pointer-events: none;
+
+        transition:
+            max-height 0.4s ease,
+            padding 0.4s ease,
+            opacity 0.25s ease;
+    }
+
+
+    .main-nav.active {
+
+        max-height: 720px;
+
+        padding:
+            14px 18px 20px;
+
+        border-color:
+            rgba(244, 156, 171, 0.4);
+
+        opacity: 1;
+
+        visibility: visible;
+
+        pointer-events: auto;
+    }
+
+
+    body.dark-theme .main-nav {
+
+        background: #000000;
+
+        box-shadow:
+            0 18px 40px
+            rgba(0, 0, 0, 0.6);
+    }
+
+
+    /* NAV LINKS */
+
+    .nav-link {
+
+        width: 100%;
+
+        justify-content:
+            space-between;
+
+        padding: 13px 4px;
+
+        border-bottom:
+            1px solid
+            rgba(244, 156, 171, 0.22);
+
+        font-size: 0.88rem;
+    }
+
+
+    .nav-link::after {
+        display: none;
+    }
+
+
+    .nav-link.active {
+        color: var(--primary);
+    }
+
+
+    body.dark-theme .nav-link.active {
+        color: var(--secondary);
+    }
+
+
+    /* =====================================================
+       MOBILE DROPDOWN
+    ===================================================== */
+
+    .dropdown-menu {
+
+        position: static;
+
+        width: 100%;
+
+        max-height: 0;
+
+        padding: 0 5px;
+
+        border: 0;
+
+        border-radius: 10px;
+
+        box-shadow: none;
+
+        opacity: 1;
+
+        visibility: visible;
+
+        pointer-events: auto;
+
+        overflow: hidden;
+
+        transform: none;
+
+        transition:
+            max-height 0.35s ease,
+            padding 0.35s ease;
+    }
+
+
+    .has-dropdown.open .dropdown-menu {
+
+        max-height: 220px;
+
+        padding: 7px 5px;
+    }
+
+
+    .has-dropdown:hover .dropdown-menu {
+        transform: none;
+    }
+
+
+    .has-dropdown.open .dropdown-link i {
+        transform: rotate(180deg);
+    }
+
+
+    /* =====================================================
+       MOBILE CTA
+    ===================================================== */
+
+    .mobile-cta {
+
+        width: 100%;
+
+        min-height: 48px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 9px;
+
+        margin-top: 14px;
+
+        padding: 0 18px;
+
+        border:
+            2px solid transparent;
+
+        border-radius: 50px;
+
+        color: #ffffff;
+
+        background: var(--primary);
+
+        font-family:
+            var(--body-font);
+
+        font-size: 0.9rem;
+
+        font-weight:
+            var(--fw-bold);
+
+        transition:
+            background var(--transition),
+            color var(--transition),
+            transform var(--transition);
+    }
+
+
+    .mobile-cta:hover {
+
+        color: var(--primary);
+
+        background:
+            var(--secondary);
+
+        border-color:
+            transparent;
+    }
+
+
+    body.dark-theme .mobile-cta:hover {
+
+        color: #000000;
+
+        background:
+            var(--secondary);
+    }
+
+
+    /* RTL MOBILE */
+
+    html[dir="rtl"] .main-nav {
+
+        left: auto;
+
+        right: 3%;
+    }
+
+
+    html[dir="rtl"] .nav-link {
+        text-align: right;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   769px - 900px
+========================================================= */
+
+@media (min-width: 769px) and (max-width: 900px) {
+
+    :root {
+        --header-height: 76px;
+    }
+
+
+    .header-container {
+
+        width: 94%;
+
+        min-height:
+            var(--header-height);
+    }
+
+
+    .brand-logo {
+
+        width: 56px;
+        height: 56px;
+
+        min-width: 56px;
+    }
+
+
+    .brand-name {
+        font-size: 1.12rem;
+    }
+
+
+    .brand-tagline {
+        font-size: 0.6rem;
+    }
+
+
+    .header-tool,
+    .menu-toggle {
+
+        width: 39px;
+        height: 39px;
+    }
+}
+
+
+/* =========================================================
+   LARGE MOBILE
+   601px - 768px
+========================================================= */
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+    :root {
+        --header-height: 74px;
+    }
+
+
+    .header-container {
+
+        width: 94%;
+
+        min-height:
+            var(--header-height);
+
+        gap: 7px;
+    }
+
+
+    .brand-logo {
+
+        width: 54px;
+        height: 54px;
+
+        min-width: 54px;
+    }
+
+
+    .brand-name {
+        font-size: 1.08rem;
+    }
+
+
+    .brand-tagline {
+        font-size: 0.58rem;
+    }
+
+
+    .header-actions {
+        gap: 6px;
+    }
+
+
+    .header-tool,
+    .menu-toggle {
+
+        width: 38px;
+        height: 38px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   421px - 600px
+========================================================= */
+
+@media (min-width: 421px) and (max-width: 600px) {
+
+    :root {
+        --header-height: 72px;
+    }
+
+
+    .header-container {
+
+        width: 96%;
+
+        min-height:
+            var(--header-height);
+
+        gap: 5px;
+    }
+
+
+    /* BRAND */
+
+    .brand {
+        gap: 6px;
+    }
+
+
+    .brand-logo {
+
+        width: 50px;
+        height: 50px;
+
+        min-width: 50px;
+    }
+
+
+    .brand-name {
+        font-size: 1rem;
+    }
+
+
+    .brand-tagline {
+
+        margin-top: 3px;
+
+        font-size: 0.53rem;
+    }
+
+
+    /* ACTIONS */
+
+    .header-actions {
+        gap: 4px;
+    }
+
+
+    .header-tool,
+    .menu-toggle {
+
+        width: 36px;
+        height: 36px;
+
+        min-width: 36px;
+    }
+
+
+    .header-tool {
+        font-size: 0.62rem;
+    }
+
+
+    .theme-btn {
+        font-size: 0.82rem;
+    }
+
+
+    .menu-toggle {
+        padding: 7px;
+    }
+
+
+    /* DRAWER */
+
+    .main-nav {
+
+        left: 2%;
+
+        width: 96%;
+
+        padding-left: 15px;
+
+        padding-right: 15px;
+    }
+
+
+    .main-nav.active {
+
+        padding:
+            12px 15px 18px;
+    }
+
+
+    html[dir="rtl"] .main-nav {
+
+        left: auto;
+
+        right: 2%;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   361px - 420px
+========================================================= */
+
+@media (min-width: 361px) and (max-width: 420px) {
+
+    :root {
+        --header-height: 70px;
+    }
+
+
+    .header-container {
+
+        width: 97%;
+
+        min-height:
+            var(--header-height);
+
+        gap: 3px;
+    }
+
+
+    /* BRAND */
+
+    .brand {
+        gap: 5px;
+    }
+
+
+    .brand-logo {
+
+        width: 46px;
+        height: 46px;
+
+        min-width: 46px;
+    }
+
+
+    .brand-name {
+
+        font-size: 0.91rem;
+
+        line-height: 1;
+    }
+
+
+    .brand-tagline {
+
+        margin-top: 2px;
+
+        font-size: 0.47rem;
+
+        line-height: 1.05;
+    }
+
+
+    /* ACTIONS */
+
+    .header-actions {
+        gap: 3px;
+    }
+
+
+    .header-tool,
+    .menu-toggle {
+
+        width: 34px;
+        height: 34px;
+
+        min-width: 34px;
+    }
+
+
+    .header-tool {
+        font-size: 0.57rem;
+    }
+
+
+    .theme-btn {
+        font-size: 0.77rem;
+    }
+
+
+    .menu-toggle {
+        padding: 7px;
+    }
+
+
+    /* DRAWER */
+
+    .main-nav {
+
+        left: 1.5%;
+
+        width: 97%;
+    }
+
+
+    html[dir="rtl"] .main-nav {
+
+        left: auto;
+
+        right: 1.5%;
+    }
+}
+
+
+/* =========================================================
+   360px MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    :root {
+        --header-height: 68px;
+    }
+
+
+    .header-container {
+
+        width: 98%;
+
+        min-height:
+            var(--header-height);
+
+        gap: 2px;
+    }
+
+
+    /* BRAND */
+
+    .brand {
+
+        gap: 4px;
+
+        min-width: 0;
+    }
+
+
+    .brand-logo {
+
+        width: 43px;
+        height: 43px;
+
+        min-width: 43px;
+    }
+
+
+    .brand-content {
+        min-width: 0;
+    }
+
+
+    .brand-name {
+
+        font-size: 0.84rem;
+
+        line-height: 1;
+    }
+
+
+    .brand-tagline {
+
+        margin-top: 2px;
+
+        font-size: 0.43rem;
+
+        line-height: 1.05;
+    }
+
+
+    /* ACTIONS */
+
+    .header-actions {
+        gap: 2px;
+    }
+
+
+    .header-tool,
+    .menu-toggle {
+
+        width: 32px;
+        height: 32px;
+
+        min-width: 32px;
+    }
+
+
+    .header-tool {
+
+        font-size: 0.53rem;
+
+        border-width: 1.3px;
+    }
+
+
+    .theme-btn {
+        font-size: 0.72rem;
+    }
+
+
+    .menu-toggle {
+
+        padding: 6px;
+
+        border-width: 1.3px;
+    }
+
+
+    .menu-toggle span {
+
+        height: 1.7px;
+
+        margin: 3.5px 0;
+    }
+
+
+    /* DRAWER */
+
+    .main-nav {
+
+        left: 1%;
+
+        width: 98%;
+
+        padding-left: 12px;
+
+        padding-right: 12px;
+    }
+
+
+    .main-nav.active {
+
+        padding:
+            10px 12px 16px;
+    }
+
+
+    .nav-link {
+
+        padding: 12px 3px;
+
+        font-size: 0.82rem;
+    }
+
+
+    .dropdown-item {
+
+        gap: 9px;
+
+        padding: 10px;
+    }
+
+
+    .dropdown-icon {
+
+        width: 36px;
+        height: 36px;
+
+        font-size: 0.8rem;
+    }
+
+
+    .dropdown-item strong {
+        font-size: 0.88rem;
+    }
+
+
+    .dropdown-item small {
+        font-size: 0.64rem;
+    }
+
+
+    .mobile-cta {
+
+        min-height: 44px;
+
+        margin-top: 12px;
+
+        font-size: 0.84rem;
+    }
+
+
+    html[dir="rtl"] .main-nav {
+
+        left: auto;
+
+        right: 1%;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL
+   <= 330px
+========================================================= */
+
+@media (max-width: 330px) {
+
+    :root {
+        --header-height: 66px;
+    }
+
+
+    .brand-logo {
+
+        width: 39px;
+        height: 39px;
+
+        min-width: 39px;
+    }
+
+
+    .brand {
+        gap: 3px;
+    }
+
+
+    .brand-name {
+        font-size: 0.76rem;
+    }
+
+
+    .brand-tagline {
+        font-size: 0.39rem;
+    }
+
+
+    .header-tool,
+    .menu-toggle {
+
+        width: 30px;
+        height: 30px;
+
+        min-width: 30px;
+    }
+
+
+    .header-tool {
+        font-size: 0.49rem;
+    }
+
+
+    .theme-btn {
+        font-size: 0.67rem;
+    }
+
+
+    .menu-toggle {
+        padding: 6px;
+    }
+}
+
+
+/* =========================================================
+   RTL RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    html[dir="rtl"] .header-container {
+        direction: rtl;
+    }
+
+
+    html[dir="rtl"] .brand-content {
+        align-items: flex-start;
+    }
+
+
+    html[dir="rtl"] .dropdown-item {
+
+        direction: rtl;
+
+        text-align: right;
+    }
+}
+
+
+/* =========================================================
+   DARK RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    body.dark-theme .site-header,
+    body.dark-theme .site-header.sticky {
+
+        background: #000000;
+    }
+
+
+    body.dark-theme .main-nav {
+
+        background: #000000;
+
+        border-color:
+            rgba(244, 156, 171, 0.35);
+    }
+
+
+    body.dark-theme .menu-toggle {
+        border-color: var(--secondary);
+    }
+
+
+    body.dark-theme .menu-toggle span {
+        background: var(--secondary);
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY - REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .site-header,
+    .site-header.sticky,
+    .main-nav,
+    .dropdown-menu,
+    .nav-link,
+    .header-tool,
+    .menu-toggle,
+    .mobile-cta {
+
+        transition: none !important;
+
+        animation: none !important;
+    }
+}
+
+
+/* =========================================================
+   FINAL STICKY HEADER FIX
+   DESKTOP + TABLET + MOBILE
+========================================================= */
+
+html {
+    overflow-x: clip;
+}
+
+body {
+    overflow-x: clip;
+}
+
+
+/* HEADER ALWAYS STICKY */
+
+.site-header,
+.site-header.sticky {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+
+    top: 0 !important;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 999999 !important;
+
+    transform: none !important;
+    translate: none !important;
+
+    animation: none !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+
+/* Keep correct header height */
+
+.site-header,
+.site-header.sticky,
+.header-container {
+    min-height: var(--header-height);
+}
+
+
+/* Sticky appearance */
+
+.site-header.sticky {
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* DARK MODE */
+
+body.dark-theme .site-header,
+body.dark-theme .site-header.sticky {
+    background: #000000;
+
+    border-bottom-color:
+        rgba(244, 156, 171, 0.25);
+
+    box-shadow:
+        0 5px 22px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    :root {
+        --header-height: 78px;
+    }
+
+    .site-header,
+    .site-header.sticky {
+        position: -webkit-sticky !important;
+        position: sticky !important;
+
+        top: 0 !important;
+
+        min-height: 78px;
+
+        z-index: 999999 !important;
+    }
+
+    .header-container {
+        min-height: 78px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    :root {
+        --header-height: 72px;
+    }
+
+    .site-header,
+    .site-header.sticky {
+        position: -webkit-sticky !important;
+        position: sticky !important;
+
+        top: 0 !important;
+
+        min-height: 72px;
+
+        z-index: 999999 !important;
+
+        transform: none !important;
+        animation: none !important;
+    }
+
+    .header-container {
+        min-height: 72px;
+    }
+
+
+    /* Mobile dropdown remains attached below header */
+
+    .main-nav {
+        top: 100%;
+        z-index: 999998;
+    }
+}
+
+
+/* =========================================================
+   420px MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    :root {
+        --header-height: 70px;
+    }
+
+    .site-header,
+    .site-header.sticky,
+    .header-container {
+        min-height: 70px;
+    }
+}
+
+
+/* =========================================================
+   360px MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    :root {
+        --header-height: 68px;
+    }
+
+    .site-header,
+    .site-header.sticky,
+    .header-container {
+        min-height: 68px;
+    }
+}
+
+/* =========================================================
+   HEADER MOBILE BRAND
+   EXACTLY SAME SIZE AS FOOTER BRAND
+========================================================= */
+
+@media (max-width: 650px) {
+
+    /* Keep brand properly aligned */
+    .brand {
+        display: flex;
+        align-items: center;
+
+        gap: 10px;
+
+        flex-shrink: 0;
+
+        margin-right: auto;
+    }
+
+
+    /* SAME LOGO SIZE AS FOOTER */
+
+    .brand-logo {
+        width: 58px !important;
+        height: 58px !important;
+
+        min-width: 58px !important;
+        min-height: 58px !important;
+
+        max-width: 58px;
+
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+
+    /* BRAND TEXT */
+
+    .brand-content {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: flex-start;
+
+        min-width: 0;
+
+        line-height: 1.1;
+    }
+
+
+    /* SAME BRAND NAME SIZE AS FOOTER */
+
+    .brand-name {
+        font-family: var(--heading-font);
+
+        font-size: 1.2rem !important;
+        font-weight: 700;
+
+        line-height: 1.1;
+
+        white-space: nowrap;
+    }
+
+
+    /* SAME TAGLINE SIZE AS FOOTER */
+
+    .brand-tagline {
+        margin-top: 4px;
+
+        font-family: var(--heading-font);
+
+        font-size: 0.62rem !important;
+        font-weight: 700;
+
+        line-height: 1.2;
+
+        white-space: nowrap;
+    }
+
+
+    /* Keep controls aligned */
+
+    .header-actions {
+        flex-shrink: 0;
+    }
+
+
+    /* RTL */
+
+    html[dir="rtl"] .brand {
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+}
+
+
+/* =========================================================
+   360px MOBILE
+   KEEP SAME BRAND SIZE - DON'T SHRINK AGAIN
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .brand-logo {
+        width: 58px !important;
+        height: 58px !important;
+
+        min-width: 58px !important;
+    }
+
+    .brand-name {
+        font-size: 1.2rem !important;
+    }
+
+    .brand-tagline {
+        font-size: 0.62rem !important;
+    }
+
+}

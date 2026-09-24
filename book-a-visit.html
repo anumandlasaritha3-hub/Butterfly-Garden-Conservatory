@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Visit — Wing & Bloom</title>
+<link rel="stylesheet" href="book-a-visit.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER — logo + brand name + tagline, toggles top-right
+============================================================ -->
+<header class="visit-header">
+
+    <div class="header-toggles">
+        <button class="icon-btn" id="rtlToggle" aria-label="Toggle text direction">
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        </button>
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+            <i class="fa-regular fa-moon" id="themeIcon"></i>
+        </button>
+    </div>
+
+  <a href="index.html" class="brand">
+    <img decoding="async" src="images/logo.webp" alt="Wing & Bloom logo" class="brand-logo">
+
+    <div class="brand-text">
+        <span class="brand-name">
+            Wing <em>&amp;</em> Bloom
+        </span>
+
+        <span class="brand-tagline">
+            Where Nature Takes Flight
+        </span>
+    </div>
+</a>
+
+</header>
+
+<main class="visit-page">
+
+    <!-- ========================================================
+         HERO
+    ======================================================== -->
+    <section class="visit-hero">
+      
+        <h1>Let's Plan Your <span>Garden Visit.</span></h1>
+        <p>Share a few details about your group and what you'd like to see. We'll get in touch to plan the right visit for you.</p>
+    </section>
+
+    <!-- ========================================================
+         VISIT REQUEST FORM
+    ======================================================== -->
+    <section class="visit-form-card">
+
+        <div class="form-card-head">
+            <span class="eyebrow">Your Details</span>
+            <h2>Visit Request</h2>
+            <p>Tell us a little about yourself and your visit.</p>
+        </div>
+
+        <hr>
+
+        <form class="visit-form">
+
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="fullName">Full Name</label>
+                    <div class="input-wrap">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" id="fullName" placeholder="Enter your full name">
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="phone">Phone Number</label>
+                    <div class="input-wrap">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="email">Email Address</label>
+                    <div class="input-wrap">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" id="email" placeholder="you@example.com">
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="visitType">Visit Type</label>
+                    <div class="input-wrap">
+                        <i class="fa-solid fa-sliders"></i>
+                        <select id="visitType">
+                            <option value="" selected disabled>Select a visit type</option>
+                            <option>General Visit</option>
+                            <option>School Field Trip</option>
+                            <option>Group Visit</option>
+                            <option>Photography Session</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="date">Preferred Date</label>
+                    <div class="input-wrap">
+                        <i class="fa-regular fa-calendar"></i>
+                        <input type="date" id="date">
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="time">Preferred Time</label>
+                    <div class="input-wrap">
+                        <i class="fa-regular fa-clock"></i>
+                        <select id="time">
+                            <option value="" selected disabled>Select a time</option>
+                            <option>9:00 AM – 11:00 AM</option>
+                            <option>11:00 AM – 1:00 PM</option>
+                            <option>1:00 PM – 3:00 PM</option>
+                            <option>3:00 PM – 5:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-field form-field--full">
+                <label for="visitors">Number of Visitors</label>
+                <div class="input-wrap">
+                    <i class="fa-solid fa-users"></i>
+                    <input type="number" id="visitors" min="1" placeholder="e.g. 4">
+                </div>
+            </div>
+
+            <div class="form-field form-field--full">
+                <label for="message">Tell Us About Your Visit</label>
+                <div class="input-wrap input-wrap--textarea">
+                    <i class="fa-regular fa-file-lines"></i>
+                    <textarea id="message" rows="4" placeholder="Tell us about your group, any accessibility needs, or anything else you'd like us to know..."></textarea>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-submit">
+                Request a Visit <i class="fa-solid fa-arrow-up-right"></i>
+            </button>
+
+            <p class="form-note">
+                <i class="fa-solid fa-shield-halved"></i>
+                Your information will only be used to contact you about your visit.
+            </p>
+
+        </form>
+
+    </section>
+
+</main>
+
+<script src="book-a-visit.js"></script>
+</body>
+</html>

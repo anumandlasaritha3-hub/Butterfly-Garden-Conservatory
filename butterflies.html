@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wing & Bloom Conservatory</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+ <!-- Google Fonts -->
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./butterflies.css">
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="footer.css">
+
+</head>
+
+<body>
+    <header class="site-header" id="siteHeader">
+    <div class="header-container">
+
+        <!-- BRAND -->
+        <a href="index.html" class="brand" aria-label="Wing and Bloom Conservatory Home">
+            <img decoding="async" src="./images/logo.webp"
+                 alt="Wing & Bloom Conservatory"
+                 class="brand-logo">
+
+            <div class="brand-content">
+                <span class="brand-name">
+                    Wing <span>&</span> Bloom
+                </span>
+            
+                <span class="brand-tagline"><b>Where Nature Takes Flight</b></span>
+            </div>
+        </a>
+
+        <!-- DESKTOP NAV -->
+        <nav class="main-nav" id="mainNav">
+
+            <div class="nav-item has-dropdown">
+                <a href="index.html" class="nav-link dropdown-link">
+                    Home
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="index.html" class="dropdown-item">
+                        <span class="dropdown-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </span>
+                        <span>
+                            <strong>Garden Experience</strong>
+                            <small>Classic nature-inspired home</small>
+                        </span>
+                    </a>
+
+                    <a href="home.html#home2" class="dropdown-item">
+                        <span class="dropdown-icon">
+                            <i class="fa-solid fa-seedling"></i>
+                        </span>
+                        <span>
+                            <strong>Conservatory Escape</strong>
+                            <small>Immersive tropical experience</small>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="butterflies.html" class="nav-link active">Butterflies</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="experiences.html" class="nav-link">Experiences</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="gallery.html" class="nav-link">Gallery</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="blog.html" class="nav-link">Blog</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <!-- MOBILE CTA -->
+            <a href="book-a-visit.html" class="mobile-cta">
+                <i class="fa-regular fa-calendar-check"></i>
+                Plan Your Visit
+            </a>
+        </nav>
+
+        <!-- HEADER ACTIONS -->
+        <div class="header-actions">
+
+            <!-- RTL / LTR -->
+            <button class="header-tool rtl-btn"
+                    id="rtlToggle"
+                    type="button"
+                    aria-label="Switch text direction">
+                <span id="directionText">RTL</span>
+            </button>
+
+            <!-- DARK / LIGHT -->
+            <button class="header-tool theme-btn"
+                    id="themeToggle"
+                    type="button"
+                    aria-label="Switch theme">
+                <i class="fa-regular fa-moon" id="themeIcon"></i>
+            </button>
+
+            <!-- PRIMARY CTA -->
+            <a href="book-a-visit.html" class="header-cta">
+                <i class="fa-regular fa-calendar-check"></i>
+                <span>Plan Your Visit</span>
+                <i class="fa-solid fa-arrow-right cta-arrow"></i>
+            </a>
+
+            <!-- HAMBURGER -->
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Open navigation"
+                    aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </div>
+</header>
+
+
+
+
+
+
+
+
+<main class="butterflies-page">
+
+    <!-- =====================================================
+         01. HERO
+    ====================================================== -->
+    <section class="bf-hero">
+
+        <div class="bf-hero-image">
+            <img fetchpriority="high" decoding="async" src="./images/butterflies-hero.webp"
+                 alt="Colourful butterfly inside Wing and Bloom Conservatory">
+        </div>
+
+        <div class="bf-hero-overlay"></div>
+
+        <div class="container bf-hero-container">
+
+            <div class="bf-hero-content">
+
+                <div class="bf-tag">
+                
+
+                    <p>
+                        <i class="fa-solid fa-feather"></i>
+                        DISCOVER THEIR WORLD
+                    </p>
+                        <span class="bf-tag-line"></span>
+                </div>
+
+                <h1>
+                    Small Wings.
+                    <span>Extraordinary Stories.</span>
+                </h1>
+
+                <p>
+                    Step into the fascinating world of butterflies and
+                    discover the colours, patterns, behaviours and remarkable
+                    transformations that make every species unique.
+                </p>
+
+                <div class="bf-hero-actions">
+
+                    <a href="#species"
+                       class="bf-primary-btn">
+
+                        Explore The Species
+                        <i class="fa-solid fa-arrow-down"></i>
+
+                    </a>
+
+                    <a href="#life-cycle"
+                       class="bf-outline-btn">
+
+                        Discover Their Journey
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="bf-hero-fact">
+
+            <span>01</span>
+
+            <div>
+                <small>LOOK A LITTLE CLOSER</small>
+                <strong>Every Wing Tells A Story</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         02. INTRODUCTION
+    ====================================================== -->
+    <section class="bf-intro bf-section-space">
+
+        <div class="container bf-intro-grid">
+
+            <div class="bf-intro-heading bf-reveal">
+
+                <div class="bf-tag">
+
+                    <span class="bf-tag-line"></span>
+
+                    <p>
+                        <i class="fa-solid fa-leaf"></i>
+                        MEET THE BUTTERFLIES
+                    </p>
+
+                </div>
+
+                <h2 class="bf-section-title">
+                    Delicate To See.
+                    <span>Remarkable To Know.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="bf-intro-content bf-reveal">
+
+                <p>
+                    Butterflies are far more than beautiful visitors.
+                    Every species has its own way of flying, feeding,
+                    resting and responding to the environment around it.
+                </p>
+
+                <p>
+                    At Wing &amp; Bloom, the conservatory gives visitors
+                    an opportunity to observe these details at a gentle
+                    pace and experience butterflies from surprisingly
+                    close distances.
+                </p>
+
+
+                <div class="bf-intro-note">
+
+                    <div class="bf-intro-note-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+
+                    <div>
+                        <small>OBSERVATION TIP</small>
+
+                        <strong>
+                            Slow down and watch before moving closer.
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         03. SPECIES COLLECTION
+    ====================================================== -->
+    <section class="bf-species bf-section-space"
+             id="species">
+
+        <div class="container">
+
+            <div class="bf-section-heading bf-reveal">
+
+                <div class="bf-tag bf-center-tag">
+
+                    <span class="bf-tag-line"></span>
+
+                    <p>
+                        <i class="fa-solid fa-feather"></i>
+                        SPECIES SPOTLIGHT
+                    </p>
+
+                    <span class="bf-tag-line"></span>
+
+                </div>
+
+                <h2 class="bf-section-title">
+                    Meet Some Of Our
+                    <span>Winged Residents</span>
+                </h2>
+
+                <p class="bf-section-text">
+                    Look closely and you'll begin to notice how different
+                    each butterfly can be — from bold colours and dramatic
+                    markings to subtle patterns designed for camouflage.
+                </p>
+
+            </div>
+
+
+            <!-- FILTERS -->
+
+            <div class="bf-species-filters bf-reveal">
+
+                <button class="bf-filter-btn active"
+                        data-filter="all">
+                    All Species
+                </button>
+
+                <button class="bf-filter-btn"
+                        data-filter="colourful">
+                    Colourful
+                </button>
+
+                <button class="bf-filter-btn"
+                        data-filter="large">
+                    Large Wings
+                </button>
+
+                <button class="bf-filter-btn"
+                        data-filter="delicate">
+                    Delicate
+                </button>
+
+            </div>
+
+
+            <!-- SPECIES GRID -->
+
+            <div class="bf-species-grid">
+
+
+                <!-- 01 -->
+                <article class="bf-species-card bf-reveal"
+                         data-category="colourful large">
+
+                    <div class="bf-species-image">
+
+                        <img loading="lazy" decoding="async" src="./images/species-blue-morpho.webp"
+                             alt="Blue Morpho butterfly">
+
+                        <span class="bf-species-number">
+                            01
+                        </span>
+
+                    </div>
+
+                    <div class="bf-species-content">
+
+                        <div class="bf-species-meta">
+                            <span>COLOURFUL</span>
+                            <span>LARGE WINGS</span>
+                        </div>
+
+                        <h3>Blue Morpho</h3>
+
+                     <p>
+    Famous for brilliant blue wings that appear to shimmer as the
+    butterfly moves through light. Native to tropical forests, the
+    Blue Morpho is a stunning example of nature's iridescent beauty.
+</p>
+
+
+                    </div>
+
+                </article>
+
+
+                <!-- 02 -->
+                <article class="bf-species-card bf-reveal"
+                         data-category="colourful">
+
+                    <div class="bf-species-image">
+
+                        <img loading="lazy" decoding="async" src="./images/species-swallowtail.webp"
+                             alt="Swallowtail butterfly">
+
+                        <span class="bf-species-number">
+                            02
+                        </span>
+
+                    </div>
+
+                    <div class="bf-species-content">
+
+                        <div class="bf-species-meta">
+                            <span>COLOURFUL</span>
+                            <span>ELEGANT</span>
+                        </div>
+
+                        <h3>Swallowtail</h3>
+
+                      <p>
+    Recognised by elegant wing shapes and distinctive tail-like
+    extensions on the hindwings. Swallowtails are known for graceful
+    flight and vibrant patterns found across gardens and woodlands.
+</p>
+
+                        
+
+                    </div>
+
+                </article>
+
+
+                <!-- 03 -->
+                <article class="bf-species-card bf-reveal"
+                         data-category="colourful delicate">
+
+                    <div class="bf-species-image">
+
+                        <img loading="lazy" decoding="async" src="./images/species-monarch.webp"
+                             alt="Monarch butterfly">
+
+                        <span class="bf-species-number">
+                            03
+                        </span>
+
+                    </div>
+
+                    <div class="bf-species-content">
+
+                        <div class="bf-species-meta">
+                            <span>ICONIC</span>
+                            <span>ORANGE WINGS</span>
+                        </div>
+
+                        <h3>Monarch</h3>
+
+                        <p>
+    Known for striking orange and black markings and one of nature's
+    most recognisable wing patterns. Monarchs are also famous for
+    remarkable long-distance seasonal migrations.
+</p>
+
+
+                    </div>
+
+                </article>
+
+
+                <!-- 04 -->
+                <article class="bf-species-card bf-reveal"
+                         data-category="large">
+
+                    <div class="bf-species-image">
+
+                        <img loading="lazy" decoding="async" src="./images/species-owl.webp"
+                             alt="Owl butterfly">
+
+                        <span class="bf-species-number">
+                            04
+                        </span>
+
+                    </div>
+
+                    <div class="bf-species-content">
+
+                        <div class="bf-species-meta">
+                            <span>LARGE WINGS</span>
+                            <span>CAMOUFLAGE</span>
+                        </div>
+
+                        <h3>Owl Butterfly</h3>
+
+                       <p>
+    Large circular markings on the wings resemble the eyes of an owl,
+    helping confuse potential predators. Their impressive wings make
+    them especially striking when resting among tropical foliage.
+</p>
+
+
+
+                    </div>
+
+                </article>
+
+
+                <!-- 05 -->
+                <article class="bf-species-card bf-reveal"
+                         data-category="delicate">
+
+                    <div class="bf-species-image">
+
+                        <img loading="lazy" decoding="async" src="./images/species-glasswing.webp"
+                             alt="Glasswing butterfly">
+
+                        <span class="bf-species-number">
+                            05
+                        </span>
+
+                    </div>
+
+                    <div class="bf-species-content">
+
+                        <div class="bf-species-meta">
+                            <span>DELICATE</span>
+                            <span>TRANSPARENT</span>
+                        </div>
+
+                        <h3>Glasswing</h3>
+
+                      <p>
+    Transparent sections of the wings allow light and surrounding
+    colours to appear through them. Their delicate appearance provides
+    remarkable camouflage while moving through dense vegetation.
+</p>
+
+                        
+
+                    </div>
+
+                </article>
+
+
+                <!-- 06 -->
+                <article class="bf-species-card bf-reveal"
+                         data-category="colourful delicate">
+
+                    <div class="bf-species-image">
+
+                        <img loading="lazy" decoding="async" src="./images/species-longwing.webp"
+                             alt="Longwing butterfly">
+
+                        <span class="bf-species-number">
+                            06
+                        </span>
+
+                    </div>
+
+                    <div class="bf-species-content">
+
+                        <div class="bf-species-meta">
+                            <span>COLOURFUL</span>
+                            <span>SLENDER WINGS</span>
+                        </div>
+
+                        <h3>Longwing</h3>
+<p>
+    Long narrow wings create a graceful silhouette and distinctive
+    appearance in flight. These colourful butterflies often move
+    gently between tropical flowers while searching for nectar.
+</p>
+
+                        
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         04. BUTTERFLY ANATOMY
+    ====================================================== -->
+    <section class="bf-anatomy bf-section-space">
+
+        <div class="container bf-anatomy-grid">
+
+
+            <div class="bf-anatomy-content bf-reveal">
+
+                <div class="bf-tag">
+
+                    <span class="bf-tag-line"></span>
+
+                    <p>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        LOOK CLOSER
+                    </p>
+
+                </div>
+
+                <h2 class="bf-section-title">
+                    Beautifully Designed
+                    <span>For Flight</span>
+                </h2>
+
+                <p class="bf-section-text bf-left-text">
+                    A butterfly may appear delicate, but every part of its
+                    body plays an important role in helping it sense,
+                    feed, balance and move through its environment.
+                </p>
+
+
+                <div class="bf-anatomy-list">
+
+
+                    <div class="bf-anatomy-item">
+
+                        <span>01</span>
+
+                        <div>
+                            <h3>Antennae</h3>
+
+                            <p>
+                                Help butterflies sense their surroundings
+                                and detect important environmental cues.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="bf-anatomy-item">
+
+                        <span>02</span>
+
+                        <div>
+                            <h3>Compound Eyes</h3>
+
+                            <p>
+                                Provide a broad view of the world and help
+                                detect colour, light and movement.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="bf-anatomy-item">
+
+                        <span>03</span>
+
+                        <div>
+                            <h3>Proboscis</h3>
+
+                            <p>
+                                A long feeding tube that can uncoil when
+                                the butterfly drinks nectar.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="bf-anatomy-item">
+
+                        <span>04</span>
+
+                        <div>
+                            <h3>Scaled Wings</h3>
+
+                            <p>
+                                Thousands of tiny scales contribute to the
+                                colours and patterns we see on the wings.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="bf-anatomy-visual bf-reveal">
+
+                <div class="bf-anatomy-image">
+
+                    <img loading="lazy" decoding="async" src="./images/garden-butterfly.webp"
+                         alt="Close view of a butterfly showing its wings and body">
+
+                </div>
+
+
+                <div class="bf-anatomy-badge">
+
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+
+                    <div>
+                        <small>TINY DETAILS</small>
+                        <strong>Made To Survive</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         05. LIFE CYCLE
+    ====================================================== -->
+    <section class="bf-life-cycle bf-section-space"
+             id="life-cycle">
+
+        <div class="container">
+
+            <div class="bf-section-heading bf-reveal">
+
+                <div class="bf-tag bf-center-tag">
+
+                    <span class="bf-tag-line"></span>
+
+                    <p>
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        THE LIFE CYCLE
+                    </p>
+
+                    <span class="bf-tag-line"></span>
+
+                </div>
+
+                <h2 class="bf-section-title">
+                    Four Stages.
+                    <span>One Remarkable Journey.</span>
+                </h2>
+
+                <p class="bf-section-text">
+                    The butterfly life cycle is one of nature's most
+                    extraordinary transformations, changing completely
+                    from one stage to the next.
+                </p>
+
+            </div>
+
+
+            <div class="bf-cycle-track">
+
+
+                <article class="bf-cycle-item bf-reveal">
+
+                    <div class="bf-cycle-image">
+                        <img loading="lazy" decoding="async" src="./images/life-egg.webp"
+                             alt="Butterfly egg on a leaf">
+                    </div>
+
+                    <div class="bf-cycle-number">
+                        01
+                    </div>
+
+                    <div class="bf-cycle-content">
+
+                        <span>THE BEGINNING</span>
+
+                        <h3>Egg</h3>
+
+                        <p>
+                            The journey begins with a tiny egg,
+                            usually placed carefully on a suitable plant.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="bf-cycle-item bf-reveal">
+
+                    <div class="bf-cycle-image">
+                        <img loading="lazy" decoding="async" src="./images/life-caterpillar.webp"
+                             alt="Caterpillar feeding on a leaf">
+                    </div>
+
+                    <div class="bf-cycle-number">
+                        02
+                    </div>
+
+                    <div class="bf-cycle-content">
+
+                        <span>GROWING</span>
+
+                        <h3>Caterpillar</h3>
+
+                        <p>
+                            The larva emerges and focuses on feeding
+                            and growing before its next transformation.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="bf-cycle-item bf-reveal">
+
+                    <div class="bf-cycle-image">
+                        <img loading="lazy" decoding="async" src="./images/life-chrysalis.webp"
+                             alt="Butterfly chrysalis hanging from a plant">
+                    </div>
+
+                    <div class="bf-cycle-number">
+                        03
+                    </div>
+
+                    <div class="bf-cycle-content">
+
+                        <span>TRANSFORMING</span>
+
+                        <h3>Chrysalis</h3>
+
+                        <p>
+                            Inside the protective chrysalis,
+                            an extraordinary transformation takes place.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="bf-cycle-item bf-reveal">
+
+                    <div class="bf-cycle-image">
+                        <img loading="lazy" decoding="async" src="./images/life-butterfly.webp"
+                             alt="Adult butterfly resting on a flower">
+                    </div>
+
+                    <div class="bf-cycle-number">
+                        04
+                    </div>
+
+                    <div class="bf-cycle-content">
+
+                        <span>TAKING FLIGHT</span>
+
+                        <h3>Butterfly</h3>
+
+                        <p>
+                            The adult emerges, expands its wings
+                            and begins the next chapter of its life.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         06. HABITAT + FEEDING
+    ====================================================== -->
+    <section class="bf-habitat bf-section-space">
+
+        <div class="container">
+
+            <div class="bf-habitat-top bf-reveal">
+
+                <div>
+
+                    <div class="bf-tag">
+
+                        <span class="bf-tag-line"></span>
+
+                        <p>
+                            <i class="fa-solid fa-seedling"></i>
+                            A LIVING HABITAT
+                        </p>
+
+                    </div>
+
+                    <h2 class="bf-section-title">
+                        What Butterflies
+                        <span>Need To Thrive</span>
+                    </h2>
+
+                </div>
+
+                <p>
+                    A butterfly-friendly habitat is more than a beautiful
+                    collection of flowers. It provides food, shelter,
+                    warmth and suitable plants for different stages of life.
+                </p>
+
+            </div>
+
+
+            <div class="bf-habitat-layout">
+
+
+                <div class="bf-habitat-photo bf-reveal">
+
+                    <img loading="lazy" decoding="async" src="./images/butterfly-habitat.webp"
+                         alt="Butterfly feeding in a tropical garden">
+
+                    <div class="bf-habitat-photo-label">
+
+                        <span>THE CONSERVATORY</span>
+
+                        <strong>
+                            Designed Around Living Needs
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="bf-habitat-cards">
+
+
+                    <article class="bf-habitat-card bf-reveal">
+
+                        <div>
+                            <i class="fa-solid fa-droplet"></i>
+                        </div>
+
+                        <span>01</span>
+
+                        <h3>Humidity</h3>
+
+                        <p>
+                            A warm and humid environment supports
+                            many tropical butterfly species.
+                        </p>
+
+                    </article>
+
+
+                    <article class="bf-habitat-card bf-reveal">
+
+                        <div>
+                            <i class="fa-solid fa-sun"></i>
+                        </div>
+
+                        <span>02</span>
+
+                        <h3>Warmth</h3>
+
+                        <p>
+                            Butterflies rely on external warmth
+                            to become active and ready for flight.
+                        </p>
+
+                    </article>
+
+
+                    <article class="bf-habitat-card bf-reveal">
+
+                        <div>
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+
+                        <span>03</span>
+
+                        <h3>Host Plants</h3>
+
+                        <p>
+                            Particular plants provide important
+                            places for eggs and developing caterpillars.
+                        </p>
+
+                    </article>
+
+
+                    <article class="bf-habitat-card bf-reveal">
+
+                        <div>
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+
+                        <span>04</span>
+
+                        <h3>Nectar Plants</h3>
+
+                        <p>
+                            Flowering plants provide nectar and
+                            encourage natural feeding behaviour.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         07. BUTTERFLY FACTS
+    ====================================================== -->
+    <section class="bf-facts bf-section-space">
+
+        <div class="container">
+
+            <div class="bf-section-heading bf-reveal">
+
+                <div class="bf-tag bf-center-tag">
+
+                    <span class="bf-tag-line"></span>
+
+                    <p>
+                        <i class="fa-regular fa-lightbulb"></i>
+                        DID YOU KNOW?
+                    </p>
+
+                    <span class="bf-tag-line"></span>
+
+                </div>
+
+                <h2 class="bf-section-title">
+                    Little Details.
+                    <span>Big Surprises.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="bf-facts-grid">
+
+
+                <article class="bf-fact-card bf-reveal">
+
+                    <span class="bf-fact-number">
+                        01
+                    </span>
+
+                    <i class="fa-solid fa-shoe-prints"></i>
+
+                    <h3>They Taste With Their Feet</h3>
+
+                    <p>
+                        Butterflies have sensory receptors on their feet
+                        that help them investigate the plants they land on.
+                    </p>
+
+                </article>
+
+
+                <article class="bf-fact-card bf-reveal">
+
+                    <span class="bf-fact-number">
+                        02
+                    </span>
+
+                    <i class="fa-solid fa-temperature-half"></i>
+
+                    <h3>Warmth Helps Them Fly</h3>
+
+                    <p>
+                        Butterflies depend on environmental warmth
+                        because they cannot regulate body temperature
+                        in the same way mammals do.
+                    </p>
+
+                </article>
+
+
+                <article class="bf-fact-card bf-reveal">
+
+                    <span class="bf-fact-number">
+                        03
+                    </span>
+
+                    <i class="fa-solid fa-eye"></i>
+
+                    <h3>They See Differently</h3>
+
+                    <p>
+                        Their compound eyes allow them to detect a wide
+                        field of movement and visual information.
+                    </p>
+
+                </article>
+
+
+                <article class="bf-fact-card bf-reveal">
+
+                    <span class="bf-fact-number">
+                        04
+                    </span>
+
+                    <i class="fa-solid fa-feather"></i>
+
+                    <h3>Wings Are Covered In Scales</h3>
+
+                    <p>
+                        The powder-like material on butterfly wings
+                        is made from thousands of microscopic scales.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         08. CONSERVATION
+    ====================================================== -->
+    <section class="bf-conservation bf-section-space">
+
+        <div class="container bf-conservation-grid">
+
+
+            <div class="bf-conservation-visual bf-reveal">
+
+                <div class="bf-conservation-main">
+
+                    <img loading="lazy" decoding="async" src="./images/butterfly-conservation.webp"
+                         alt="Butterfly resting among native plants">
+
+                </div>
+
+                <div class="bf-conservation-small">
+
+                    <img loading="lazy" decoding="async" src="./images/conservation-flower.webp"
+                         alt="Nectar flowers for butterflies">
+
+                </div>
+
+
+                <div class="bf-conservation-stamp">
+
+                    <i class="fa-solid fa-leaf"></i>
+
+                    <span>
+                        PROTECT
+                        <strong>WHAT FLIES</strong>
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="bf-conservation-content bf-reveal">
+
+                <div class="bf-tag">
+
+                    <span class="bf-tag-line"></span>
+
+                    <p>
+                        <i class="fa-solid fa-hands-holding-circle"></i>
+                        CONSERVATION
+                    </p>
+
+                </div>
+
+                <h2 class="bf-section-title">
+                    Beautiful Creatures Need
+                    <span>Healthy Habitats</span>
+                </h2>
+
+                <p class="bf-section-text bf-left-text">
+                    Butterflies depend on healthy plant communities,
+                    suitable host plants and connected habitats.
+                    Protecting those environments benefits much more
+                    than butterflies alone.
+                </p>
+
+
+                <div class="bf-conservation-points">
+
+
+                    <div>
+
+                        <span>
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                        <p>
+                            <strong>Plant For Pollinators</strong>
+
+                            Grow nectar-rich and suitable host plants
+                            where possible.
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                        <p>
+                            <strong>Protect Natural Spaces</strong>
+
+                            Healthy green spaces provide food,
+                            shelter and breeding habitat.
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                        <p>
+                            <strong>Observe Without Disturbing</strong>
+
+                            Enjoy butterflies gently and avoid
+                            handling or interrupting natural behaviour.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <a href="contact.html"
+                   class="bf-primary-btn">
+
+                    Learn More With Us
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         09. FINAL CTA
+    ====================================================== -->
+<!-- =====================================================
+     MINIMAL CTA
+===================================================== -->
+
+<section class="bf-cta">
+
+    <div class="container">
+
+        <div class="bf-cta-box bf-reveal">
+
+            <!-- Decorative elements -->
+            <i class="fa-solid fa-leaf bf-cta-leaf bf-cta-leaf-one"></i>
+            <i class="fa-solid fa-feather bf-cta-leaf bf-cta-leaf-two"></i>
+
+            <!-- LEFT -->
+            <div class="bf-cta-content">
+
+                <div class="bf-cta-tag">
+                    <span></span>
+
+                    <p>
+                        <i class="fa-solid fa-feather"></i>
+                        EXPERIENCE THE CONSERVATORY
+                    </p>
+                </div>
+
+                <h2>
+                    See The Beauty
+                    <span>Up Close</span>
+                </h2>
+
+                <p>
+                    Walk among colourful butterflies and discover
+                    the quiet beauty of Wing &amp; Bloom for yourself.
+                </p>
+
+            </div>
+
+
+            <!-- RIGHT -->
+            <div class="bf-cta-actions">
+
+                <a href="book-a-visit.html" class="bf-cta-primary">
+                    Plan Your Visit
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="gallery.html" class="bf-cta-outline">
+                    Explore Gallery
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========================
+     FOOTER START
+========================= -->
+
+<footer class="site-footer">
+
+    <!-- Top Accent Line -->
+    <div class="footer-top-line"></div>
+
+    <div class="footer-container">
+
+        <div class="footer-main">
+
+            <!-- ================= BRAND ================= -->
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="footer-logo-wrap">
+
+                    <img decoding="async" src="./images/logo.webp"
+                         alt="Wing & Bloom Conservatory"
+                         class="footer-logo">
+
+                    <div class="footer-brand-content">
+
+                        <span class="footer-brand-name">
+                            Wing <span>&</span> Bloom
+                        </span>
+
+                        <span class="footer-tagline">
+                            Where Nature Takes Flight
+                        </span>
+
+                    </div>
+
+                </a>
+
+                <p class="footer-description">
+                    Step into a living world of butterflies, tropical blooms
+                    and peaceful garden experiences designed to bring you
+                    closer to nature.
+                </p>
+
+                <div class="footer-socials">
+
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="social-link" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="#" class="social-link" aria-label="Pinterest">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= EXPLORE ================= -->
+
+            <div class="footer-column">
+
+                <h3 class="footer-title">Explore</h3>
+
+                <ul class="footer-links">
+
+                    <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i>About Us</a></li>
+
+                    <li><a href="butterflies.html"><i class="fa-solid fa-chevron-right"></i>Our Butterflies</a></li>
+
+                    <li><a href="experiences.html"><i class="fa-solid fa-chevron-right"></i>Experiences</a></li>
+
+                    <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i>Gallery</a></li>
+
+                    <li><a href="blog.html"><i class="fa-solid fa-chevron-right"></i>Garden Journal</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- ================= PLAN VISIT ================= -->
+
+            <div class="footer-column">
+
+                <h3 class="footer-title">Plan Your Visit</h3>
+
+                <ul class="footer-links">
+
+                    <li><a href="book-a-visit.html"><i class="fa-solid fa-chevron-right"></i>Visitor Information</a></li>
+
+                    <li><a href="book-a-visit.html#tickets"><i class="fa-solid fa-chevron-right"></i>Opening Hours</a></li>
+
+                    <li><a href="book-a-visit.html#tickets"><i class="fa-solid fa-chevron-right"></i>Tickets</a></li>
+
+                    <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i>Contact Us</a></li>
+
+                    <li><a href="book-a-visit.html#visit-faq"><i class="fa-solid fa-chevron-right"></i>FAQs</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- ================= QUICK LINKS ================= -->
+
+            <div class="footer-quick-area">
+
+
+                <!-- DISCOVER -->
+
+                <div class="footer-quick-column">
+
+                    <h3 class="footer-title">Discover</h3>
+
+                    <ul class="footer-links">
+
+                        <li><a href="home.html#garden"><i class="fa-solid fa-chevron-right"></i>Our Gardens</a></li>
+
+                        <li><a href="butterflies.html#species"><i class="fa-solid fa-chevron-right"></i>Butterfly Species</a></li>
+
+                        <li><a href="experiences.html#our-experiences"><i class="fa-solid fa-chevron-right"></i>Events</a></li>
+
+                        <li><a href="experiences.html#group-experiences"><i class="fa-solid fa-chevron-right"></i>Education</a></li>
+
+                        <li><a href="about.html#our-story"><i class="fa-solid fa-chevron-right"></i>Conservation</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- VISITOR HELP -->
+
+              <!-- VISITOR HELP -->
+<div class="footer-quick-column">
+
+    <h3 class="footer-title">Visitor Help</h3>
+
+    <ul class="footer-links">
+
+        <li>
+            <a href="book-a-visit.html#getting-here">
+                <i class="fa-solid fa-chevron-right"></i>
+                Directions
+            </a>
+        </li>
+
+        <li>
+            <a href="book-a-visit.html#quick-facts">
+                <i class="fa-solid fa-chevron-right"></i>
+                Accessibility
+            </a>
+        </li>
+
+        <li>
+            <a href="book-a-visit.html#visit-faq">
+                <i class="fa-solid fa-chevron-right"></i>
+                FAQs
+            </a>
+        </li>
+
+        <li>
+            <a href="coming-soon.html">
+                <i class="fa-solid fa-chevron-right"></i>
+                Coming Soon
+            </a>
+        </li>
+
+        <li>
+            <a href="404.html">
+                <i class="fa-solid fa-chevron-right"></i>
+                404 Page
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= BOTTOM ================= -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="currentYear"></span>
+                <strong>Wing & Bloom Conservatory.</strong>
+                All Rights Reserved.
+            </p>
+
+            <div class="footer-bottom-links">
+
+                <a href="privacy-policy.html">Privacy Policy</a>
+
+                <span></span>
+
+                <a href="terms-conditions.html">Terms & Conditions</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="./nav.js"></script>
+<script src="./butterflies.js"></script>
+</body>
+
+</html>

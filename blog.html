@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wing & Bloom Conservatory</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+ <!-- Google Fonts -->
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./blog.css">
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="footer.css">
+
+</head>
+
+<body>
+    <header class="site-header" id="siteHeader">
+    <div class="header-container">
+
+        <!-- BRAND -->
+        <a href="index.html" class="brand" aria-label="Wing and Bloom Conservatory Home">
+            <img decoding="async" src="./images/logo.webp"
+                 alt="Wing & Bloom Conservatory"
+                 class="brand-logo">
+
+            <div class="brand-content">
+                <span class="brand-name">
+                    Wing <span>&</span> Bloom
+                </span>
+            
+                <span class="brand-tagline"><b>Where Nature Takes Flight</b></span>
+            </div>
+        </a>
+
+        <!-- DESKTOP NAV -->
+        <nav class="main-nav" id="mainNav">
+
+            <div class="nav-item has-dropdown">
+                <a href="index.html" class="nav-link dropdown-link">
+                    Home
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="index.html" class="dropdown-item">
+                        <span class="dropdown-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </span>
+                        <span>
+                            <strong>Garden Experience</strong>
+                            <small>Classic nature-inspired home</small>
+                        </span>
+                    </a>
+
+                    <a href="home.html#home2" class="dropdown-item">
+                        <span class="dropdown-icon">
+                            <i class="fa-solid fa-seedling"></i>
+                        </span>
+                        <span>
+                            <strong>Conservatory Escape</strong>
+                            <small>Immersive tropical experience</small>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="butterflies.html" class="nav-link">Butterflies</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="experiences.html" class="nav-link">Experiences</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="gallery.html" class="nav-link">Gallery</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="blog.html" class="nav-link active">Blog</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <!-- MOBILE CTA -->
+            <a href="book-a-visit.html" class="mobile-cta">
+                <i class="fa-regular fa-calendar-check"></i>
+                Plan Your Visit
+            </a>
+        </nav>
+
+        <!-- HEADER ACTIONS -->
+        <div class="header-actions">
+
+            <!-- RTL / LTR -->
+            <button class="header-tool rtl-btn"
+                    id="rtlToggle"
+                    type="button"
+                    aria-label="Switch text direction">
+                <span id="directionText">RTL</span>
+            </button>
+
+            <!-- DARK / LIGHT -->
+            <button class="header-tool theme-btn"
+                    id="themeToggle"
+                    type="button"
+                    aria-label="Switch theme">
+                <i class="fa-regular fa-moon" id="themeIcon"></i>
+            </button>
+
+            <!-- PRIMARY CTA -->
+            <a href="book-a-visit.html" class="header-cta">
+                <i class="fa-regular fa-calendar-check"></i>
+                <span>Plan Your Visit</span>
+                <i class="fa-solid fa-arrow-right cta-arrow"></i>
+            </a>
+
+            <!-- HAMBURGER -->
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Open navigation"
+                    aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </div>
+</header>
+
+
+
+
+<main class="blog-page">
+
+    <!-- =========================
+         BLOG HERO
+    ========================== -->
+    <section class="blog-hero">
+
+        <div class="blog-hero-bg">
+            <img fetchpriority="high" decoding="async" src="./images/blog-banner.webp"
+                 alt="Butterfly resting among tropical flowers">
+        </div>
+
+        <div class="blog-hero-overlay"></div>
+
+        <div class="container blog-hero-container">
+
+            <div class="blog-hero-content">
+
+                <div class="blog-tag">
+                    <span class="blog-tag-line"></span>
+                    <p>
+                        <i class="fa-solid fa-feather"></i>
+                        THE WING & BLOOM JOURNAL
+                    </p>
+                </div>
+
+                <h1>
+                    Stories From
+                    <span>The Garden</span>
+                </h1>
+
+                <p>
+                    Discover butterfly stories, garden inspiration,
+                    conservation insights and simple ways to look
+                    closer at the natural world around you.
+                </p>
+
+                <a href="#latest-stories"
+                   class="blog-primary-btn">
+                    Explore Stories
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="blog-hero-note">
+            <i class="fa-solid fa-leaf"></i>
+
+            <div>
+                <small>FROM OUR CONSERVATORY</small>
+                <strong>Stories worth slowing down for.</strong>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FEATURED STORY
+    ========================== -->
+    <section class="featured-blog blog-section-space">
+
+        <div class="container">
+
+            <div class="blog-section-heading blog-reveal">
+
+                <div class="blog-tag blog-center-tag">
+                    <span class="blog-tag-line"></span>
+
+                    <p>
+                        <i class="fa-solid fa-book-open"></i>
+                        FEATURED STORY
+                    </p>
+
+                    <span class="blog-tag-line"></span>
+                </div>
+
+                <h2 class="blog-section-title">
+                    A Story Worth
+                    <span>Looking Closer</span>
+                </h2>
+
+            </div>
+
+
+            <article class="featured-blog-card blog-reveal">
+
+                <div class="featured-blog-image">
+
+                    <img loading="lazy" decoding="async" src="./images/featured-blog.webp"
+                         alt="Monarch butterfly resting on a flower">
+
+                    <span class="blog-category">
+                        BUTTERFLIES
+                    </span>
+
+                </div>
+
+
+                <div class="featured-blog-content">
+
+                    <div class="blog-meta">
+                        <span>
+                            <i class="fa-regular fa-calendar"></i>
+                            September 12, 2026
+                        </span>
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            6 Min Read
+                        </span>
+                    </div>
+
+                    <h3>
+                        The Secret Language of Butterfly Wings
+                    </h3>
+
+                   <p>
+    Butterfly wings are more than beautiful.
+    Their colours, patterns and movements can
+    help with camouflage, communication,
+    temperature control and survival. Each wing
+    is covered with thousands of tiny scales that
+    create remarkable colours and patterns,
+    helping butterflies adapt to their surroundings
+    and communicate within the natural world.
+</p>
+
+
+<p>
+    Every butterfly carries a unique story across its wings.
+    From delicate markings that confuse predators to vibrant
+    colours used to attract a mate, these intricate patterns
+    play an important role in everyday survival. A closer look
+    reveals how beautifully butterflies have adapted to the
+    environments they call home.
+</p>
+
+                    <a href="blog-details.html?article=wing-language"
+                       class="blog-read-link">
+                        Read The Story
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         LATEST STORIES
+    ========================== -->
+    <section class="latest-blogs blog-section-space"
+             id="latest-stories">
+
+        <div class="container">
+
+            <div class="blog-section-heading blog-reveal">
+
+                <div class="blog-tag blog-center-tag">
+                    <span class="blog-tag-line"></span>
+
+                    <p>
+                        <i class="fa-solid fa-leaf"></i>
+                        LATEST STORIES
+                    </p>
+
+                    <span class="blog-tag-line"></span>
+                </div>
+
+                <h2 class="blog-section-title">
+                    Fresh From
+                    <span>Wing & Bloom</span>
+                </h2>
+
+                <p class="blog-section-text">
+                    Explore stories inspired by butterflies,
+                    tropical gardens and the people who care for them.
+                </p>
+
+            </div>
+
+
+            <div class="blog-filter-wrap blog-reveal">
+
+                <button class="blog-filter active"
+                        data-filter="all">
+                    All Stories
+                </button>
+
+                <button class="blog-filter"
+                        data-filter="butterflies">
+                    Butterflies
+                </button>
+
+                <button class="blog-filter"
+                        data-filter="garden">
+                    Garden
+                </button>
+
+                <button class="blog-filter"
+                        data-filter="conservation">
+                    Conservation
+                </button>
+
+                <button class="blog-filter"
+                        data-filter="visitors">
+                    Visitor Guides
+                </button>
+
+            </div>
+
+
+            <div class="blog-grid">
+
+                <article class="blog-card blog-reveal"
+                         data-category="butterflies">
+
+                    <a href="blog-details.html?article=wing-language"
+                       class="blog-card-image">
+
+                        <img loading="lazy" decoding="async" src="./images/blog-1.webp"
+                             alt="Butterfly feeding on nectar">
+
+                        <span>Butterflies</span>
+
+                    </a>
+
+                    <div class="blog-card-content">
+
+                        <div class="blog-meta">
+                            <span>Sep 08, 2026</span>
+                            <span>5 Min Read</span>
+                        </div>
+
+                        <h3>
+                            Why Butterflies Love Certain Flowers
+                        </h3>
+
+                        <p>
+                            Discover how colour, scent and flower
+                            shape help butterflies find the nectar
+                            they need.
+                        </p>
+
+                        <a href="blog-details.html?article=butterfly-flowers"
+                           class="blog-read-link">
+                            Read Article
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="blog-card blog-reveal"
+                         data-category="garden">
+
+                    <a href="blog-details.html?article=butterfly-flowers"
+                       class="blog-card-image">
+
+                        <img loading="lazy" decoding="async" src="./images/blog-2.webp"
+                             alt="Tropical flowers in a garden">
+
+                        <span>Garden</span>
+
+                    </a>
+
+                    <div class="blog-card-content">
+
+                        <div class="blog-meta">
+                            <span>Sep 03, 2026</span>
+                            <span>4 Min Read</span>
+                        </div>
+
+                        <h3>
+                            Creating a Garden That Feels Alive
+                        </h3>
+
+                        <p>
+                            Layered greenery and nectar-rich blooms
+                            can turn a simple garden into a living
+                            habitat.
+                        </p>
+
+                        <a href="blog-details.html?article=living-garden"
+                           class="blog-read-link">
+                            Read Article
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="blog-card blog-reveal"
+                         data-category="conservation">
+
+                    <a href="blog-details.html?article=living-garden"
+                       class="blog-card-image">
+
+                        <img loading="lazy" decoding="async" src="./images/blog-3.webp"
+                             alt="Butterfly habitat plants">
+
+                        <span>Conservation</span>
+
+                    </a>
+
+                    <div class="blog-card-content">
+
+                        <div class="blog-meta">
+                            <span>Aug 28, 2026</span>
+                            <span>7 Min Read</span>
+                        </div>
+
+                        <h3>
+                            Small Habitats Can Make a Big Difference
+                        </h3>
+
+                        <p>
+                            Even modest green spaces can provide
+                            food and shelter for butterflies and
+                            other pollinators.
+                        </p>
+
+                        <a href="blog-details.html?article=small-habitats"
+                           class="blog-read-link">
+                            Read Article
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="blog-card blog-reveal"
+                         data-category="visitors">
+
+                    <a href="blog-details.html?article=small-habitats"
+                       class="blog-card-image">
+
+                        <img loading="lazy" decoding="async" src="./images/blog-4.webp"
+                             alt="Visitor photographing butterflies">
+
+                        <span>Visitor Guide</span>
+
+                    </a>
+
+                    <div class="blog-card-content">
+
+                        <div class="blog-meta">
+                            <span>Aug 21, 2026</span>
+                            <span>5 Min Read</span>
+                        </div>
+
+                        <h3>
+                            How to Photograph Butterflies Beautifully
+                        </h3>
+
+                        <p>
+                            A few simple habits can help you capture
+                            beautiful butterfly photographs without
+                            disturbing them.
+                        </p>
+
+                        <a href="blog-details.html?article=photography-tips"
+                           class="blog-read-link">
+                            Read Article
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="blog-card blog-reveal"
+                         data-category="butterflies">
+
+                    <a href="blog-details.html?article=photography-tips"
+                       class="blog-card-image">
+
+                        <img loading="lazy" decoding="async" src="./images/blog-5.webp"
+                             alt="Butterfly emerging from chrysalis">
+
+                        <span>Butterflies</span>
+
+                    </a>
+
+                    <div class="blog-card-content">
+
+                        <div class="blog-meta">
+                            <span>Aug 15, 2026</span>
+                            <span>6 Min Read</span>
+                        </div>
+
+                        <h3>
+                            From Chrysalis to First Flight
+                        </h3>
+
+                        <p>
+                            Explore one of nature's most remarkable
+                            transformations from chrysalis to
+                            butterfly.
+                        </p>
+
+                        <a href="blog-details.html?article=chrysalis-flight"
+                           class="blog-read-link">
+                            Read Article
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="blog-card blog-reveal"
+                         data-category="garden">
+
+                    <a href="blog-details.html?article=chrysalis-flight"
+                       class="blog-card-image">
+
+                        <img loading="lazy" decoding="async" src="./images/blog-6.webp"
+                             alt="Tropical leaves and flowers">
+
+                        <span>Garden</span>
+
+                    </a>
+
+                    <div class="blog-card-content">
+
+                        <div class="blog-meta">
+                            <span>Aug 09, 2026</span>
+                            <span>4 Min Read</span>
+                        </div>
+
+                        <h3>
+                            The Plants Behind a Butterfly Garden
+                        </h3>
+
+                        <p>
+                            Nectar plants and host plants play
+                            different but equally important roles
+                            in butterfly habitats.
+                        </p>
+
+                        <a href="blog-details.html?article=garden-plants"
+                           class="blog-read-link">
+                            Read Article
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONSERVATION FEATURE
+    ========================== -->
+    <section class="journal-feature blog-section-space">
+
+        <div class="container journal-feature-grid">
+
+            <div class="journal-feature-content blog-reveal">
+
+                <div class="blog-tag">
+                    <span class="blog-tag-line"></span>
+
+                    <p>
+                        <i class="fa-solid fa-seedling"></i>
+                        CONSERVATION NOTES
+                    </p>
+                </div>
+
+                <h2 class="blog-section-title">
+                    Growing More Than
+                    <span>Beautiful Gardens</span>
+                </h2>
+
+                <p class="blog-section-text blog-left-text">
+                    Behind every colourful garden is thoughtful
+                    habitat care. Learn how plants, butterflies and
+                    people can share spaces that support a healthier
+                    natural world.
+                </p>
+
+                <div class="journal-points">
+
+                    <div>
+                        <span>01</span>
+
+                        <p>
+                            <strong>Plant With Purpose</strong>
+                            Choose plants that offer food and shelter.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>02</span>
+
+                        <p>
+                            <strong>Protect Small Spaces</strong>
+                            Even small habitats can support wildlife.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>03</span>
+
+                        <p>
+                            <strong>Share What You Learn</strong>
+                            Curiosity can inspire better care for nature.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="journal-feature-image blog-reveal">
+
+                <img loading="lazy" decoding="async" src="./images/conservation-feature.webp"
+                     alt="Butterfly garden habitat">
+
+                <div class="journal-image-note">
+                    <i class="fa-solid fa-leaf"></i>
+
+                    <span>
+                        SMALL ACTIONS
+                        <strong>GROW INTO CHANGE</strong>
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CTA
+    ========================== -->
+   <!-- =====================================================
+     BLOG CTA
+===================================================== -->
+
+<section class="blog-cta">
+
+    <div class="container">
+
+        <div class="blog-cta-wrap blog-reveal">
+
+            <!-- LEFT CONTENT -->
+            <div class="blog-cta-content">
+
+                <div class="blog-cta-tag">
+
+                    <span class="blog-cta-tag-line"></span>
+
+                    <p>
+                        <i class="fa-solid fa-feather"></i>
+                        BEYOND THE STORIES
+                    </p>
+
+                </div>
+
+                <h2>
+                    Read About Nature.
+                    <span>Then Step Into It.</span>
+                </h2>
+
+                <p>
+                    Discover the butterflies, tropical blooms and quiet
+                    garden moments you've been reading about — this time
+                    surrounded by them in person.
+                </p>
+
+                <a href="book-a-visit.html" class="blog-cta-link">
+
+                    Plan Your Visit
+
+                    <span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <!-- RIGHT BACKGROUND IMAGE -->
+            <div class="blog-cta-visual">
+
+                <div class="blog-cta-image-label">
+
+                    <small>YOUR NEXT STORY</small>
+
+                    <strong>
+                        Experience It In Person
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========================
+     FOOTER START
+========================= -->
+
+<footer class="site-footer">
+
+    <!-- Top Accent Line -->
+    <div class="footer-top-line"></div>
+
+    <div class="footer-container">
+
+        <div class="footer-main">
+
+            <!-- ================= BRAND ================= -->
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="footer-logo-wrap">
+
+                    <img decoding="async" src="./images/logo.webp"
+                         alt="Wing & Bloom Conservatory"
+                         class="footer-logo">
+
+                    <div class="footer-brand-content">
+
+                        <span class="footer-brand-name">
+                            Wing <span>&</span> Bloom
+                        </span>
+
+                        <span class="footer-tagline">
+                            Where Nature Takes Flight
+                        </span>
+
+                    </div>
+
+                </a>
+
+                <p class="footer-description">
+                    Step into a living world of butterflies, tropical blooms
+                    and peaceful garden experiences designed to bring you
+                    closer to nature.
+                </p>
+
+                <div class="footer-socials">
+
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="social-link" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="#" class="social-link" aria-label="Pinterest">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= EXPLORE ================= -->
+
+            <div class="footer-column">
+
+                <h3 class="footer-title">Explore</h3>
+
+                <ul class="footer-links">
+
+                    <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i>About Us</a></li>
+
+                    <li><a href="butterflies.html"><i class="fa-solid fa-chevron-right"></i>Our Butterflies</a></li>
+
+                    <li><a href="experiences.html"><i class="fa-solid fa-chevron-right"></i>Experiences</a></li>
+
+                    <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i>Gallery</a></li>
+
+                    <li><a href="blog.html"><i class="fa-solid fa-chevron-right"></i>Garden Journal</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- ================= PLAN VISIT ================= -->
+
+            <div class="footer-column">
+
+                <h3 class="footer-title">Plan Your Visit</h3>
+
+                <ul class="footer-links">
+
+                    <li><a href="book-a-visit.html"><i class="fa-solid fa-chevron-right"></i>Visitor Information</a></li>
+
+                    <li><a href="book-a-visit.html#tickets"><i class="fa-solid fa-chevron-right"></i>Opening Hours</a></li>
+
+                    <li><a href="book-a-visit.html#tickets"><i class="fa-solid fa-chevron-right"></i>Tickets</a></li>
+
+                    <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i>Contact Us</a></li>
+
+                    <li><a href="book-a-visit.html#visit-faq"><i class="fa-solid fa-chevron-right"></i>FAQs</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- ================= QUICK LINKS ================= -->
+
+            <div class="footer-quick-area">
+
+
+                <!-- DISCOVER -->
+
+                <div class="footer-quick-column">
+
+                    <h3 class="footer-title">Discover</h3>
+
+                    <ul class="footer-links">
+
+                        <li><a href="home.html#garden"><i class="fa-solid fa-chevron-right"></i>Our Gardens</a></li>
+
+                        <li><a href="butterflies.html#species"><i class="fa-solid fa-chevron-right"></i>Butterfly Species</a></li>
+
+                        <li><a href="experiences.html#our-experiences"><i class="fa-solid fa-chevron-right"></i>Events</a></li>
+
+                        <li><a href="experiences.html#group-experiences"><i class="fa-solid fa-chevron-right"></i>Education</a></li>
+
+                        <li><a href="about.html#our-story"><i class="fa-solid fa-chevron-right"></i>Conservation</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- VISITOR HELP -->
+
+              <!-- VISITOR HELP -->
+<div class="footer-quick-column">
+
+    <h3 class="footer-title">Visitor Help</h3>
+
+    <ul class="footer-links">
+
+        <li>
+            <a href="book-a-visit.html#getting-here">
+                <i class="fa-solid fa-chevron-right"></i>
+                Directions
+            </a>
+        </li>
+
+        <li>
+            <a href="book-a-visit.html#quick-facts">
+                <i class="fa-solid fa-chevron-right"></i>
+                Accessibility
+            </a>
+        </li>
+
+        <li>
+            <a href="book-a-visit.html#visit-faq">
+                <i class="fa-solid fa-chevron-right"></i>
+                FAQs
+            </a>
+        </li>
+
+        <li>
+            <a href="coming-soon.html">
+                <i class="fa-solid fa-chevron-right"></i>
+                Coming Soon
+            </a>
+        </li>
+
+        <li>
+            <a href="404.html">
+                <i class="fa-solid fa-chevron-right"></i>
+                404 Page
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= BOTTOM ================= -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="currentYear"></span>
+                <strong>Wing & Bloom Conservatory.</strong>
+                All Rights Reserved.
+            </p>
+
+            <div class="footer-bottom-links">
+
+                <a href="privacy-policy.html">Privacy Policy</a>
+
+                <span></span>
+
+                <a href="terms-conditions.html">Terms & Conditions</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="./nav.js"></script>
+<script src="./blog.js"></script>
+</body>
+
+</html>

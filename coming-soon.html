@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coming Soon — Wing & Bloom</title>
+<link rel="stylesheet" href="site-shared.css">
+<link rel="stylesheet" href="coming-soon.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-toggles">
+        <button class="icon-btn" id="rtlToggle" aria-label="Toggle text direction">
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        </button>
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+            <i class="fa-regular fa-moon" id="themeIcon"></i>
+        </button>
+    </div>
+
+    <a href="index.html" class="brand">
+        <img decoding="async" src="images/logo.webp" alt="Wing & Bloom logo" class="brand-logo">
+        <div class="brand-text">
+            <span class="brand-name">Wing <em>&amp;</em> Bloom</span>
+            <span class="brand-tagline">Where Nature Takes Flight</span>
+        </div>
+    </a>
+</header>
+
+<main class="soon-page">
+
+    <img fetchpriority="high" decoding="async" src="images/blue-morpho.webp" alt="A blue morpho butterfly" class="soon-illustration">
+
+    <span class="eyebrow">Coming Soon</span>
+    <h1>Something New is <span>Taking Flight.</span></h1>
+    <p>We're preparing a beautiful new experience. Leave your email and we'll let you know the moment it opens its wings.</p>
+
+    <form class="notify-form">
+        <div class="input-wrap">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" placeholder="you@example.com" required>
+        </div>
+        <button type="submit" class="btn-primary">Notify Me</button>
+    </form>
+
+    <div class="soon-social">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+    </div>
+
+</main>
+
+<script src="site-shared.js"></script>
+<script src="coming-soon.js"></script>
+</body>
+</html>
