@@ -1,28 +1,8 @@
-/* =========================================================
-   WING & BLOOM — RESPONSIVE / BANNER FIX PATCH
-   Load this file LAST, after every other <link> in <head>,
-   on the pages listed at the top of each section below.
-   It only touches the rules that were causing problems —
-   nothing else on the site is changed.
-========================================================= */
-
-
-/* =========================================================
-   1) GLOBAL SAFETY NET — safe to include on EVERY page
-========================================================= */
-html {
-    overflow-x: hidden;
-}
 
 img,
 video {
     max-width: 100%;
     height: auto;
-}
-
-/* stop any accidental horizontal scrollbar from a wide element */
-body {
-    overflow-x: hidden;
 }
 
 /* wide tables / code blocks scroll inside themselves instead of
