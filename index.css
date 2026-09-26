@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
 
-/* =========================================================
-   HOME 1 HERO - FINAL CLEAN VERSION
-   HEADER & FOOTER NOT TOUCHED
-========================================================= */
+
 
 .home1-hero {
     position: relative;
     width: 100%;
 
-    /* Stable desktop height */
+   
     height: calc(100vh - var(--header-height));
     min-height: 650px;
 
@@ -37,9 +34,7 @@
 }
 
 
-/* =========================================================
-   MAIN CONTAINER
-========================================================= */
+
 
 .home1-container {
     position: relative;
@@ -60,9 +55,6 @@
 }
 
 
-/* =========================================================
-   LEFT CONTENT
-========================================================= */
 
 .hero-content {
     position: relative;
@@ -74,9 +66,7 @@
 }
 
 
-/* =========================================================
-   EYEBROW
-========================================================= */
+
 
 .hero-eyebrow {
     display: flex;
@@ -113,9 +103,7 @@
 }
 
 
-/* =========================================================
-   HEADING
-========================================================= */
+
 
 .hero-title {
     margin: 0;
@@ -149,9 +137,7 @@
 }
 
 
-/* =========================================================
-   DESCRIPTION
-========================================================= */
+
 
 .hero-description {
     width: 100%;
@@ -167,9 +153,6 @@
 }
 
 
-/* =========================================================
-   BUTTONS
-========================================================= */
 
 .hero-buttons {
     display: flex;
@@ -218,7 +201,7 @@
 }
 
 
-/* PRIMARY BUTTON */
+
 
 .hero-btn-primary {
     color: #fff;
@@ -250,7 +233,7 @@
 
     background: var(--secondary);
 
-    /* IMPORTANT */
+    
     border-color: transparent;
 
     transform: translateY(-2px);
@@ -270,7 +253,7 @@
 }
 
 
-/* OUTLINE BUTTON */
+
 
 .hero-btn-outline {
     color: var(--primary);
@@ -294,9 +277,6 @@
 }
 
 
-/* =========================================================
-   INFORMATION
-========================================================= */
 
 .hero-info {
     display: flex;
@@ -383,9 +363,7 @@
 }
 
 
-/* =========================================================
-   SIGNATURE
-========================================================= */
+
 
 .hero-signature {
     position: relative;
@@ -436,9 +414,6 @@
 }
 
 
-/* =========================================================
-   RIGHT VISUAL
-========================================================= */
 
 .hero-visual {
     position: relative;
@@ -453,9 +428,6 @@
 }
 
 
-/* =========================================================
-   MAIN IMAGE
-========================================================= */
 
 .hero-image-frame {
     position: absolute;
@@ -476,7 +448,6 @@
 
     background: #fff;
 
-    /* Keeps animation inside image only */
     contain: paint;
 }
 
@@ -517,9 +488,6 @@
 }
 
 
-/* =========================================================
-   SMALL BUTTERFLY IMAGE
-========================================================= */
 
 .hero-small-card {
     position: absolute;
@@ -581,9 +549,6 @@
 }
 
 
-/* =========================================================
-   LIVE BUTTERFLY BADGE
-========================================================= */
 
 .hero-live-badge {
     position: absolute;
@@ -612,7 +577,7 @@
     -webkit-backdrop-filter: blur(8px);
 
     animation:
-        homeBadgeFloat
+      
         4s ease-in-out infinite;
 }
 
@@ -673,9 +638,7 @@
 }
 
 
-/* =========================================================
-   BADGE FLOWERS
-========================================================= */
+
 
 .badge-flower {
     position: absolute;
@@ -710,9 +673,7 @@
 }
 
 
-/* =========================================================
-   BOTTOM NOTE
-========================================================= */
+
 
 .hero-note {
     position: absolute;
@@ -735,7 +696,7 @@
     text-align: center;
 
     animation:
-        homeNoteFloat
+      
         5.5s ease-in-out infinite;
 }
 
@@ -771,9 +732,7 @@
 }
 
 
-/* =========================================================
-   BUTTERFLIES
-========================================================= */
+
 
 .css-butterfly {
     position: absolute;
@@ -873,9 +832,7 @@
 }
 
 
-/* =========================================================
-   PETALS
-========================================================= */
+
 
 .hero-petal {
     position: absolute;
@@ -936,9 +893,7 @@
 }
 
 
-/* =========================================================
-   DECORATIVE LEAF
-========================================================= */
+
 
 .hero-leaves {
     position: absolute;
@@ -967,9 +922,7 @@
 }
 
 
-/* =========================================================
-   CONTENT ENTRANCE
-========================================================= */
+
 
 .reveal {
     opacity: 0;
@@ -1015,8 +968,7 @@
 }
 
 
-/* Main image entrance uses opacity only.
-   No translate that can visually shift layout. */
+
 
 .reveal-right {
     opacity: 0;
@@ -1030,9 +982,7 @@
 }
 
 
-/* =========================================================
-   ANIMATION KEYFRAMES
-========================================================= */
+
 
 @keyframes homeContentReveal {
 
@@ -1258,9 +1208,7 @@
 }
 
 
-/* =========================================================
-   DARK MODE - BANNER ONLY
-========================================================= */
+
 
 body.dark-theme .home1-hero {
     background:
@@ -1337,9 +1285,6 @@ body.dark-theme .badge-inner {
 }
 
 
-/* =========================================================
-   RTL - BANNER ONLY
-========================================================= */
 
 html[dir="rtl"] .home1-container {
     direction: rtl;
@@ -1372,9 +1317,7 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   SHORT LAPTOP SCREENS
-========================================================= */
+
 
 @media (min-width: 993px) and (max-height: 760px) {
 
@@ -1432,9 +1375,7 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   LAPTOP
-========================================================= */
+
 
 @media (max-width: 1200px) {
 
@@ -1461,9 +1402,7 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   TABLET
-========================================================= */
+
 
 @media (max-width: 992px) {
 
@@ -1535,9 +1474,7 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   MOBILE
-========================================================= */
+
 
 @media (max-width: 650px) {
 
@@ -1662,7 +1599,7 @@ html[dir="rtl"]
     }
 
 
-    /* RIGHT VISUAL */
+
 
     .hero-visual {
         height: 490px;
@@ -1749,9 +1686,6 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   VERY SMALL MOBILE
-========================================================= */
 
 @media (max-width: 400px) {
 
@@ -1830,9 +1764,7 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   REDUCED MOTION
-========================================================= */
+
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -1866,11 +1798,6 @@ html[dir="rtl"]
 
 
 
-/* =========================================================
-   HOME1 HERO - CLEAN MOBILE DESIGN
-   HEADER / FOOTER NOT TOUCHED
-========================================================= */
-
 @media (max-width: 576px) {
 
     .home1-hero {
@@ -1896,9 +1823,7 @@ html[dir="rtl"]
     }
 
 
-    /* =========================
-       CONTENT
-    ========================= */
+   
 
     .hero-content {
         width: 100%;
@@ -1910,7 +1835,7 @@ html[dir="rtl"]
     }
 
 
-    /* EYEBROW */
+    
 
     .hero-eyebrow {
         display: flex;
@@ -1934,9 +1859,7 @@ html[dir="rtl"]
     }
 
 
-    /* =========================
-       TITLE
-    ========================= */
+    
 
     .hero-title {
         margin: 0;
@@ -1955,9 +1878,7 @@ html[dir="rtl"]
     }
 
 
-    /* =========================
-       DESCRIPTION
-    ========================= */
+   
 
     .hero-description {
         width: 100%;
@@ -1970,9 +1891,7 @@ html[dir="rtl"]
     }
 
 
-    /* =========================
-       BUTTONS
-    ========================= */
+ 
 
     .hero-buttons {
         width: 100%;
@@ -2000,9 +1919,7 @@ html[dir="rtl"]
     }
 
 
-    /* =========================
-       VISITOR INFO
-    ========================= */
+
 
     .hero-info {
         width: 100%;
@@ -2065,9 +1982,7 @@ html[dir="rtl"]
     }
 
 
-    /* =========================
-       SIGNATURE
-    ========================= */
+  
 
     .hero-signature {
         width: max-content;
@@ -2096,9 +2011,7 @@ html[dir="rtl"]
     }
 
 
-    /* =========================
-       IMAGE COMPOSITION
-    ========================= */
+
 
     .hero-visual {
         position: relative;
@@ -2111,7 +2024,7 @@ html[dir="rtl"]
     }
 
 
-    /* MAIN IMAGE */
+   
 
     .hero-image-frame {
         position: absolute;
@@ -2141,9 +2054,6 @@ html[dir="rtl"]
     }
 
 
-    /* =========================
-       SMALL IMAGE
-    ========================= */
 
     .hero-small-card {
         left: 0;
@@ -2172,9 +2082,7 @@ html[dir="rtl"]
     }
 
 
-    /* =========================
-       LIVE BADGE
-    ========================= */
+
 
     .hero-live-badge {
         top: 12%;
@@ -2212,9 +2120,7 @@ html[dir="rtl"]
     }
 
 
-    /* =========================
-       NOTE CARD
-    ========================= */
+
 
     .hero-note {
         right: 0;
@@ -2240,9 +2146,7 @@ html[dir="rtl"]
     }
 
 
-    /* =========================
-       DECORATIONS
-    ========================= */
+
 
     .butterfly-one {
         top: 5%;
@@ -2269,9 +2173,7 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   360PX / SMALL MOBILE
-========================================================= */
+
 
 @media (max-width: 400px) {
 
@@ -2359,9 +2261,7 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   EXTRA SMALL
-========================================================= */
+
 
 @media (max-width: 350px) {
 
@@ -2397,19 +2297,6 @@ html[dir="rtl"]
 
 
 
-
-
-
-
-
-
-
-
-/* =====================================================
-   MOBILE - SMALL SCROLL FIX ONLY
-   Header & Footer NOT touched
-===================================================== */
-
 @media (max-width: 576px) {
 
     .home1-hero {
@@ -2437,14 +2324,14 @@ html[dir="rtl"]
         margin-top: 17px;
     }
 
-    /* Main fix - reduce image area slightly */
+
     .hero-visual {
         height: 350px;
     }
 }
 
 
-/* Samsung / 360px phones */
+
 @media (max-width: 400px) {
 
     .home1-hero {
@@ -2482,21 +2369,6 @@ html[dir="rtl"]
 
 
 
-
-
-
-
-
-/* =========================================================
-   WING & BLOOM
-   SECTION 02 - THE MAGIC INSIDE
-========================================================= */
-
-
-/* =========================================================
-   SECTION
-========================================================= */
-
 .magic-section {
     position: relative;
     width: 100%;
@@ -2520,9 +2392,7 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   CONTAINER
-========================================================= */
+
 
 .magic-container {
     position: relative;
@@ -2534,9 +2404,7 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   SECTION HEADER
-========================================================= */
+
 
 .magic-header {
     max-width: 820px;
@@ -2547,10 +2415,7 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   DISCOVER TAGLINE
-   SAME STYLE FEEL AS BANNER EYEBROW
-========================================================= */
+
 
 .magic-subtitle {
     display: flex;
@@ -2608,9 +2473,6 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   MAIN TITLE
-========================================================= */
 
 .magic-title {
     margin: 0;
@@ -2637,9 +2499,6 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   DESCRIPTION
-========================================================= */
 
 .magic-description {
     max-width: 720px;
@@ -2658,9 +2517,7 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   CARDS GRID
-========================================================= */
+
 
 .magic-grid {
     display: grid;
@@ -2672,9 +2529,6 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   CARD
-========================================================= */
 
 .magic-card {
     position: relative;
@@ -2713,9 +2567,7 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   CARD IMAGE
-========================================================= */
+
 
 .magic-image-wrap {
     position: relative;
@@ -2763,9 +2615,7 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   CARD ICON
-========================================================= */
+
 
 .magic-card-icon {
     position: relative;
@@ -2814,9 +2664,7 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   CARD CONTENT
-========================================================= */
+
 
 .magic-card-content {
     padding:
@@ -2826,7 +2674,7 @@ html[dir="rtl"]
 }
 
 
-/* H3 - DECREASED */
+
 
 .magic-card-content h3 {
     margin: 0;
@@ -2861,9 +2709,7 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   LEARN MORE LINK
-========================================================= */
+
 
 .magic-card-link {
     display: inline-flex;
@@ -2928,9 +2774,7 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   BOTTOM AREA
-========================================================= */
+
 
 .magic-bottom {
     position: relative;
@@ -2946,10 +2790,7 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   PLAN YOUR VISIT
-   SAME STYLE AS BANNER PRIMARY BUTTON
-========================================================= */
+
 
 .magic-visit-btn {
     min-height: 50px;
@@ -3021,9 +2862,7 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   SIGNATURE
-========================================================= */
+
 
 .magic-signature {
     position: absolute;
@@ -3076,9 +2915,6 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   DECORATIVE LEAVES
-========================================================= */
 
 .magic-decoration {
     position: absolute;
@@ -3112,9 +2948,7 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   DECORATIVE BUTTERFLY
-========================================================= */
+
 
 .magic-butterfly {
     position: absolute;
@@ -3160,9 +2994,6 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   SCROLL REVEAL ANIMATION
-========================================================= */
 
 .magic-reveal {
     opacity: 0;
@@ -3185,7 +3016,7 @@ html[dir="rtl"]
 }
 
 
-/* CARD STAGGER */
+
 
 .magic-grid
 .magic-card:nth-child(1) {
@@ -3205,9 +3036,6 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   DARK MODE
-========================================================= */
 
 body.dark-theme .magic-section {
     background: #000000;
@@ -3236,7 +3064,7 @@ body.dark-theme .magic-card:hover {
 }
 
 
-/* TITLE */
+
 
 body.dark-theme .magic-title {
     color: #ffffff;
@@ -3248,7 +3076,7 @@ body.dark-theme .magic-title em {
 }
 
 
-/* DISCOVER */
+
 
 body.dark-theme .magic-subtitle p,
 body.dark-theme .magic-subtitle p i {
@@ -3261,7 +3089,7 @@ body.dark-theme .magic-subtitle > span {
 }
 
 
-/* TEXT */
+
 
 body.dark-theme .magic-description,
 body.dark-theme .magic-card-content p {
@@ -3274,7 +3102,7 @@ body.dark-theme .magic-card-content h3 {
 }
 
 
-/* CARD ICON */
+
 
 body.dark-theme .magic-card-icon {
     color: #000000;
@@ -3294,7 +3122,7 @@ body.dark-theme
 }
 
 
-/* LEARN MORE */
+
 
 body.dark-theme .magic-card-link {
     color: #ffffff;
@@ -3307,7 +3135,7 @@ body.dark-theme
 }
 
 
-/* BUTTON */
+
 
 body.dark-theme .magic-visit-btn {
     color: #ffffff;
@@ -3326,7 +3154,7 @@ body.dark-theme
 }
 
 
-/* SIGNATURE */
+
 
 body.dark-theme .magic-signature,
 body.dark-theme .magic-signature p,
@@ -3335,9 +3163,7 @@ body.dark-theme .magic-signature p span {
 }
 
 
-/* =========================================================
-   RTL
-========================================================= */
+
 
 html[dir="rtl"] .magic-section {
     direction: rtl;
@@ -3374,10 +3200,7 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   LAPTOP
-   <= 1200px
-========================================================= */
+
 
 @media (max-width: 1200px) {
 
@@ -3420,10 +3243,7 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   TABLET
-   <= 992px
-========================================================= */
+
 
 @media (max-width: 992px) {
 
@@ -3499,10 +3319,6 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   MOBILE
-   <= 650px
-========================================================= */
 
 @media (max-width: 650px) {
 
@@ -3517,14 +3333,14 @@ html[dir="rtl"] .magic-signature {
     }
 
 
-    /* HEADER */
+    
 
     .magic-header {
         margin-bottom: 29px;
     }
 
 
-    /* DISCOVER */
+    
 
     .magic-subtitle {
         gap: 8px;
@@ -3552,7 +3368,7 @@ html[dir="rtl"] .magic-signature {
     }
 
 
-    /* TITLE */
+  
 
     .magic-title {
         font-size: 2.2rem;
@@ -3561,7 +3377,7 @@ html[dir="rtl"] .magic-signature {
     }
 
 
-    /* DESCRIPTION */
+  
 
     .magic-description {
         max-width: 440px;
@@ -3574,7 +3390,7 @@ html[dir="rtl"] .magic-signature {
     }
 
 
-    /* GRID */
+
 
     .magic-grid {
         grid-template-columns: 1fr;
@@ -3590,14 +3406,14 @@ html[dir="rtl"] .magic-signature {
     }
 
 
-    /* IMAGE */
+   
 
     .magic-image-wrap {
         height: 205px;
     }
 
 
-    /* ICON */
+   
 
     .magic-card-icon {
         width: 62px;
@@ -3611,7 +3427,7 @@ html[dir="rtl"] .magic-signature {
     }
 
 
-    /* CONTENT */
+   
 
     .magic-card-content {
         padding:
@@ -3638,7 +3454,7 @@ html[dir="rtl"] .magic-signature {
     }
 
 
-    /* LEARN MORE */
+  
 
     .magic-card-link {
         gap: 9px;
@@ -3655,7 +3471,7 @@ html[dir="rtl"] .magic-signature {
     }
 
 
-    /* BOTTOM */
+
 
     .magic-bottom {
         gap: 22px;
@@ -3664,7 +3480,7 @@ html[dir="rtl"] .magic-signature {
     }
 
 
-    /* CTA */
+   
 
     .magic-visit-btn {
         min-height: 48px;
@@ -3675,7 +3491,7 @@ html[dir="rtl"] .magic-signature {
     }
 
 
-    /* SIGNATURE */
+   
 
     .magic-signature {
         gap: 8px;
@@ -3692,7 +3508,7 @@ html[dir="rtl"] .magic-signature {
     }
 
 
-    /* DECORATIONS */
+    
 
     .magic-decoration {
         font-size: 4rem;
@@ -3723,10 +3539,6 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   SMALL MOBILE
-   <= 400px
-========================================================= */
 
 @media (max-width: 400px) {
 
@@ -3746,7 +3558,7 @@ html[dir="rtl"] .magic-signature {
     }
 
 
-    /* DISCOVER */
+   
 
     .magic-subtitle {
         gap: 7px;
@@ -3765,14 +3577,14 @@ html[dir="rtl"] .magic-signature {
     }
 
 
-    /* TITLE */
+
 
     .magic-title {
         font-size: 2rem;
     }
 
 
-    /* DESCRIPTION */
+  
 
     .magic-description {
         font-size: 0.83rem;
@@ -3781,14 +3593,14 @@ html[dir="rtl"] .magic-signature {
     }
 
 
-    /* IMAGE */
+   
 
     .magic-image-wrap {
         height: 190px;
     }
 
 
-    /* CONTENT */
+   
 
     .magic-card-content {
         padding:
@@ -3806,7 +3618,7 @@ html[dir="rtl"] .magic-signature {
     }
 
 
-    /* BUTTON */
+
 
     .magic-visit-btn {
         width: auto;
@@ -3828,10 +3640,6 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   EXTRA SMALL MOBILE
-   <= 350px
-========================================================= */
 
 @media (max-width: 350px) {
 
@@ -3892,9 +3700,7 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   REDUCED MOTION
-========================================================= */
+
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -3923,15 +3729,6 @@ html[dir="rtl"] .magic-signature {
 
 
 
-
-
-
-
-
-
-/* =========================================================
-   SECTION 03 - SPECIES SPOTLIGHT
-========================================================= */
 
 .species-section {
     position: relative;
@@ -3962,9 +3759,6 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   CONTAINER
-========================================================= */
 
 .species-container {
     position: relative;
@@ -3977,9 +3771,7 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   HEADER
-========================================================= */
+
 
 .species-header {
     max-width: 820px;
@@ -3990,7 +3782,7 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* EYEBROW */
+
 
 .species-eyebrow {
     display: flex;
@@ -4046,9 +3838,7 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   TITLE
-========================================================= */
+
 
 .species-main-title {
     margin: 0;
@@ -4075,7 +3865,7 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* INTRO */
+
 
 .species-intro {
     max-width: 600px;
@@ -4092,9 +3882,6 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   SHOWCASE
-========================================================= */
 
 .species-showcase {
     display: grid;
@@ -4109,9 +3896,7 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   LEFT VISUAL
-========================================================= */
+
 
 .species-visual {
     position: relative;
@@ -4122,7 +3907,7 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* PINK BACKGROUND SHAPE */
+
 
 .species-image-bg {
     position: absolute;
@@ -4167,7 +3952,7 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* IMAGE FRAME */
+
 
 .species-image-frame {
     position: relative;
@@ -4211,7 +3996,7 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* IMAGE CHANGE ANIMATION */
+
 
 .species-main-image.species-changing {
     opacity: 0;
@@ -4221,9 +4006,7 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   IMAGE BADGE
-========================================================= */
+
 
 .species-image-badge {
     position: absolute;
@@ -4309,9 +4092,7 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   LEFT NOTE
-========================================================= */
+
 
 .species-left-note {
     position: absolute;
@@ -4359,9 +4140,7 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   RIGHT CONTENT
-========================================================= */
+
 
 .species-content {
     position: relative;
@@ -4372,9 +4151,6 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   TOP COUNTER
-========================================================= */
 
 .species-content-top {
     display: flex;
@@ -4430,9 +4206,7 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   ARROW CONTROLS
-========================================================= */
+
 
 .species-controls {
     display: flex;
@@ -4503,9 +4277,7 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   DYNAMIC CONTENT
-========================================================= */
+
 
 .species-dynamic-content {
     transition:
@@ -4522,7 +4294,7 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* SPECIES NAME */
+
 
 .species-dynamic-content h3 {
     margin: 0;
@@ -4540,7 +4312,7 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* SCIENTIFIC NAME */
+
 
 .species-scientific {
     margin: 7px 0 0;
@@ -4557,7 +4329,7 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* DESCRIPTION */
+
 
 .species-description {
     max-width: 590px;
@@ -4574,9 +4346,6 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   DETAILS
-========================================================= */
 
 .species-details {
     display: flex;
@@ -4654,9 +4423,6 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   CTA
-========================================================= */
 
 .species-btn {
     min-height: 50px;
@@ -4720,9 +4486,6 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   RIGHT NOTE
-========================================================= */
 
 .species-right-note {
     position: absolute;
@@ -4770,9 +4533,7 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   BOTTOM SPECIES SELECTOR
-========================================================= */
+
 
 .species-selector {
     max-width: 1000px;
@@ -4932,9 +4693,7 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   DECORATIONS
-========================================================= */
+
 
 .species-leaf {
     position: absolute;
@@ -5043,9 +4802,7 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   SCROLL ANIMATION
-========================================================= */
+
 
 .species-reveal {
     opacity: 0;
@@ -5092,9 +4849,6 @@ html[dir="rtl"] .magic-signature {
 }
 
 
-/* =========================================================
-   DARK MODE
-========================================================= */
 
 body.dark-theme
 .species-section {
@@ -5204,9 +4958,7 @@ body.dark-theme
 }
 
 
-/* =========================================================
-   RTL
-========================================================= */
+
 
 html[dir="rtl"]
 .species-section {
@@ -5249,9 +5001,7 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   LAPTOP
-========================================================= */
+
 
 @media (max-width: 1200px) {
 
@@ -5289,9 +5039,7 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   TABLET
-========================================================= */
+
 
 @media (max-width: 992px) {
 
@@ -5368,9 +5116,6 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   MOBILE
-========================================================= */
 
 @media (max-width: 650px) {
 
@@ -5425,7 +5170,7 @@ html[dir="rtl"]
     }
 
 
-    /* IMAGE */
+   
 
     .species-visual {
         padding:
@@ -5467,7 +5212,7 @@ html[dir="rtl"]
     }
 
 
-    /* CONTENT */
+   
 
     .species-showcase {
         gap: 30px;
@@ -5509,7 +5254,7 @@ html[dir="rtl"]
     }
 
 
-    /* DETAILS */
+  
 
     .species-details {
         gap: 14px;
@@ -5548,7 +5293,7 @@ html[dir="rtl"]
     }
 
 
-    /* BUTTON */
+    
 
     .species-btn {
         min-height: 48px;
@@ -5562,7 +5307,7 @@ html[dir="rtl"]
     }
 
 
-    /* SELECTOR */
+   
 
     .species-selector {
         display: grid;
@@ -5636,7 +5381,7 @@ html[dir="rtl"]
     }
 
 
-    /* DECORATIONS */
+
 
     .species-leaf {
         opacity: 0.5;
@@ -5667,9 +5412,7 @@ html[dir="rtl"]
 }
 
 
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
+
 
 @media (max-width: 400px) {
 

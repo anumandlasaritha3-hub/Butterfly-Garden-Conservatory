@@ -1,0 +1,167 @@
+/* =========================================================
+   WING & BLOOM — RESPONSIVE / BANNER FIX PATCH
+   Load this file LAST, after every other <link> in <head>,
+   on the pages listed at the top of each section below.
+   It only touches the rules that were causing problems —
+   nothing else on the site is changed.
+========================================================= */
+
+
+/* =========================================================
+   1) GLOBAL SAFETY NET — safe to include on EVERY page
+========================================================= */
+html {
+    overflow-x: hidden;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* stop any accidental horizontal scrollbar from a wide element */
+body {
+    overflow-x: hidden;
+}
+
+/* wide tables / code blocks scroll inside themselves instead of
+   breaking the page width on small screens */
+table,
+pre {
+    max-width: 100%;
+    overflow-x: auto;
+    display: block;
+}
+
+
+/* =========================================================
+   2) EXPERIENCES.HTML — hero banner contrast fix
+   (page: experiences.html)
+========================================================= */
+@media (max-width: 767px) {
+
+    .exp-hero-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(249, 248, 237, .30) 0%,
+                rgba(249, 248, 237, .80) 32%,
+                rgba(249, 248, 237, .99) 58%
+            );
+    }
+
+    body.dark-theme .exp-hero-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(0, 0, 0, .30) 0%,
+                rgba(0, 0, 0, .82) 32%,
+                rgba(0, 0, 0, .99) 58%
+            );
+    }
+
+    /* small text-shadow as a second line of defence so headline
+       stays legible even over the brightest part of the photo */
+    .exp-hero h1,
+    .exp-hero h1 span,
+    .exp-hero-content > p {
+        text-shadow: 0 2px 14px rgba(0, 0, 0, .12);
+    }
+}
+
+
+/* =========================================================
+   3) CONTACT.HTML — hero banner contrast fix
+   (page: contact.html)
+========================================================= */
+@media (max-width: 767px) {
+
+    .contact-hero-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(249, 248, 237, .28) 0%,
+                rgba(249, 248, 237, .78) 32%,
+                rgba(249, 248, 237, .99) 56%
+            );
+    }
+
+    body.dark-theme .contact-hero-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(0, 0, 0, .28) 0%,
+                rgba(0, 0, 0, .80) 32%,
+                rgba(0, 0, 0, .99) 56%
+            );
+    }
+
+    .contact-hero h1,
+    .contact-hero h1 span,
+    .contact-hero-content > p {
+        text-shadow: 0 2px 14px rgba(0, 0, 0, .12);
+    }
+}
+
+
+/* =========================================================
+   4) EXPERIENCE-DETAILS.HTML — hero banner
+   This page never had a mobile version of its overlay at all,
+   so on phones the text sat over the un-darkened part of the
+   image. We switch it from a left-to-right gradient (made for
+   desktop, image visible on the right) to a full, even, top-
+   to-bottom scrim so every line of text has the same contrast
+   no matter how wide it is.
+   (page: experience-details.html)
+========================================================= */
+@media (max-width: 768px) {
+
+    .detail-hero-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(7, 37, 18, .55) 0%,
+                rgba(7, 37, 18, .74) 45%,
+                rgba(7, 37, 18, .90) 100%
+            );
+    }
+
+    .detail-hero h1,
+    .detail-hero-content > p,
+    .detail-back,
+    .detail-hero .detail-tag p {
+        text-shadow: 0 2px 14px rgba(0, 0, 0, .25);
+    }
+}
+
+/* this page also stopped adding phone-specific sizing at 576px;
+   add one more step down for small phones (iPhone SE / small
+   Android, ~360–400px) so the big decorative number and heading
+   don't crowd the meta bar */
+@media (max-width: 400px) {
+
+    .detail-hero {
+        min-height: 640px;
+    }
+
+    .detail-number {
+        font-size: 3rem;
+    }
+
+    .detail-hero h1 {
+        font-size: clamp(2.4rem, 13vw, 3.2rem);
+    }
+
+    .detail-hero-content > p {
+        font-size: .92rem;
+    }
+
+    .detail-hero-meta > div {
+        padding: 10px 14px;
+    }
+
+    .detail-hero-meta strong {
+        font-size: .74rem;
+    }
+}
