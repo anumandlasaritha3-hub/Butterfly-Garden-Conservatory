@@ -13158,3 +13158,190 @@ html[dir="rtl"]
     }
 
 }
+
+
+/* =========================================
+   HOME PAGE 1 - TEXT READABILITY FIX
+   ========================================= */
+
+/* Small eyebrow / label text */
+.home1-hero .hero-eyebrow {
+    font-size: 0.82rem;
+}
+
+/* Main hero description */
+.home1-hero .hero-description {
+    font-size: 1.08rem;
+    line-height: 1.75;
+}
+
+/* Hero buttons */
+.home1-hero .hero-btn {
+    font-size: 0.95rem;
+}
+
+/* Hero information small labels */
+.home1-hero .info-box span {
+    font-size: 0.78rem;
+}
+
+/* Hero information values */
+.home1-hero .info-box strong {
+    font-size: 0.88rem;
+}
+
+/* Small supporting note */
+.home1-hero .hero-note span {
+    font-size: 0.85rem;
+}
+
+/* Live badge text */
+.home1-hero .badge-inner span {
+    font-size: 0.95rem;
+}
+
+
+
+
+
+/* =========================================================
+   HOME 1 - HEADING & IMAGE REFINEMENT
+   ========================================================= */
+
+/* Main Hero Heading */
+.home1-hero .hero-title {
+    font-size: clamp(3.2rem, 4.6vw, 5rem);
+    line-height: 0.98;
+    letter-spacing: -0.035em;
+}
+
+/* Main Section Headings */
+.magic-title,
+.species-main-title,
+.life-title {
+    font-size: clamp(2.5rem, 3.8vw, 3.8rem);
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+}
+
+/* Card / Content Headings */
+.magic-card h3,
+.species-dynamic-content h3,
+.life-stage h3 {
+    line-height: 1.2;
+}
+
+/* =========================
+   IMAGE REFINEMENT
+   ========================= */
+
+/* Hero image */
+.hero-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Hero supporting image */
+.hero-small-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Magic cards */
+.magic-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Species main image */
+.species-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Species thumbnail images */
+.species-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Life-cycle images */
+.life-image-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media screen and (max-width: 992px) {
+
+    .home1-hero .hero-title {
+        font-size: clamp(3rem, 7vw, 4.2rem);
+    }
+
+    .magic-title,
+    .species-main-title,
+    .life-title {
+        font-size: clamp(2.3rem, 5vw, 3.2rem);
+    }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media screen and (max-width: 650px) {
+
+    .home1-hero .hero-title {
+        font-size: clamp(2.35rem, 10vw, 3rem);
+        line-height: 1;
+        letter-spacing: -0.025em;
+    }
+
+    .magic-title,
+    .species-main-title,
+    .life-title {
+        font-size: clamp(2rem, 8vw, 2.6rem);
+        line-height: 1.08;
+    }
+
+    .magic-card h3,
+    .species-dynamic-content h3,
+    .life-stage h3 {
+        line-height: 1.25;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media screen and (max-width: 400px) {
+
+    .home1-hero .hero-title {
+        font-size: 2.3rem;
+    }
+
+    .magic-title,
+    .species-main-title,
+    .life-title {
+        font-size: 2rem;
+    }
+}

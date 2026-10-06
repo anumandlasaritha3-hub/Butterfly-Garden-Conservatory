@@ -3030,3 +3030,167 @@ body.dark-theme .purpose-word {
 body.dark-theme .purpose-item:hover .purpose-word {
     color: rgba(244, 156, 171, 0.16) !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   ABOUT PAGE - HEADING & IMAGE REFINEMENT
+========================================================= */
+
+/* =========================
+   HERO HEADING
+========================= */
+
+.about-page .about-hero-title {
+    font-size: clamp(3.1rem, 4.8vw, 5.1rem);
+    line-height: 0.98;
+    letter-spacing: -0.035em;
+}
+
+.about-page .about-hero-title span {
+    line-height: 1;
+}
+
+
+/* =========================
+   MAIN SECTION HEADINGS
+========================= */
+
+.about-page .about-section-title {
+    font-size: clamp(2.15rem, 3vw, 2.75rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+
+/* =========================
+   SMALL CONTENT HEADINGS
+========================= */
+
+.about-page .purpose-item h3,
+.about-page .inside-feature h3,
+.about-page .impact-item h3,
+.about-page .value-copy h3 {
+    line-height: 1.25;
+}
+
+
+/* =========================================================
+   IMAGE REFINEMENT
+========================================================= */
+
+/* About hero */
+.about-page .about-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Our Story images */
+.about-page .story-main-image img,
+.about-page .story-small-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Inside Wing & Bloom */
+.about-page .inside-about-visual > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Values section */
+.about-page .values-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Closing CTA */
+.about-page .about-cta-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media screen and (max-width: 992px) {
+
+    .about-page .about-hero-title {
+        font-size: clamp(2.9rem, 6vw, 4.2rem);
+    }
+
+    .about-page .about-section-title {
+        font-size: clamp(2rem, 4vw, 2.55rem);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 767px) {
+
+    .about-page .about-hero-title {
+        font-size: clamp(2.4rem, 9.5vw, 3.2rem);
+        line-height: 1;
+        letter-spacing: -0.025em;
+    }
+
+    .about-page .about-section-title {
+        font-size: clamp(1.9rem, 7vw, 2.35rem);
+        line-height: 1.1;
+    }
+
+    /* Better hero image focus on mobile */
+    .about-page .about-hero-image img {
+        object-position: 62% center;
+    }
+
+    .about-page .purpose-item h3,
+    .about-page .inside-feature h3,
+    .about-page .impact-item h3,
+    .about-page .value-copy h3 {
+        line-height: 1.3;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media screen and (max-width: 480px) {
+
+    .about-page .about-hero-title {
+        font-size: 2.35rem;
+    }
+
+    .about-page .about-section-title {
+        font-size: 1.95rem;
+    }
+}

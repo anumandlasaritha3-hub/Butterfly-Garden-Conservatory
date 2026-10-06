@@ -322,3 +322,202 @@ body.dark-theme .form-note i { color: var(--secondary); }
 .brand-tagline {
     white-space: nowrap;
 }
+
+
+
+/* =========================================
+   360PX MOBILE - TEXT OVERLAP FIX
+   ========================================= */
+@media screen and (max-width: 380px) {
+
+    /* Header */
+    .visit-header {
+        padding: 20px 12px 10px;
+        min-height: 190px;
+    }
+
+    .header-toggles {
+        position: static;
+        justify-content: center;
+        margin-bottom: 14px;
+    }
+
+    /* Brand */
+    .brand {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+
+        width: 100%;
+        max-width: 100%;
+
+        flex-direction: row;
+        justify-content: center;
+        gap: 9px;
+
+        margin: 0 auto;
+    }
+
+    .brand-logo {
+        width: 52px;
+        height: 52px;
+        flex-shrink: 0;
+    }
+
+    .brand-text {
+        min-width: 0;
+        align-items: flex-start;
+    }
+
+    .brand-name {
+        font-size: 20px;
+        white-space: normal;
+        line-height: 1.15;
+    }
+
+    .brand-tagline {
+        font-size: 11px;
+        white-space: normal;
+        line-height: 1.3;
+    }
+
+    /* Hero */
+    .visit-hero {
+        padding: 20px 16px 10px;
+    }
+
+    .visit-hero h1 {
+        font-size: 30px;
+        line-height: 1.15;
+        margin: 10px 0 15px;
+        overflow-wrap: break-word;
+    }
+
+    .visit-hero p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* Form */
+    .visit-form-card {
+        width: calc(100% - 24px);
+        margin: 28px auto 50px;
+        padding: 24px 16px;
+    }
+
+    .form-card-head h2 {
+        font-size: 26px;
+    }
+
+    .input-wrap {
+        width: 100%;
+        min-width: 0;
+        padding: 12px;
+    }
+
+    .input-wrap input,
+    .input-wrap select,
+    .input-wrap textarea {
+        min-width: 0;
+        width: 100%;
+    }
+
+    /* Privacy text */
+    .form-note {
+        align-items: flex-start;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}
+
+
+
+
+
+
+/* =========================================================
+   BOOK A VISIT PAGE - HEADING REFINEMENT
+   Paste at the very bottom of book-a-visit.css
+========================================================= */
+
+
+/* =========================
+   HERO HEADING
+========================= */
+
+.visit-page .visit-hero h1 {
+    font-size: clamp(2.6rem, 4.2vw, 3.5rem);
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+}
+
+.visit-page .visit-hero h1 span {
+    color: var(--secondary);
+    line-height: 1.08;
+}
+
+
+/* =========================
+   FORM HEADING
+========================= */
+
+.visit-page .form-card-head h2 {
+    font-size: clamp(1.8rem, 2.5vw, 2.2rem);
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media screen and (max-width: 992px) {
+
+    .visit-page .visit-hero h1 {
+        font-size: clamp(2.5rem, 6vw, 3.2rem);
+    }
+
+    .visit-page .form-card-head h2 {
+        font-size: clamp(1.75rem, 3.5vw, 2.1rem);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 767px) {
+
+    .visit-page .visit-hero h1 {
+        font-size: clamp(2.25rem, 8vw, 2.8rem);
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+    }
+
+    .visit-page .form-card-head h2 {
+        font-size: 1.85rem;
+        line-height: 1.15;
+    }
+}
+
+
+/* =========================================================
+   360PX / SMALL MOBILE
+========================================================= */
+
+@media screen and (max-width: 380px) {
+
+    .visit-page .visit-hero h1 {
+        font-size: 2rem;
+        line-height: 1.12;
+        margin: 10px 0 15px;
+        overflow-wrap: break-word;
+    }
+
+    .visit-page .form-card-head h2 {
+        font-size: 1.7rem;
+    }
+}

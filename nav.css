@@ -2419,3 +2419,26 @@ body.dark-theme .site-header.sticky {
     }
 
 }
+
+
+
+
+/* =========================================
+   WING & BLOOM - REFINED LIGHT THEME
+   ========================================= */
+
+body:not(.dark-theme) {
+    --bg: #F8FAF5;
+    --surface: #FFFFFF;
+
+    --text: #1D251F;
+    --muted-text: #566159;
+
+    --soft-green: #E7EFE3;
+    --soft-cream: #F5EFE5;
+    --soft-pink: #FBE7EC;
+
+    --border: rgba(27, 77, 42, 0.18);
+}
+
+

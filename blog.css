@@ -1532,3 +1532,228 @@ body.dark-theme .blog-cta-card {
     }
 
 }
+
+
+
+
+/* =========================================================
+   BLOG PAGE - HEADING & IMAGE REFINEMENT
+   Paste at the very bottom of blog.css
+========================================================= */
+
+
+/* =========================
+   HERO HEADING
+========================= */
+
+.blog-page .blog-hero h1 {
+    font-size: clamp(3.1rem, 4.8vw, 5.1rem);
+    line-height: 0.98;
+    letter-spacing: -0.035em;
+}
+
+.blog-page .blog-hero h1 span {
+    line-height: 1;
+}
+
+
+/* =========================
+   MAIN SECTION HEADINGS
+========================= */
+
+.blog-page .blog-section-title {
+    font-size: clamp(2.15rem, 3vw, 2.75rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+
+/* =========================
+   FEATURED STORY HEADING
+========================= */
+
+.blog-page .featured-blog-content h3 {
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+    line-height: 1.15;
+}
+
+
+/* =========================
+   BLOG CARD HEADINGS
+========================= */
+
+.blog-page .blog-card-content h3 {
+    font-size: 1.4rem;
+    line-height: 1.28;
+}
+
+
+/* =========================
+   CTA HEADING
+========================= */
+
+.blog-page .blog-cta-content h2 {
+    font-size: clamp(2.15rem, 3vw, 2.75rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+
+/* =========================
+   SMALL CONTENT HEADINGS
+========================= */
+
+.blog-page .journal-points strong {
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   IMAGE REFINEMENT
+========================================================= */
+
+/* Hero image */
+
+.blog-page .blog-hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Featured story */
+
+.blog-page .featured-blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Blog card images */
+
+.blog-page .blog-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Conservation feature */
+
+.blog-page .journal-feature-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* CTA background */
+
+.blog-page .blog-cta-visual {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Prevent image distortion */
+
+.blog-page img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media screen and (max-width: 992px) {
+
+    .blog-page .blog-hero h1 {
+        font-size: clamp(2.9rem, 6vw, 4.2rem);
+    }
+
+    .blog-page .blog-section-title,
+    .blog-page .blog-cta-content h2 {
+        font-size: clamp(2rem, 4vw, 2.55rem);
+    }
+
+    .blog-page .featured-blog-content h3 {
+        font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 767px) {
+
+    .blog-page .blog-hero h1 {
+        font-size: clamp(2.4rem, 9.5vw, 3.2rem);
+        line-height: 1;
+        letter-spacing: -0.025em;
+    }
+
+    .blog-page .blog-section-title,
+    .blog-page .blog-cta-content h2 {
+        font-size: clamp(1.9rem, 7vw, 2.35rem);
+        line-height: 1.1;
+    }
+
+    .blog-page .featured-blog-content h3 {
+        font-size: 1.85rem;
+        line-height: 1.18;
+    }
+
+    .blog-page .blog-card-content h3 {
+        font-size: 1.35rem;
+        line-height: 1.3;
+    }
+
+
+    /* Better hero crop on mobile */
+
+    .blog-page .blog-hero-bg img {
+        object-position: 62% center;
+    }
+
+
+    /* Keep conservation image focus clean */
+
+    .blog-page .journal-feature-image > img {
+        object-position: center;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media screen and (max-width: 480px) {
+
+    .blog-page .blog-hero h1 {
+        font-size: 2.35rem;
+    }
+
+    .blog-page .blog-section-title,
+    .blog-page .blog-cta-content h2 {
+        font-size: 1.95rem;
+    }
+
+    .blog-page .featured-blog-content h3 {
+        font-size: 1.7rem;
+    }
+
+    .blog-page .blog-card-content h3 {
+        font-size: 1.3rem;
+    }
+}
